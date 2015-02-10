@@ -1,0 +1,13 @@
+callback([
+
+  {
+    "text": "principles and practices, project management",
+    "href": "//localhost:4000/class%20assignments/week1"
+  } ,
+
+  {
+    "text": "computer-aided design",
+    "href": "//localhost:4000/class%20assignments/week2"
+  } 
+
+])

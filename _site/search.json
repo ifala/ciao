@@ -1,0 +1,19 @@
+[
+	
+		{
+		  "title"      : "computer-aided design",
+		  "category"   : "Class assignments",
+		  "url"        : "//localhost:4000/class%20assignments/week2",
+		  "date"       : "2015-02-09 00:00:00 +0100",
+		  "shortdate"  : "February 09, 2015"
+		} ,
+	
+		{
+		  "title"      : "principles and practices, project management",
+		  "category"   : "Class assignments",
+		  "url"        : "//localhost:4000/class%20assignments/week1",
+		  "date"       : "2015-01-31 00:00:00 +0100",
+		  "shortdate"  : "January 31, 2015"
+		} 
+	
+]
