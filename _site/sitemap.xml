@@ -48,11 +48,11 @@
 
     
     <url>
-        <loc>//localhost:4000/class%20assignments/week2</loc>
+        <loc>//localhost:4000/class_assignments/week2</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/class%20assignments/week1</loc>
+        <loc>//localhost:4000/class_assignments/week1</loc>
     </url>
     
 </urlset>
