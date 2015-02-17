@@ -1,94 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>//localhost:4000</loc>
+        <loc>//ifala.github.io</loc>
     </url>
     
     
     <url>
-        <loc>//localhost:4000/2015-01-31-week1.html</loc>
+        <loc>//ifala.github.io/2015-01-31-week1.html</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/404.html</loc>
+        <loc>//ifala.github.io/404.html</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/about/index.html</loc>
+        <loc>//ifala.github.io/about/index.html</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/classes/index.html</loc>
+        <loc>//ifala.github.io/classes/index.html</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/final_project/</loc>
+        <loc>//ifala.github.io/final_project/</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/index.html</loc>
+        <loc>//ifala.github.io/index.html</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/links.jsonp</loc>
+        <loc>//ifala.github.io/links.jsonp</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/search.json</loc>
+        <loc>//ifala.github.io/search.json</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/sitemap.xml</loc>
+        <loc>//ifala.github.io/sitemap.xml</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/tags/index.html</loc>
+        <loc>//ifala.github.io/tags/index.html</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/page2/index.html</loc>
+        <loc>//ifala.github.io/page2/index.html</loc>
     </url>
     
 
     
     <url>
-        <loc>//localhost:4000/class_assignments/week3</loc>
+        <loc>//ifala.github.io/class_assignments/week3</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/class_assignments/week2</loc>
+        <loc>//ifala.github.io/class_assignments/week2</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/class_assignments/week1</loc>
+        <loc>//ifala.github.io/class_assignments/week1</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/webdevelopment/wh2y-jekyll</loc>
+        <loc>//ifala.github.io/webdevelopment/wh2y-jekyll</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/webdevelopment/why-jekyll</loc>
+        <loc>//ifala.github.io/webdevelopment/why-jekyll</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/personal/introducing-notepad</loc>
+        <loc>//ifala.github.io/personal/introducing-notepad</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/theme/documentation</loc>
+        <loc>//ifala.github.io/theme/documentation</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/theme/readability-feature-post</loc>
+        <loc>//ifala.github.io/theme/readability-feature-post</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/articles/readability-post</loc>
+        <loc>//ifala.github.io/articles/readability-post</loc>
     </url>
     
     <url>
-        <loc>//localhost:4000/articles/theme-elements</loc>
+        <loc>//ifala.github.io/articles/theme-elements</loc>
     </url>
     
 </urlset>

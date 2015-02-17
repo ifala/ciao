@@ -2,52 +2,52 @@ callback([
 
   {
     "text": "Theme Elements",
-    "href": "//localhost:4000/articles/theme-elements"
+    "href": "//ifala.github.io/articles/theme-elements"
   } ,
 
   {
     "text": "Testing Readability with a Bunch of Text",
-    "href": "//localhost:4000/articles/readability-post"
+    "href": "//ifala.github.io/articles/readability-post"
   } ,
 
   {
     "text": "Post with Cover Image and Text",
-    "href": "//localhost:4000/theme/readability-feature-post"
+    "href": "//ifala.github.io/theme/readability-feature-post"
   } ,
 
   {
     "text": "Documentation",
-    "href": "//localhost:4000/theme/documentation"
+    "href": "//ifala.github.io/theme/documentation"
   } ,
 
   {
     "text": "Introducing Notepad",
-    "href": "//localhost:4000/personal/introducing-notepad"
+    "href": "//ifala.github.io/personal/introducing-notepad"
   } ,
 
   {
     "text": "Why Jekyll?",
-    "href": "//localhost:4000/webdevelopment/why-jekyll"
+    "href": "//ifala.github.io/webdevelopment/why-jekyll"
   } ,
 
   {
     "text": "Why Jekyll?",
-    "href": "//localhost:4000/webdevelopment/wh2y-jekyll"
+    "href": "//ifala.github.io/webdevelopment/wh2y-jekyll"
   } ,
 
   {
     "text": "principles and practices, project management",
-    "href": "//localhost:4000/class_assignments/week1"
+    "href": "//ifala.github.io/class_assignments/week1"
   } ,
 
   {
     "text": "computer-aided design",
-    "href": "//localhost:4000/class_assignments/week2"
+    "href": "//ifala.github.io/class_assignments/week2"
   } ,
 
   {
     "text": "computer-controlled cutting",
-    "href": "//localhost:4000/class_assignments/week3"
+    "href": "//ifala.github.io/class_assignments/week3"
   } 
 
 ])

@@ -3,7 +3,7 @@
 		{
 		  "title"      : "computer-controlled cutting",
 		  "category"   : "Class_assignments",
-		  "url"        : "//localhost:4000/class_assignments/week3",
+		  "url"        : "//ifala.github.io/class_assignments/week3",
 		  "date"       : "2015-02-16 00:00:00 +0100",
 		  "shortdate"  : "February 16, 2015"
 		} ,
@@ -11,7 +11,7 @@
 		{
 		  "title"      : "computer-aided design",
 		  "category"   : "Class_assignments",
-		  "url"        : "//localhost:4000/class_assignments/week2",
+		  "url"        : "//ifala.github.io/class_assignments/week2",
 		  "date"       : "2015-02-09 00:00:00 +0100",
 		  "shortdate"  : "February 09, 2015"
 		} ,
@@ -19,7 +19,7 @@
 		{
 		  "title"      : "principles and practices, project management",
 		  "category"   : "Class_assignments",
-		  "url"        : "//localhost:4000/class_assignments/week1",
+		  "url"        : "//ifala.github.io/class_assignments/week1",
 		  "date"       : "2015-01-31 00:00:00 +0100",
 		  "shortdate"  : "January 31, 2015"
 		} ,
@@ -27,7 +27,7 @@
 		{
 		  "title"      : "Why Jekyll?",
 		  "category"   : "webdevelopment",
-		  "url"        : "//localhost:4000/webdevelopment/wh2y-jekyll",
+		  "url"        : "//ifala.github.io/webdevelopment/wh2y-jekyll",
 		  "date"       : "2014-07-24 00:00:00 +0200",
 		  "shortdate"  : "July 24, 2014"
 		} ,
@@ -35,7 +35,7 @@
 		{
 		  "title"      : "Why Jekyll?",
 		  "category"   : "webdevelopment",
-		  "url"        : "//localhost:4000/webdevelopment/why-jekyll",
+		  "url"        : "//ifala.github.io/webdevelopment/why-jekyll",
 		  "date"       : "2014-07-23 00:00:00 +0200",
 		  "shortdate"  : "July 23, 2014"
 		} ,
@@ -43,7 +43,7 @@
 		{
 		  "title"      : "Introducing Notepad",
 		  "category"   : "personal",
-		  "url"        : "//localhost:4000/personal/introducing-notepad",
+		  "url"        : "//ifala.github.io/personal/introducing-notepad",
 		  "date"       : "2014-07-19 00:00:00 +0200",
 		  "shortdate"  : "July 19, 2014"
 		} ,
@@ -51,7 +51,7 @@
 		{
 		  "title"      : "Documentation",
 		  "category"   : "theme",
-		  "url"        : "//localhost:4000/theme/documentation",
+		  "url"        : "//ifala.github.io/theme/documentation",
 		  "date"       : "2014-06-19 00:00:00 +0200",
 		  "shortdate"  : "June 19, 2014"
 		} ,
@@ -59,7 +59,7 @@
 		{
 		  "title"      : "Post with Cover Image and Text",
 		  "category"   : "theme",
-		  "url"        : "//localhost:4000/theme/readability-feature-post",
+		  "url"        : "//ifala.github.io/theme/readability-feature-post",
 		  "date"       : "2013-05-23 00:00:00 +0200",
 		  "shortdate"  : "May 23, 2013"
 		} ,
@@ -67,7 +67,7 @@
 		{
 		  "title"      : "Testing Readability with a Bunch of Text",
 		  "category"   : "articles",
-		  "url"        : "//localhost:4000/articles/readability-post",
+		  "url"        : "//ifala.github.io/articles/readability-post",
 		  "date"       : "2012-05-22 00:00:00 +0200",
 		  "shortdate"  : "May 22, 2012"
 		} ,
@@ -75,7 +75,7 @@
 		{
 		  "title"      : "Theme Elements",
 		  "category"   : "articles",
-		  "url"        : "//localhost:4000/articles/theme-elements",
+		  "url"        : "//ifala.github.io/articles/theme-elements",
 		  "date"       : "2011-03-10 00:00:00 +0100",
 		  "shortdate"  : "March 10, 2011"
 		} 
