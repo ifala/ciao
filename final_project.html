@@ -1,20 +1,29 @@
 ---
 layout: page
-permalink: /featured/
-title: PROJECT Blog
+permalink: /final_project/
+title: Twister
 description: "An archive of posts by my final project."
 ---
-{% assign featuredcount = '0' %}
-<ul class="post-list">
-{% for post in site.posts %}
-{% if post.featured %}
-{% assign featuredcount = featuredcount | plus:'1' %}
-  <li><article><i class="fa fa-star-half-o"></i> <a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
-{% endif %}
-{% endfor %}
-</ul>
-{% if featuredcount == '0' %}
-<div class="notepad-page-title row">
+<div class="row">
+  <div class="small-3 columns">
+sidaidiai<img src="{{ site.url }}/images/week/2/illustrator/sketch3final_logo.jpg">
+  </div>
+  <div class="small-9 columns">
+	  {% assign featuredcount = '0' %}
+	  <ul class="post-list">Project fresh update
+		  {% for post in site.posts %}
+		  {% if post.featured %}
+		  {% assign featuredcount = featuredcount | plus:'1' %}
+  			<li><article><i class="fa fa-plus-square"></i> <a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | 			date: "%B %d, %Y" }}</time></span></a></article></li>
+		  {% endif %}
+		  {% endfor %}
+	  </ul>
+	  {% if featuredcount == '0' %}
+  <div class="notepad-page-title row">
     <h1>No posts has been featured yet</h1>
+	</div>
+	   {% endif %}	  	  
+	  
+	  
+  </div>
 </div>
-{% endif %}

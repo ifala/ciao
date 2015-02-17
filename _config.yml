@@ -1,4 +1,4 @@
-title:            Giaacomo Falschi
+title:            Giacomo Falschi
 description:      "Fab academy 2015"
 logo:             logo.png
 disqus_shortname: 
@@ -7,7 +7,7 @@ dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  //ifala.github.io
+url:              //localhost:4000
 
 # Owner/author information
 owner:
@@ -22,10 +22,10 @@ owner:
   github:         ifala      
   instagram:      jakefala
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/102602916593522619858
+  google_plus:    
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-39365944-7
+google_analytics:   
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
@@ -37,19 +37,19 @@ links:
     url: /
     external: false
     icon: home
-  - title: Project Blog
-    url: /featured
+  - title: aboutME
+    url: /about
+  - title: final project
+    url: /final_project
   - title: classes
     url: /classes
-  - title: AboutME
-    url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Rome
 future:      true
 highlighter: pygments
 markdown:    kramdown
-paginate:    10
+paginate:    5
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
@@ -57,7 +57,7 @@ permalink:   /:categories/:title
 
 kramdown:
   auto_ids: true
-  footnote_nr: 10
+  footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
@@ -113,18 +113,12 @@ prose:
           placeholder: "Choose categories"
           value: personal
           options:
-            - name: "Personal"
-              value: personal
-            - name: "Engineering"
-              value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
-            - name: "Interesting"
-              value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
+            - name: "class_assignments"
+              value: class_assignments
+            - name: "project_blog"
+              value: project_blog
+            - name: "aboutME"
+              value: aboutME
           alterable: true
       - name: "tags"
         field:

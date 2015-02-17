@@ -22,7 +22,7 @@
     </url>
     
     <url>
-        <loc>//localhost:4000/featured/</loc>
+        <loc>//localhost:4000/final_project/</loc>
     </url>
     
     <url>
@@ -45,7 +45,15 @@
         <loc>//localhost:4000/tags/index.html</loc>
     </url>
     
+    <url>
+        <loc>//localhost:4000/page2/index.html</loc>
+    </url>
+    
 
+    
+    <url>
+        <loc>//localhost:4000/class_assignments/week3</loc>
+    </url>
     
     <url>
         <loc>//localhost:4000/class_assignments/week2</loc>
@@ -53,6 +61,34 @@
     
     <url>
         <loc>//localhost:4000/class_assignments/week1</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/webdevelopment/wh2y-jekyll</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/webdevelopment/why-jekyll</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/personal/introducing-notepad</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/theme/documentation</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/theme/readability-feature-post</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/articles/readability-post</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/articles/theme-elements</loc>
     </url>
     
 </urlset>
