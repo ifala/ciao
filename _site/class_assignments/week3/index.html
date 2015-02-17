@@ -187,31 +187,84 @@ so before you buy an item like this, which although very nice cost a fortune, <a
 
 <h4 id="workflow">workflow</h4>
 
+<hr />
+
+<h5 id="parametric-project-and-test">Parametric project and test</h5>
+
+<hr />
+
 <h6 id="after-writing-some-notes-on-paper-and-the-bad-code-in-openscad">- after writing some notes on paper and the bad code in OpenSCAD,</h6>
 <p>These are the settings to be included in OpenSCAD, to generate your own laptop stand, of course, in addition to the kerf=K</p>
 
-<p><img src="//localhost:4000/images/week/3/appome/workflow/quotatura.png" />
-I included the measures of my mac and controlled via the export in DXF, the actual measurements of the cardboard/vinil to be cut.
+<p><img src="//localhost:4000/images/week/3/appome/workflow/quotatura.png" /></p>
+
+<p>I put in the measures of my mac,and the measures of cardboard (thikness and wheelbase dimples) and export in DXF just uncomment —&gt; remove “//” the 2 line after //+++++++++++Laser Cut cardboard (press F6 and export DXF)  —&gt; remove “(//)”</p>
+
+<h6 id="laser-cut-cardboard-press-f6-and-export-dxf">//+++++++++++Laser Cut cardboard (press F6 and export DXF)</h6>
+
+<blockquote>
+  <p>translate([X+P+X/5+K+K+10,0,0]) projection(cut = false) rotate([0,0,90]) layerdown();</p>
+</blockquote>
+
+<blockquote>
+  <p>projection(cut = false) overup();</p>
+</blockquote>
+
 <figure class="half">
 	<img src="//localhost:4000/images/week/3/appome/workflow/export_DXF" />
 	<img src="//localhost:4000/images/week/3/appome/workflow/export_vinile.jpg" />
-</figure></p>
-
-<figure class="third">
-	<img src="//localhost:4000/images/apple-touch-icon-72x72-precomposed.png" />
-	<img src="//localhost:4000/images/apple-touch-icon-114x114-precomposed.png" />
-	<img src="//localhost:4000/images/apple-touch-icon-144x144-precomposed.png" />
 </figure>
 
-<figure class="half">
-	<img src="//localhost:4000/images/week/2/illustrator/sketch1.jpg" />
-	<img src="//localhost:4000/images/week/2/illustrator/sketch2.jpg" />
+<p>I have also created a small test, in order to understand the power of the laser cutting and verify the cuts in the flexible section of the project.</p>
+
+<h6 id="test-laser-cut-cardboard">//+++++++++++Test laser cut cardboard</h6>
+
+<blockquote>
+  <p>projection(cut = false) testlaser();</p>
+</blockquote>
+
+<figure>
+	<img src="//localhost:4000/images/week/3/appome/workflow/testlaser.jpg" />
 </figure>
+
+<h5 id="modify-in-autocad">modify in Autocad</h5>
+
+<h6 id="openscad-unfortunately-does-not-export-the-colors-so-i-was-forced-to-use-autocad-to-open-the-dxf-and-change-the-color-of-the-cuts-to-be-made">- OpenSCAD unfortunately does not export the colors, so I was forced to use autocad to open the dxf and change the color of the cuts to be made</h6>
+
+<p>begin editing the file to test the power to apply to lasercut..</p>
+
 <figure class="third">
-	<img src="//localhost:4000/images/apple-touch-icon-72x72-precomposed.png" />
-	<img src="//localhost:4000/images/apple-touch-icon-114x114-precomposed.png" />
-	<img src="//localhost:4000/images/apple-touch-icon-144x144-precomposed.png" />
+	<img src="//localhost:4000/images/week/3/0003.jpg" />
+	<img src="//localhost:4000/images/week/3/0004.jpg" />
+	<img src="//localhost:4000/images/week/3/0001.jpg" />
+	<figcaption>the blue line was set to 10% of power</figcaption>
 </figure>
+<figure>
+	<img src="//localhost:4000/images/week/3/0005.jpg" />
+	<figcaption>the cardboard back after the cut, blue power of 10% is to use on flexible section</figcaption>
+</figure>
+
+<hr />
+
+<h5 id="lasercut">Lasercut!</h5>
+
+<hr />
+
+<h6 id="unfortunately-we-can-not-use-the-fabmodules-to-send-in-cutting-but-we-have-to-create-a-pdf-and-send-the-job-directly-from-the-pc-connected-to-the-lasercut">- Unfortunately we can not use the fabmodules to send in cutting, but we have to create a pdf and send the job directly from the PC connected to the lasercut.</h6>
+
+<figure>
+	<img src="//localhost:4000/images/week/3/appome/workflow/direction_cardboard.png" />
+	<figcaption>before use the lasercut control the cardboard direction, and block it with a paper adhesive tape to adhere the cardboard to the cutting surface.</figcaption>
+</figure>
+
+<figure>
+	<img src="//localhost:4000/images/week/3/appome/workflow/forcelaser.jpg" />
+	<figcaption>although I had set the laser at 10% power, the cardboard is completely broken, failure!</figcaption>
+</figure>
+
+<p>After a few minutes of discouragement, I realized that the carton was different from that used by the cutting test .</p>
+
+<p>After a little research into the FabLab, I found another piece of cardboard the same of Test laser cut, in the meantime, my instructor asked me to change the parameters to test directly on his macbook air the project.</p>
 
 <hr />
 
