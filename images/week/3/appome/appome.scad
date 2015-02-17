@@ -10,7 +10,7 @@ d=60	;	//circle down
 X=250;		//interasse appoggi larghezza
 Y=135;		//interasse appoggi profondita
 
-F=5.65;			//interasse ondulature
+F=5.65;			//wheelbase dimples / offset
 
 P=20	;	//extra margine laterale
 L=40;	//extra margine sup e inf
@@ -58,7 +58,7 @@ translate([(X/3)+20,-b*2,0]) rotate([180,0,0]) vinile4();
 }
 
 //+++++++++++++++++++++
-// togli i commenti per visualizzare
+// preview3d 
 //translate([0,0,-a/2]) layerdown();
 //translate([0,0,a/2]) overup();
 
