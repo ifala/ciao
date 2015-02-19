@@ -11,11 +11,27 @@ ul.latest_updates li {
 
 
 .notepad-page-content > div:not(.notepad-page-title) a, .notepad-page-content > div:not(.notepad-page-title) code {
-	color: black;
+	color: grey;
 }
 
 .notepad-page-content > div:not(.notepad-page-title) ul, .notepad-page-content > div:not(.notepad-page-title) ol {
 padding-left: 0;
 font-size: 1.125rem;
-color: grey;
+color: black;
+}
+
+img[alt="mini"] { 
+  max-width:  200px; 
+}
+
+img[alt="normal"] { 
+  max-width:  450px; 
+}
+
+img[alt="big"] { 
+  max-width:  600px; 
+}
+
+img[alt="verybig"] { 
+  max-width:  800px; 
 }

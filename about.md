@@ -31,17 +31,50 @@ chart: true
 		
 <ul class="small-block-grid-2 medium-block-grid-3 text-center" style="font-size:0.8em">
 	
-	<li><a href="mailto:superfala@gmail.com"><i class="fi-at-sign size-48"></i><br/>@gmail</a></li>
+	<li><a href="mailto:superfala@gmail.com">
+		<span class="fa-stack fa-lg">
+	  	    	    <i class="fa fa-square-o fa-stack-2x"></i>
+	 	   	    <i class="fa fa-phone fa-stack-1x"></i>
+		</span><br/>@gmail</a></li>
 
-    <li><a href="tel:+393318986857"><i class="fi-social-apple size-48"></i><br/>+393318986857</a>
+    <li><a href="tel:+393318986857">
+		<span class="fa-stack fa-lg">
+  	    	    <i class="fa fa-square-o fa-stack-2x"></i>
+ 	   	    <i class="fa fa-phone fa-stack-1x"></i>
+	    </span><br/>+393318986857</a>
 	
-	<li><a href="https://www.facebook.com/falaschi"><i class="fi-social-facebook size-48"></i><br/>Facebook</a></li>
-	<li><a href="http://twitter.com/ifala"><i class="fi-social-twitter size-48"></i><br/>Twitter </a></li>
-	<li><a href="http://it.linkedin.com/pub/giacomo-falaschi/61/a14/639"><i class="fi-social-linkedin size-48"></i><br/>LinkedIn </a></li>
-	<li><a href="http://github.com/3dita"><i class="fi-social-github size-48"></i><br/>GitHub </a></li>
-    <li><a href="http://ykky.it"><i class="fi-rss size-48"></i><br/>ykky.it</a></li>
-    <li><a href="http://fablabcontea.blogspot.com"><i class="fi-wrench size-48"></i><br/>FabLab Contea</a></li>
-    <li><a href="http://falla3d.com"><i class="fi-shopping-bag size-48"></i><br/>Falla3d</a></li>
+	<li><a href="https://www.facebook.com/falaschi">
+		<span class="fa-stack fa-lg">
+  	    	    <i class="fa fa-square-o fa-stack-2x"></i>
+ 	   	    <i class="fa fa-facebook fa-stack-1x"></i>
+		</span><br/>Facebook</a></li>
+	<li><a href="http://twitter.com/ifala">
+		<span class="fa-stack fa-lg">
+ 		       <i class="fa fa-square-o fa-stack-2x"></i>
+ 		       <i class="fa fa-twitter fa-stack-1x"></i>
+	      	</span><br/>Twitter </a></li>
+	<li><a href="http://it.linkedin.com/pub/giacomo-falaschi/61/a14/639">
+		<span class="fa-stack fa-lg">
+  	    	    <i class="fa fa-square-o fa-stack-2x"></i>
+ 	   	    <i class="fa fa-linkedin fa-stack-1x"></i>
+		</span><br/>LinkedIn </a></li>
+	<li><a href="http://github.com/3dita">
+		<span class="fa-stack fa-lg">
+  	    	    <i class="fa fa-square-o fa-stack-2x"></i>
+ 	   	    <i class="fa fa-github fa-stack-1x"></i>
+		</span><br/>GitHub </a></li>
+    <li><a href="http://3dita.falaschi.com">
+    		<span class="fa-stack fa-lg">
+     	   	    <i class="fa fa-external-link fa-stack-1x"></i>
+    		</span><br/>3dita</a></li>
+    <li><a href="http://fablabcontea.blogspot.com">
+    		<span class="fa-stack fa-lg">
+     	   	    <i class="fa fa-cog fa-spin fa-stack-1x"></i>
+    		</span><br/>FabLab Contea</a></li>
+    <li><a href="http://falla3d.com">
+        		<span class="fa-stack fa-lg">
+         	   	    <i class="fa fa-cube fa-stack-1x"></i>
+        		</span><br/>Falla3d</a></li>
     
 </ul>
 
