@@ -352,7 +352,7 @@ nav.pagination {
     margin-left: 0.625rem; }
 
 .notepad-site-footer {
-  background: black; }
+  background: white; }
   .notepad-site-footer.with-bg-cover {
     background-color: rgba(0, 0, 0, 0.7); }
   .notepad-site-footer .social-icons,
@@ -361,14 +361,14 @@ nav.pagination {
     padding: 0;
     text-align: center; }
   .notepad-site-footer .copyright {
-    color: white;
+    color: black;
     float: none;
     text-align: center;
     font-size: 0.8125rem;
     padding-top: 3.75rem;
     padding-bottom: 1.25rem; }
     .notepad-site-footer .copyright a {
-      color: white; }
+      color: grey; }
   .notepad-site-footer .social-icons {
     text-align: center;
     float: none;

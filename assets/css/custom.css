@@ -1,0 +1,21 @@
+.latest_updates {
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+ul.latest_updates li {
+	
+	padding-left: 0px;
+}
+
+
+.notepad-page-content > div:not(.notepad-page-title) a, .notepad-page-content > div:not(.notepad-page-title) code {
+	color: black;
+}
+
+.notepad-page-content > div:not(.notepad-page-title) ul, .notepad-page-content > div:not(.notepad-page-title) ol {
+padding-left: 0;
+font-size: 1.125rem;
+color: grey;
+}
