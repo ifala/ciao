@@ -238,92 +238,58 @@ thanks to the “istructor tricks” it was very fast soldering components.</p>
 
 <ul>
   <li>make clean</li>
-  <li>make hex</li>
+  <li>
+    <p>make hex</p>
+  </li>
   <li>sudo make fuse</li>
 </ul>
 
 <hr />
-<p>avrdude -c arduino -p attiny44 -U hfuse:w:0xDF:m -U lfuse:w:0xFF:m</p>
 
-<p>avrdude: AVR device initialized and ready to accept instructions</p>
+<pre><code>
+avrdude -c arduino -p attiny44 -U hfuse:w:0xDF:m -U lfuse:w:0xFF:m
 
-<table>
-  <tbody>
-    <tr>
-      <td>Reading</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+avrdude: AVR device initialized and ready to accept instructions
 
-<p>avrdude: Device signature = 0x1e9207
-avrdude: reading input file “0xDF”
-avrdude: writing hfuse (1 bytes):</p>
+Reading | ################################################## | 100% 0.00s
 
-<table>
-  <tbody>
-    <tr>
-      <td>Writing</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+avrdude: Device signature = 0x1e9207
+avrdude: reading input file "0xDF"
+avrdude: writing hfuse (1 bytes):
 
-<p>avrdude: 1 bytes of hfuse written
+Writing | ################################################## | 100% 0.00s
+
+avrdude: 1 bytes of hfuse written
 avrdude: verifying hfuse memory against 0xDF:
 avrdude: load data hfuse data from input file 0xDF:
 avrdude: input file 0xDF contains 1 bytes
-avrdude: reading on-chip hfuse data:</p>
+avrdude: reading on-chip hfuse data:
 
-<table>
-  <tbody>
-    <tr>
-      <td>Reading</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+Reading | ################################################## | 100% 0.00s
 
-<p>avrdude: verifying …
+avrdude: verifying ...
 avrdude: 1 bytes of hfuse verified
-avrdude: reading input file “0xFF”
-avrdude: writing lfuse (1 bytes):</p>
+avrdude: reading input file "0xFF"
+avrdude: writing lfuse (1 bytes):
 
-<table>
-  <tbody>
-    <tr>
-      <td>Writing</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+Writing | ################################################## | 100% 0.00s
 
-<p>avrdude: 1 bytes of lfuse written
+avrdude: 1 bytes of lfuse written
 avrdude: verifying lfuse memory against 0xFF:
 avrdude: load data lfuse data from input file 0xFF:
 avrdude: input file 0xFF contains 1 bytes
-avrdude: reading on-chip lfuse data:</p>
+avrdude: reading on-chip lfuse data:
 
-<table>
-  <tbody>
-    <tr>
-      <td>Reading</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+Reading | ################################################## | 100% 0.00s
 
-<p>avrdude: verifying …
-avrdude: 1 bytes of lfuse verified</p>
+avrdude: verifying ...
+avrdude: 1 bytes of lfuse verified
 
-<p>avrdude: safemode: Fuses OK (H:FF, E:DF, L:FF)</p>
+avrdude: safemode: Fuses OK (H:FF, E:DF, L:FF)
 
-<p>avrdude done. Thank you.</p>
+avrdude done. Thank you.
+
+</code></pre>
 
 <hr />
 
@@ -332,141 +298,81 @@ avrdude: 1 bytes of lfuse verified</p>
 </ul>
 
 <hr />
-<p>avrdude -c arduino -p attiny44 -U flash:w:main.hex:i</p>
 
-<p>avrdude: AVR device initialized and ready to accept instructions</p>
+<pre><code>
+avrdude -c arduino -p attiny44 -U flash:w:main.hex:i
 
-<table>
-  <tbody>
-    <tr>
-      <td>Reading</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+avrdude: AVR device initialized and ready to accept instructions
 
-<p>avrdude: Device signature = 0x1e9207
-avrdude: NOTE: “flash” memory has been specified, an erase cycle will be performed
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e9207
+avrdude: NOTE: "flash" memory has been specified, an erase cycle will be performed
 To disable this feature, specify the -D option.
 avrdude: erasing chip
-avrdude: reading input file “main.hex”
-avrdude: writing flash (2002 bytes):</p>
+avrdude: reading input file "main.hex"
+avrdude: writing flash (2002 bytes):
 
-<table>
-  <tbody>
-    <tr>
-      <td>Writing</td>
-      <td>##################################################</td>
-      <td>100% 1.98s</td>
-    </tr>
-  </tbody>
-</table>
+Writing | ################################################## | 100% 1.98s
 
-<p>avrdude: 2002 bytes of flash written
+avrdude: 2002 bytes of flash written
 avrdude: verifying flash memory against main.hex:
 avrdude: load data flash data from input file main.hex:
 avrdude: input file main.hex contains 2002 bytes
-avrdude: reading on-chip flash data:</p>
+avrdude: reading on-chip flash data:
 
-<table>
-  <tbody>
-    <tr>
-      <td>Reading</td>
-      <td>##################################################</td>
-      <td>100% 2.37s</td>
-    </tr>
-  </tbody>
-</table>
+Reading | ################################################## | 100% 2.37s
 
-<p>avrdude: verifying …
-avrdude: 2002 bytes of flash verified</p>
+avrdude: verifying ...
+avrdude: 2002 bytes of flash verified
 
-<p>avrdude: safemode: Fuses OK (H:FF, E:DF, L:FF)</p>
+avrdude: safemode: Fuses OK (H:FF, E:DF, L:FF)
 
-<p>avrdude done. Thank you.</p>
+avrdude done. Thank you.
 
-<p>avrdude -c usbtiny -p attiny44 -U hfuse:w:0xDF:m -U lfuse:w:0xFF:m</p>
+avrdude -c usbtiny -p attiny44 -U hfuse:w:0xDF:m -U lfuse:w:0xFF:m
 
-<p>avrdude: AVR device initialized and ready to accept instructions</p>
+avrdude: AVR device initialized and ready to accept instructions
 
-<table>
-  <tbody>
-    <tr>
-      <td>Reading</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+Reading | ################################################## | 100% 0.00s
 
-<p>avrdude: Device signature = 0x1e9207
-avrdude: reading input file “0xDF”
-avrdude: writing hfuse (1 bytes):</p>
+avrdude: Device signature = 0x1e9207
+avrdude: reading input file "0xDF"
+avrdude: writing hfuse (1 bytes):
 
-<table>
-  <tbody>
-    <tr>
-      <td>Writing</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+Writing | ################################################## | 100% 0.00s
 
-<p>avrdude: 1 bytes of hfuse written
+avrdude: 1 bytes of hfuse written
 avrdude: verifying hfuse memory against 0xDF:
 avrdude: load data hfuse data from input file 0xDF:
 avrdude: input file 0xDF contains 1 bytes
-avrdude: reading on-chip hfuse data:</p>
+avrdude: reading on-chip hfuse data:
 
-<table>
-  <tbody>
-    <tr>
-      <td>Reading</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+Reading | ################################################## | 100% 0.00s
 
-<p>avrdude: verifying …
+avrdude: verifying ...
 avrdude: 1 bytes of hfuse verified
-avrdude: reading input file “0xFF”
-avrdude: writing lfuse (1 bytes):</p>
+avrdude: reading input file "0xFF"
+avrdude: writing lfuse (1 bytes):
 
-<table>
-  <tbody>
-    <tr>
-      <td>Writing</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+Writing | ################################################## | 100% 0.00s
 
-<p>avrdude: 1 bytes of lfuse written
+avrdude: 1 bytes of lfuse written
 avrdude: verifying lfuse memory against 0xFF:
 avrdude: load data lfuse data from input file 0xFF:
 avrdude: input file 0xFF contains 1 bytes
-avrdude: reading on-chip lfuse data:</p>
+avrdude: reading on-chip lfuse data:
 
-<table>
-  <tbody>
-    <tr>
-      <td>Reading</td>
-      <td>##################################################</td>
-      <td>100% 0.00s</td>
-    </tr>
-  </tbody>
-</table>
+Reading | ################################################## | 100% 0.00s
 
-<p>avrdude: verifying …
-avrdude: 1 bytes of lfuse verified</p>
+avrdude: verifying ...
+avrdude: 1 bytes of lfuse verified
 
-<p>avrdude: safemode: Fuses OK (H:FF, E:DF, L:FF)</p>
+avrdude: safemode: Fuses OK (H:FF, E:DF, L:FF)
 
-<p>avrdude done. Thank you.</p>
+avrdude done. Thank you.
+
+</code></pre>
 
 <hr />
 
