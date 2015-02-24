@@ -34,13 +34,5 @@ On this page you can see some sketches made with SketchUp, but I will be using S
 
 I am also planning a blog focusing [the developement of this final project]({{ site.url }}/final_project/), that will be separeted by the [weekly assignment posts]({{ site.url }}/classes/).
 
-Operative planning:
-
-- cube design (on Solid Works or Rhino)
-- cube movement gear design
-- electronic boards for movement
-- electronics boards for interactions between cubes
-- panel control interaction (hardware)
-- panel control interaction (software)
-- additional aesthetic design (lights and sounds according to '90s Lego style)
-- multiply units to build the final Twister
+<a href="{{ site.url }}/finalproject/schedule/"><span class="tiny button success ">schedule</span></a>
+<a href="{{ site.url }}/final_project/"><span class="tiny button success ">project blog</span></a>

@@ -33,6 +33,14 @@
 		} ,
 	
 		{
+		  "title"      : "schedule",
+		  "category"   : "finalproject",
+		  "url"        : "//localhost:4000/finalproject/schedule",
+		  "date"       : "2015-01-31 00:00:00 +0100",
+		  "shortdate"  : "January 31, 2015"
+		} ,
+	
+		{
 		  "title"      : "project description",
 		  "category"   : "finalproject",
 		  "url"        : "//localhost:4000/finalproject/description",

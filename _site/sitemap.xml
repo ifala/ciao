@@ -45,6 +45,10 @@
         <loc>//localhost:4000/tags/index.html</loc>
     </url>
     
+    <url>
+        <loc>//localhost:4000/page2/index.html</loc>
+    </url>
+    
 
     
     <url>
@@ -61,6 +65,10 @@
     
     <url>
         <loc>//localhost:4000/class_assignments/week1</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/finalproject/schedule</loc>
     </url>
     
     <url>

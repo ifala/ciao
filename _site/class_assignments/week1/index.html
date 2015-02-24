@@ -148,73 +148,109 @@ Description: Awesome dude, awesome life
 
 <hr />
 
-<h1 id="set-up-jekyll-bootstrap-markdown">set-up ”jekyll bootstrap markdown”</h1>
+<h4 id="set-up-jekyll-foudation-markdown">set-up ”jekyll foudation markdown”</h4>
 
 <hr />
 
-<h6 id="during-this-week-i-havent-had-access-to-my-macbook-and-i-have-been-building-my-whole-website-on-my-android-smartphone-nexus-4---android-44">During this week I haven’t had access to my Macbook and I have been building my whole website on my Android smartphone. (Nexus 4 - android 4.4)</h6>
-
-<p>obviously I will redesign the template once I get back home.</p>
-
 <blockquote>
-  <p>After setting up a ready made bootstrap-jekill-markdown web site as shown in/with <a href="http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/">this tutorial</a></p>
+  <p>After setting up a ready made foundation-jekyll-markdown web site as shown in/with <a href="http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/">this tutorial</a></p>
 </blockquote>
 
 <p>and following the tutorial instruction to set up the name of the repository (where I forked the ready made site) with “myusername.guthub.io” </p>
 
 <h6 id="im-now-online">I’m now online!</h6>
 
-<h2 id="apps-downloaded">Apps downloaded</h2>
+<hr />
 
-<h6 id="from-android-store">from android store.</h6>
+<h4 id="git-and-github-setting-up">git and github setting up</h4>
 
-<ul>
-  <li><a href="https://play.google.com/store/apps/details?id=me.sheimi.sgit">sgit</a></li>
-</ul>
+<hr />
 
-<p>With this app you can start to improve your commit…pull ..push !</p>
+<p>I have clone a <a href="https://github.com/hmfaysal/Notepad">template website</a> in my mac, I try to use also git via terminal and github with any problem.
+I’d like use terminal but inside github I have some repository already set, and in startup it ask me this :</p>
 
-<h3 id="sgit-setting">Sgit setting</h3>
+<p>and so I have decided to continue to use the graphical version.</p>
 
-<p><img src="/images/local/app_sgit1ok.jpeg" alt="sgit app" /></p>
+<hr />
 
-<p>first of all we have to clone own repository inside the memory of smartphone or tablet</p>
+<h3 id="top-menu">top menu</h3>
 
-<blockquote>
-  <p>remote url : https://github.com/username/yourusername.github.io</p>
-</blockquote>
+<hr />
 
-<blockquote>
-  <p>local url : (this app work only inside the folder / storage/Android/git/… so at this point you must create your folder where the git can clone your repository)</p>
-</blockquote>
+<p>for modify _config.yml I have downloaded <a href="http://macromates.com/">Textmate</a> , very useful to modify and write in markdown and html/css</p>
 
-<blockquote>
-  <p>username: (your username inside github in this case)</p>
-</blockquote>
+<pre><code>
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: aboutME
+    url: /about
+  - title: final project
+    url: /final_project
+  - title: classes
+    url: /classes
 
-<blockquote>
-  <p>password: (your password inside github in this case)</p>
-</blockquote>
+</code></pre>
 
-<p><img src="/images/local/app_sgit2.jpeg" alt="sgit app" /></p>
+<hr />
 
-<ul>
-  <li><a href="https://play.google.com/store/apps/details?id=com.jotterpad.x">JotterPad</a></li>
-</ul>
+<h3 id="color-and-customize-font">color and customize font</h3>
 
-<h6 id="section">#</h6>
+<hr />
 
-<ul>
-  <li><a href="https://play.google.com/store/apps/details?id=com.github.mobile">Github</a></li>
-</ul>
+<p>I have created the file:</p>
 
-<h6 id="section-1">#</h6>
+<pre><code>---&gt; /assets/css/vendor/custom.css
+</code></pre>
 
-<h4 id="now-we-can-play-with-the-visual-settings-i-want-for-my-website">Now we can play with the visual settings I want for my website.</h4>
+<p>and add the path file in:</p>
 
-<h6 id="i-deleted-the-disquis-comments-i-actually-dont-like-them">I deleted the disquis comments (I actually don’t like them).</h6>
+<pre><code>_/includes/head.html_
 
-<p><img src="/images/local/apps.jpeg" alt="All apps that I have used" /></p>
+    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/vendor/normalize.css"&gt;
+    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/vendor/nprogress.css"&gt;
+    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/vendor/foundation.min.css"&gt;
+    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/style.css"&gt;
+    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/post.css"&gt;
+---&gt;    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/custom.css"&gt;
+</code></pre>
+<p>This is the sequence of files for file creation final css.</p>
+
+<hr />
+
+<h3 id="difference-post-visualize-btw-classes--final-project">difference post visualize btw classes / final project</h3>
+
+<hr />
+
+<p>I wanted to see in a different way the two page, the <strong>classes</strong> page only visualize the post inside <em>post folder</em> which have <em>categories = class_assignments</em> in reverse “reversed” list of insert date:</p>
+
+<pre><code>	
+	&lt;ul class="post-list"&gt;
+	&lt;li&gt;&lt;time datetime="2015-01-31T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;31 January&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week1"&gt;principles and practices, project management&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul class="post-list"&gt;
+	&lt;li&gt;&lt;time datetime="2015-02-09T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;09 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week2"&gt;computer-aided design&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul class="post-list"&gt;
+	&lt;li&gt;&lt;time datetime="2015-02-16T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;16 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week3"&gt;computer-controlled cutting&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul class="post-list"&gt;
+	&lt;li&gt;&lt;time datetime="2015-02-22T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;22 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week4"&gt;electronic production&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+</code></pre>
+
+<p>I can’t find the code mode syntax to visualize the correct information but is like:</p>
+
+<p>open with {+% for post in site.categories.<em>class_assignments</em> reversed closed with %+}</p>
+
+<p><strong><em>final project page</em></strong> only visualize the post inside <em>post folder</em> which have <em>featured: true</em>. </p>
+
 
             </div>
         </article>

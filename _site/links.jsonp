@@ -6,6 +6,11 @@ callback([
   } ,
 
   {
+    "text": "schedule",
+    "href": "//localhost:4000/finalproject/schedule"
+  } ,
+
+  {
     "text": "principles and practices, project management",
     "href": "//localhost:4000/class_assignments/week1"
   } ,
