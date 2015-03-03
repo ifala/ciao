@@ -52,6 +52,10 @@
 
     
     <url>
+        <loc>//localhost:4000/class_assignments/week5</loc>
+    </url>
+    
+    <url>
         <loc>//localhost:4000/class_assignments/week4</loc>
     </url>
     

@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "3D Scanning and Printing",
+		  "category"   : "Class_assignments",
+		  "url"        : "//localhost:4000/class_assignments/week5",
+		  "date"       : "2015-02-28 00:00:00 +0100",
+		  "shortdate"  : "February 28, 2015"
+		} ,
+	
+		{
 		  "title"      : "electronic production",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week4",
