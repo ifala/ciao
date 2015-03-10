@@ -33,6 +33,11 @@ callback([
   {
     "text": "3D Scanning and Printing",
     "href": "//localhost:4000/class_assignments/week5"
+  } ,
+
+  {
+    "text": "Electronics Design",
+    "href": "//localhost:4000/class_assignments/week6"
   } 
 
 ])
