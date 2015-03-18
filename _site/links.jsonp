@@ -38,6 +38,11 @@ callback([
   {
     "text": "Electronics Design",
     "href": "//localhost:4000/class_assignments/week6"
+  } ,
+
+  {
+    "text": "Embedded Programming",
+    "href": "//localhost:4000/class_assignments/week7"
   } 
 
 ])

@@ -17,32 +17,32 @@ Description: Awesome dude, awesome life
 -->
 <head>
 <meta charset="utf-8">
-<title>PRINCIPLES AND PRACTICES, PROJECT MANAGEMENT &vert; GIACOMO FALASCHI</title>
-<meta name="description" content="week 1">
-<meta name="keywords" content="how-to">
+<title>EMBEDDED PROGRAMMING &vert; GIACOMO FALASCHI</title>
+<meta name="description" content="week 7">
+<meta name="keywords" content="c, arduino ide, programming, led+button, button">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="//localhost:4000/images/principles-and-practices.jpg">
+<meta name="twitter:image" content="//localhost:4000/images/embedded_programming.jpg">
 
-<meta name="twitter:title" content="principles and practices, project management">
-<meta name="twitter:description" content="week 1">
+<meta name="twitter:title" content="Embedded Programming">
+<meta name="twitter:description" content="week 7">
 <meta name="twitter:creator" content="@ifala">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="principles and practices, project management">
-<meta property="og:description" content="week 1">
-<meta property="og:url" content="//localhost:4000/class_assignments/week1">
+<meta property="og:title" content="Embedded Programming">
+<meta property="og:description" content="week 7">
+<meta property="og:url" content="//localhost:4000/class_assignments/week7">
 <meta property="og:site_name" content="Giacomo Falaschi">
-<meta property="og:image" content="//localhost:4000/images/principles-and-practices.jpg">
+<meta property="og:image" content="//localhost:4000/images/embedded_programming.jpg">
 
 
 
 
 
-<link rel="canonical" href="//localhost:4000/class_assignments/week1">
+<link rel="canonical" href="//localhost:4000/class_assignments/week7">
 <link href="//localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Giacomo Falaschi Feed">
 
 
@@ -125,143 +125,148 @@ Description: Awesome dude, awesome life
             </div>
 
             <div class="notepad-post-title bg-check">
-                <h1>principles and practices, project management</h1>
+                <h1>Embedded Programming</h1>
             </div>
             <div class="bg-img"></div>
         </header>
         <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
-        <img src="//localhost:4000/images/principles-and-practices.jpg" alt="cover-image" />
+        <img src="//localhost:4000/images/embedded_programming.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><h3 id="weeklyassignments">Weekly_Assignments</h3>
+            <div><h3 id="weeklyassignments-">Weekly_Assignments :</h3>
+<pre><code>- read a microcontroller data sheet
+- program your board to do something, with as many different programming languages and programming environments as possible
+</code></pre>
 
-<h4 id="principles-and-practicesproject-management">principles and practices, project management</h4>
-
-<p>The assignments for the first week are:</p>
+<h5 id="what-i--needed-downloadinstall">What I  needed (download/install)</h5>
 
 <ul>
-  <li>to build our own website</li>
-  <li><a href="/about/">introduce ourselves</a></li>
-  <li>introduce our <a href="/final_project/">final project</a> and sketch some ideas</li>
-  <li>play with mercurial and git (commit…pull ..push)</li>
+  <li><a href="https://developer.apple.com/xcode/">Xcode</a></li>
+  <li><a href="http://www.obdev.at/products/crosspack/index.html">CrossPack-AVR</a></li>
+  <li><a href="http://www.mkyong.com/mac/how-to-install-gcc-compiler-on-mac-os-x/">GCC</a></li>
+  <li><a href="https://learn.adafruit.com/usbtinyisp/avrdude">avrdude</a></li>
+  <li><a href="http://www.atmel.com/devices/attiny44.aspx">ATtiny44 datasheet</a></li>
+  <li><a href="http://arduino.cc/en/main/software">Arduino IDE</a></li>
+  <li><a href="http://www.ftdichip.com/FTDrivers.htm">FTDI driver</a></li>
+</ul>
+
+<h5 id="what-i-have-read">What I have read:</h5>
+
+<ul>
+  <li><a href="http://fab.cba.mit.edu/classes/863.13/tutorials/EmbeddedProgramming/echo.html">Know terms</a>	</li>
+  <li><a href="http://fab.cba.mit.edu/classes/863.11/people/irina.chernyakova/7_embedded.html">easy workflow</a></li>
+  <li><a href="http://academy.cba.mit.edu/content/tutorials/akf/programming_FabISP.html">Your ISP is working correctly?</a>	</li>
+  <li><a href="http://fab.cba.mit.edu/classes/863.12/people/laia.mogassoldevila/projects/p6.html">Prepare isp cable</a>	</li>
+  <li><a href="http://publications.gbdirect.co.uk/c_book/chapter1/">introduction/examples to C</a></li>
+  <li><a href="http://www.scriptoriumdesigns.com/embedded/gpio_out.php">embedded programming</a></li>
+  <li><a href="http://academy.cba.mit.edu/content/tutorials/akf/embedded_programming_arduinoIDE.html">installing arduino support attiny44</a></li>
 </ul>
 
 <hr />
 
-<h4 id="set-up-jekyll-foudation-markdown">set-up ”jekyll foudation markdown”</h4>
+<h1 id="c-programming">C+ Programming</h1>
 
 <hr />
 
-<blockquote>
-  <p>After setting up a ready made foundation-jekyll-markdown web site as shown in/with <a href="http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/">this tutorial</a></p>
-</blockquote>
+<h3 id="prepare-c-and-make-file">prepare .c and .make file</h3>
+<p>Every program in C + to be compiled needs a File.c (where you can find the (code) program information) and a File.Make (a text file where there are the necessary information for software built from it’s source files)
+- to avoid problems I preferred to put them in the same folder</p>
 
-<p>and following the tutorial instruction to set up the name of the repository (where I forked the ready made site) with “myusername.guthub.io” </p>
+<p>led.c file:
+the first test I used a easy file called <a href="">led.c</a> for understand the correct operation of my “button+led” board.</p>
 
-<h6 id="im-now-online">I’m now online!</h6>
+<p><img src="//localhost:4000/images/week/6/14.jpg" alt="normal" /></p>
 
-<hr />
+<p>I prepare this easy led.c file where I understand how to enable output on pin and how to turns led on.</p>
 
-<h4 id="git-and-github-setting-up">git and github setting up</h4>
+<pre><code>// LED 
+#include &lt;avr/io.h&gt;
+#include &lt;util/delay.h&gt;
 
-<hr />
 
-<p>I have clone a <a href="https://github.com/hmfaysal/Notepad">template website</a> in my mac, I try to use also git via terminal and github with any problem.
-I’d like use terminal but inside github I have some repository already set, and in startup it ask me this :</p>
+int main()
+{
+	//SETUP
+	//LED is PB2
 
-<p>and so I have decided to continue to use the graphical version.</p>
 
-<hr />
+	DDRB = _BV(PB2); //Enable output on the LED pin
+	PORTB = _BV(PB2); //Turns LED on
 
-<h3 id="top-menu">top menu</h3>
-
-<hr />
-
-<p>for modify _config.yml I have downloaded <a href="http://macromates.com/">Textmate</a> , very useful to modify and write in markdown and html/css</p>
-
-<pre><code>
-links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: aboutME
-    url: /about
-  - title: final project
-    url: /final_project
-  - title: classes
-    url: /classes
-
+}
 </code></pre>
 
-<hr />
+<p>led.make file:</p>
 
-<h3 id="color-and-customize-font">color and customize font</h3>
+<p>I use <a href="http://academy.cba.mit.edu/classes/embedded_programming/hello.ftdi.44.echo.c.make">this file</a>
+and I have modified only the first line: PROJECT=<strong>YOURFILENAME</strong>.echo</p>
 
-<hr />
+<p><em>I reused this file many times in the future for create other .make file only changing the first line!</em></p>
 
-<p>I have created the file:</p>
+<pre><code>PROJECT=led.echo
+SOURCES=$(PROJECT).c
+MMCU=attiny44
+F_CPU = 20000000
 
-<pre><code>---&gt; /assets/css/vendor/custom.css
+CFLAGS=-mmcu=$(MMCU) -Wall -Os -DF_CPU=$(F_CPU)
+
+$(PROJECT).hex: $(PROJECT).out
+	avr-objcopy -O ihex $(PROJECT).out $(PROJECT).c.hex;\
+	avr-size --mcu=$(MMCU) --format=avr $(PROJECT).out
+ 
+$(PROJECT).out: $(SOURCES)
+	avr-gcc $(CFLAGS) -I./ -o $(PROJECT).out $(SOURCES)
+ 
+program-bsd: $(PROJECT).hex
+	avrdude -p t44 -c bsd -U flash:w:$(PROJECT).c.hex
+
+program-dasa: $(PROJECT).hex
+	avrdude -p t44 -P /dev/ttyUSB0 -c dasa -U flash:w:$(PROJECT).c.hex
+
+program-avrisp2: $(PROJECT).hex
+	avrdude -p t44 -P usb -c avrisp2 -U flash:w:$(PROJECT).c.hex
+
+program-avrisp2-fuses: $(PROJECT).hex
+	avrdude -p t44 -P usb -c avrisp2 -U lfuse:w:0x5E:m
+
+program-usbtiny: $(PROJECT).hex
+	avrdude -p t44 -P usb -c usbtiny -U flash:w:$(PROJECT).c.hex
+
+program-usbtiny-fuses: $(PROJECT).hex
+	avrdude -p t44 -P usb -c usbtiny -U lfuse:w:0x5E:m
+
+program-dragon: $(PROJECT).hex
+	avrdude -p t44 -P usb -c dragon_isp -U flash:w:$(PROJECT).c.hex
 </code></pre>
 
-<p>and add the path file in:</p>
+<h3 id="workflow-for-programming-buttonled-board">workflow for programming button+led board:</h3>
+<p>connect USBtiny to computer and Usbtiny by isp cable to Led+button board</p>
 
-<pre><code>_/includes/head.html_
+<h5 id="terminal-osx">Terminal (osx):</h5>
+<ul>
+  <li><strong>make -f led.make</strong> <em>//This transfers the .c instructions into bit information</em></li>
+  <li><strong>make -f led.make program_usbtiny_fuses</strong> <em>//program the FabISP fuses</em></li>
+  <li><strong>make -f led.make program_usbtiny</strong> <em>//to program the .c instructions onto the board.</em></li>
+</ul>
 
-    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/vendor/normalize.css"&gt;
-    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/vendor/nprogress.css"&gt;
-    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/vendor/foundation.min.css"&gt;
-    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/style.css"&gt;
-    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/post.css"&gt;
----&gt;    &lt;link rel="stylesheet" href="//localhost:4000/assets/css/custom.css"&gt;
-</code></pre>
-<p>This is the sequence of files for file creation final css.</p>
+<h3 id="result">result:</h3>
+<p>FOTO!led acceso!</p>
+
+<h2 id="going-forward">going forward..</h2>
+<p>I also try to make other code in c:</p>
+
+<ul>
+  <li>fade led <a href="">Fade_C</a> - <a href="">video</a> SUCCESS!</li>
+  <li>only blink on press button - <a href="">blink</a> - <a href="">video</a> SUCCESS!</li>
+  <li>blink x time on press button - <a href="">irina</a> - <a href="">video</a> SUCCESS!</li>
+  <li>fade led only on press button - <a href="">button_fade</a> - <a href="">video</a> FAIL!</li>
+</ul>
 
 <hr />
 
-<h3 id="difference-post-visualize-btw-classes--final-project">difference post visualize btw classes / final project</h3>
+<h1 id="arduino-ide-programming">Arduino IDE Programming</h1>
 
 <hr />
-
-<p>I wanted to see in a different way the two page, the <strong>classes</strong> page only visualize the post inside <em>post folder</em> which have <em>categories = class_assignments</em> in reverse “reversed” list of insert date:</p>
-
-<pre><code>	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-01-31T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;31 January&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week1"&gt;principles and practices, project management&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-02-09T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;09 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week2"&gt;computer-aided design&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-02-16T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;16 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week3"&gt;computer-controlled cutting&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-02-22T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;22 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week4"&gt;electronic production&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-02-28T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;28 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week5"&gt;3D Scanning and Printing&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-03-10T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;10 March&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week6"&gt;Electronics Design&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-03-16T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;16 March&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week7"&gt;Embedded Programming&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-</code></pre>
-
-<p>I can’t find the code mode syntax to visualize the correct information but is like:</p>
-
-<p>open with {+% for post in site.categories.<em>class_assignments</em> reversed closed with %+}</p>
-
-<p><strong><em>final project page</em></strong> only visualize the post inside <em>post folder</em> which have <em>featured: true</em>. </p>
 
 
             </div>
@@ -269,15 +274,15 @@ links:
         <div class="cf"></div>
         <div class="row text-center">
             <section class="notepad-post-share">
-                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;principles and practices, project management&quot;%20//localhost:4000/class_assignments/week1%20via%20&#64;ifala"
+                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Embedded Programming&quot;%20//localhost:4000/class_assignments/week7%20via%20&#64;ifala"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
                     <i class="fa fa-twitter"></i>
                 </a>
-                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=//localhost:4000/class_assignments/week1"
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=//localhost:4000/class_assignments/week7"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
                     <i class="fa fa-facebook"></i>
                 </a>
-                <a class="google-icon" href="https://plus.google.com/share?url=//localhost:4000/class_assignments/week1"
+                <a class="google-icon" href="https://plus.google.com/share?url=//localhost:4000/class_assignments/week7"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
                     <i class="fa fa-google-plus"></i>
                 </a>
