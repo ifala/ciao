@@ -250,16 +250,16 @@ program-dragon: $(PROJECT).hex
 </ul>
 
 <h3 id="result">result:</h3>
-<p>FOTO!led acceso!</p>
+<p><img src="//localhost:4000/images/week/7/img/ledon.jpg" alt="normal" /></p>
 
 <h2 id="going-forward">going forward..</h2>
 <p>I also try to make other code in c:</p>
 
 <ul>
-  <li>fade led <a href="">Fade_C</a> - <a href="">video</a> SUCCESS!</li>
-  <li>only blink on press button - <a href="">blink</a> - <a href="">video</a> SUCCESS!</li>
-  <li>blink x time on press button - <a href="">irina</a> - <a href="">video</a> SUCCESS!</li>
-  <li>fade led only on press button - <a href="">button_fade</a> - <a href="">video</a> FAIL!</li>
+  <li>fade led <a href="//localhost:4000/images/week/7/Fade_C.zip">Fade_C</a> SUCCESS!- <a href="">video</a> </li>
+  <li>only blink on press button - <a href="//localhost:4000/images/week/7/blink.zip">blink</a> SUCCESS!- <a href="">video</a> </li>
+  <li>blink x time on press button - <a href="//localhost:4000/images/week/7/irina.zip">irina</a> SUCCESS!- <a href="">video</a> </li>
+  <li>fade led only on press button - <a href="//localhost:4000/images/week/7/button_fade_C.zip">button_fade</a> FAIL!- <a href="">video</a> </li>
 </ul>
 
 <hr />
@@ -267,6 +267,54 @@ program-dragon: $(PROJECT).hex
 <h1 id="arduino-ide-programming">Arduino IDE Programming</h1>
 
 <hr />
+<p>After <a href="http://academy.cba.mit.edu/content/tutorials/akf/embedded_programming_arduinoIDE.html">installing arduino support attiny44</a></p>
+
+<p>I moodify the exemple code in File&gt;examples&gt;digital&gt;button
+copy this code in arduino ide:</p>
+
+<pre><code>const int buttonPin = 7;     // the number of the pushbutton pin
+const int ledPin =  8;      // the number of the LED pin
+
+// variables will change:
+int buttonState = 0;         // variable for reading the pushbutton status
+
+void setup() {
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = analogRead(buttonPin);
+
+  // check if the pushbutton is pressed.
+  // if it is, the buttonState is HIGH:
+  if (buttonState == LOW) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+  }
+  else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW);
+  }
+}
+</code></pre>
+
+<p>and press Upload … ! 
+<img src="//localhost:4000/images/week/6/14.jpg" alt="normal" />
+##going forward..
+I also try to make other code :</p>
+
+<ul>
+  <li>Led ON by press button <a href="//localhost:4000/images/week/7/arduinoIDE/Button_ledon/Button_ledON.ino">Button_ledon</a> SUCCESS!- <a href="">video</a> </li>
+  <li>LED - <a href="//localhost:4000/images/week/7/arduinoIDE/led/led.ino">led</a> SUCCESS!- <a href="">video</a></li>
+  <li>Blink led - <a href="//localhost:4000/images/week/7/arduinoIDE/Blink/Blink.ino">Blink</a> SUCCESS!- <a href="">video</a></li>
+  <li>Fade change on press button <a href="//localhost:4000/images/week/7/arduinoIDE/fadechange/fadechange.ino">fadechange</a> SUCCESS!- </li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
 
 
             </div>
