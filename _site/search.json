@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "Computer-Controlled Machining",
+		  "category"   : "Class_assignments",
+		  "url"        : "//localhost:4000/class_assignments/week8",
+		  "date"       : "2015-04-23 00:00:00 +0200",
+		  "shortdate"  : "April 23, 2015"
+		} ,
+	
+		{
 		  "title"      : "Embedded Programming",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week7",
@@ -14,6 +22,14 @@
 		  "url"        : "//localhost:4000/class_assignments/week6",
 		  "date"       : "2015-03-10 00:00:00 +0100",
 		  "shortdate"  : "March 10, 2015"
+		} ,
+	
+		{
+		  "title"      : "connection",
+		  "category"   : "finalproject",
+		  "url"        : "//localhost:4000/finalproject/connection",
+		  "date"       : "2015-03-03 00:00:00 +0100",
+		  "shortdate"  : "March 03, 2015"
 		} ,
 	
 		{
@@ -33,11 +49,35 @@
 		} ,
 	
 		{
+		  "title"      : "RGB",
+		  "category"   : "finalproject",
+		  "url"        : "//localhost:4000/finalproject/rgb",
+		  "date"       : "2015-02-21 00:00:00 +0100",
+		  "shortdate"  : "February 21, 2015"
+		} ,
+	
+		{
 		  "title"      : "computer-controlled cutting",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week3",
 		  "date"       : "2015-02-16 00:00:00 +0100",
 		  "shortdate"  : "February 16, 2015"
+		} ,
+	
+		{
+		  "title"      : "servo hack",
+		  "category"   : "finalproject",
+		  "url"        : "//localhost:4000/finalproject/servo",
+		  "date"       : "2015-02-15 00:00:00 +0100",
+		  "shortdate"  : "February 15, 2015"
+		} ,
+	
+		{
+		  "title"      : "pin sketch",
+		  "category"   : "finalproject",
+		  "url"        : "//localhost:4000/finalproject/pinsketch",
+		  "date"       : "2015-02-10 00:00:00 +0100",
+		  "shortdate"  : "February 10, 2015"
 		} ,
 	
 		{

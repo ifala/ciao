@@ -21,8 +21,23 @@ callback([
   } ,
 
   {
+    "text": "pin sketch",
+    "href": "//localhost:4000/finalproject/pinsketch"
+  } ,
+
+  {
+    "text": "servo hack",
+    "href": "//localhost:4000/finalproject/servo"
+  } ,
+
+  {
     "text": "computer-controlled cutting",
     "href": "//localhost:4000/class_assignments/week3"
+  } ,
+
+  {
+    "text": "RGB",
+    "href": "//localhost:4000/finalproject/rgb"
   } ,
 
   {
@@ -36,6 +51,11 @@ callback([
   } ,
 
   {
+    "text": "connection",
+    "href": "//localhost:4000/finalproject/connection"
+  } ,
+
+  {
     "text": "Electronics Design",
     "href": "//localhost:4000/class_assignments/week6"
   } ,
@@ -43,6 +63,11 @@ callback([
   {
     "text": "Embedded Programming",
     "href": "//localhost:4000/class_assignments/week7"
+  } ,
+
+  {
+    "text": "Computer-Controlled Machining",
+    "href": "//localhost:4000/class_assignments/week8"
   } 
 
 ])
