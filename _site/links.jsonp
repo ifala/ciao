@@ -11,12 +11,12 @@ callback([
   } ,
 
   {
-    "text": "principles and practices, project management",
+    "text": "Principles and practices, project management  ",
     "href": "//localhost:4000/class_assignments/week1"
   } ,
 
   {
-    "text": "computer-aided design",
+    "text": "Computer-aided design",
     "href": "//localhost:4000/class_assignments/week2"
   } ,
 
@@ -31,7 +31,7 @@ callback([
   } ,
 
   {
-    "text": "computer-controlled cutting",
+    "text": "Computer-controlled cutting",
     "href": "//localhost:4000/class_assignments/week3"
   } ,
 
@@ -41,7 +41,7 @@ callback([
   } ,
 
   {
-    "text": "electronic production",
+    "text": "Electronic production",
     "href": "//localhost:4000/class_assignments/week4"
   } ,
 

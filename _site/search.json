@@ -41,7 +41,7 @@
 		} ,
 	
 		{
-		  "title"      : "electronic production",
+		  "title"      : "Electronic production",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week4",
 		  "date"       : "2015-02-22 00:00:00 +0100",
@@ -57,7 +57,7 @@
 		} ,
 	
 		{
-		  "title"      : "computer-controlled cutting",
+		  "title"      : "Computer-controlled cutting",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week3",
 		  "date"       : "2015-02-16 00:00:00 +0100",
@@ -81,7 +81,7 @@
 		} ,
 	
 		{
-		  "title"      : "computer-aided design",
+		  "title"      : "Computer-aided design",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week2",
 		  "date"       : "2015-02-09 00:00:00 +0100",
@@ -89,7 +89,7 @@
 		} ,
 	
 		{
-		  "title"      : "principles and practices, project management",
+		  "title"      : "Principles and practices, project management  ",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week1",
 		  "date"       : "2015-01-31 00:00:00 +0100",

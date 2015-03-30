@@ -17,7 +17,7 @@ Description: Awesome dude, awesome life
 -->
 <head>
 <meta charset="utf-8">
-<title>PRINCIPLES AND PRACTICES, PROJECT MANAGEMENT &vert; GIACOMO FALASCHI</title>
+<title>PRINCIPLES AND PRACTICES, PROJECT MANAGEMENT   &vert; GIACOMO FALASCHI</title>
 <meta name="description" content="week 1">
 <meta name="keywords" content="how-to">
 
@@ -25,14 +25,14 @@ Description: Awesome dude, awesome life
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="//localhost:4000/images/principles-and-practices.jpg">
 
-<meta name="twitter:title" content="principles and practices, project management">
+<meta name="twitter:title" content="Principles and practices, project management  ">
 <meta name="twitter:description" content="week 1">
 <meta name="twitter:creator" content="@ifala">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="principles and practices, project management">
+<meta property="og:title" content="Principles and practices, project management  ">
 <meta property="og:description" content="week 1">
 <meta property="og:url" content="//localhost:4000/class_assignments/week1">
 <meta property="og:site_name" content="Giacomo Falaschi">
@@ -125,7 +125,7 @@ Description: Awesome dude, awesome life
             </div>
 
             <div class="notepad-post-title bg-check">
-                <h1>principles and practices, project management</h1>
+                <h1>Principles and practices, project management  </h1>
             </div>
             <div class="bg-img"></div>
         </header>
@@ -140,10 +140,11 @@ Description: Awesome dude, awesome life
 <p>The assignments for the first week are:</p>
 
 <ul>
-  <li>to build our own website</li>
+  <li>to build our own website <a href="http://ifala.github.io">github version</a>[^1]</li>
   <li><a href="/about/">introduce ourselves</a></li>
   <li>introduce our <a href="/final_project/">final project</a> and sketch some ideas</li>
   <li>play with mercurial and git (commit…pull ..push)</li>
+  <li><a href="/finalproject/schedule/">plan and sketch</a> final project </li>
 </ul>
 
 <hr />
@@ -169,6 +170,8 @@ Description: Awesome dude, awesome life
 <p>I have clone a <a href="https://github.com/hmfaysal/Notepad">template website</a> in my mac, I try to use also git via terminal and github with any problem.
 I’d like use terminal but inside github I have some repository already set, and in startup it ask me this :</p>
 
+<p><img src="//localhost:4000/images/week/1/giterror.jpg" alt="normal" /></p>
+
 <p>and so I have decided to continue to use the graphical version.</p>
 
 <hr />
@@ -178,6 +181,10 @@ I’d like use terminal but inside github I have some repository already set, an
 <hr />
 
 <p>for modify _config.yml I have downloaded <a href="http://macromates.com/">Textmate</a> , very useful to modify and write in markdown and html/css</p>
+
+<p><img src="//localhost:4000/images/week/1/textmate.jpg" alt="verybig" /></p>
+
+<p>My menu:</p>
 
 <pre><code>
 links:
@@ -197,13 +204,66 @@ links:
 <hr />
 
 <h3 id="color-and-customize-font">color and customize font</h3>
+<p><strong>(updated 20/02/2015)</strong></p>
 
 <hr />
 
-<p>I have created the file:</p>
+<p>I have created this file to change the font dimension to better control the image size and :</p>
 
 <pre><code>---&gt; /assets/css/vendor/custom.css
 </code></pre>
+
+<pre><code>.latest_updates {
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+ul.latest_updates li {
+	
+	padding-left: 0px;
+}
+
+
+.notepad-page-content &gt; div:not(.notepad-page-title) a, .notepad-page-content &gt; div:not(.notepad-page-title) code {
+	color: grey;
+}
+
+.notepad-page-content &gt; div:not(.notepad-page-title) ul, .notepad-page-content &gt; div:not(.notepad-page-title) ol {
+padding-left: 0;
+font-size: 1.125rem;
+color: black;
+}
+
+
+img[alt="mini"] { 
+  max-width:  200px; 
+}
+
+img[alt="normal"] { 
+  max-width:  450px; 
+}
+
+img[alt="big"] { 
+  max-width:  600px; 
+}
+
+img[alt="verybig"] { 
+  max-width:  800px; 
+}
+</code></pre>
+
+<p>Some example to better undestanding difference between image dimension:</p>
+
+<p>original image size (800x600) <img src="//localhost:4000/images/week/1/test.jpg" alt="" /> </p>
+
+<p><strong>verybig</strong> image size max-width:800px <img src="//localhost:4000/images/week/1/test.jpg" alt="verybig" /> </p>
+
+<p><strong>big</strong> image size max-width:600px <img src="//localhost:4000/images/week/1/test.jpg" alt="big" /> </p>
+
+<p><strong>normal</strong> image size max-width:450px <img src="//localhost:4000/images/week/1/test.jpg" alt="normal" /> </p>
+
+<p><strong>mini</strong> image size max-width:200px <img src="//localhost:4000/images/week/1/test.jpg" alt="mini" /> </p>
 
 <p>and add the path file in:</p>
 
@@ -226,46 +286,73 @@ links:
 
 <p>I wanted to see in a different way the two page, the <strong>classes</strong> page only visualize the post inside <em>post folder</em> which have <em>categories = class_assignments</em> in reverse “reversed” list of insert date:</p>
 
-<pre><code>	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-01-31T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;31 January&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week1"&gt;principles and practices, project management&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-02-09T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;09 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week2"&gt;computer-aided design&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-02-16T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;16 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week3"&gt;computer-controlled cutting&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-02-22T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;22 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week4"&gt;electronic production&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-02-28T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;28 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week5"&gt;3D Scanning and Printing&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-03-10T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;10 March&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week6"&gt;Electronics Design&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-03-16T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;16 March&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week7"&gt;Embedded Programming&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
-	&lt;ul class="post-list"&gt;
-	&lt;li&gt;&lt;time datetime="2015-03-23T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span class="6-psecondary radius label"&gt;23 March&lt;/span&gt;&lt;/time&gt; | &lt;a href="//localhost:4000/class_assignments/week8"&gt;Computer-Controlled Machining&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	
+<pre><code>\`\`
+\`&lt;ul class="post-list"&gt;\`
+\`&lt;li&gt;&lt;time datetime="2015-01-31T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span\` \`class="6-psecondary radius label"&gt;31 January&lt;/span&gt;&lt;/time&gt; | &lt;a href="/class_assignments/week1"&gt;Principles and practices, project management  &lt;/a&gt;&lt;/li&gt;\`
+\`&lt;/ul&gt;\`
+\`\`
+\`&lt;ul class="post-list"&gt;\`
+\`&lt;li&gt;&lt;time datetime="2015-02-09T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span\` \`class="6-psecondary radius label"&gt;09 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="/class_assignments/week2"&gt;Computer-aided design&lt;/a&gt;&lt;/li&gt;\`
+\`&lt;/ul&gt;\`
+\`\`
+\`&lt;ul class="post-list"&gt;\`
+\`&lt;li&gt;&lt;time datetime="2015-02-16T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span\` \`class="6-psecondary radius label"&gt;16 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="/class_assignments/week3"&gt;Computer-controlled cutting&lt;/a&gt;&lt;/li&gt;\`
+\`&lt;/ul&gt;\`
+\`\`
+\`&lt;ul class="post-list"&gt;\`
+\`&lt;li&gt;&lt;time datetime="2015-02-22T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span\` \`class="6-psecondary radius label"&gt;22 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="/class_assignments/week4"&gt;Electronic production&lt;/a&gt;&lt;/li&gt;\`
+\`&lt;/ul&gt;\`
+\`\`
+\`&lt;ul class="post-list"&gt;\`
+\`&lt;li&gt;&lt;time datetime="2015-02-28T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span\` \`class="6-psecondary radius label"&gt;28 February&lt;/span&gt;&lt;/time&gt; | &lt;a href="/class_assignments/week5"&gt;3D Scanning and Printing&lt;/a&gt;&lt;/li&gt;\`
+\`&lt;/ul&gt;\`
+\`\`
+\`&lt;ul class="post-list"&gt;\`
+\`&lt;li&gt;&lt;time datetime="2015-03-10T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span\` \`class="6-psecondary radius label"&gt;10 March&lt;/span&gt;&lt;/time&gt; | &lt;a href="/class_assignments/week6"&gt;Electronics Design&lt;/a&gt;&lt;/li&gt;\`
+\`&lt;/ul&gt;\`
+\`\`
+\`&lt;ul class="post-list"&gt;\`
+\`&lt;li&gt;&lt;time datetime="2015-03-16T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span\` \`class="6-psecondary radius label"&gt;16 March&lt;/span&gt;&lt;/time&gt; | &lt;a href="/class_assignments/week7"&gt;Embedded Programming&lt;/a&gt;&lt;/li&gt;\`
+\`&lt;/ul&gt;\`
+\`\`
+\`&lt;ul class="post-list"&gt;\`
+\`&lt;li&gt;&lt;time datetime="2015-03-23T00:00:00+01:00" itemprop="datePublished"&gt;&lt;span\` \`class="6-psecondary radius label"&gt;23 March&lt;/span&gt;&lt;/time&gt; | &lt;a href="/class_assignments/week8"&gt;Computer-Controlled Machining&lt;/a&gt;&lt;/li&gt;\`
+\`&lt;/ul&gt;\`
+\`\`
 </code></pre>
 
 <p>I can’t find the code mode syntax to visualize the correct information but is like:</p>
 
 <p>open with {+% for post in site.categories.<em>class_assignments</em> reversed closed with %+}</p>
 
-<p><strong><em>final project page</em></strong> only visualize the post inside <em>post folder</em> which have <em>featured: true</em>. </p>
+<p><img src="//localhost:4000/images/week/1/code.jpg" alt="verybig" /></p>
+
+<p><a href="//localhost:4000/final_project/"><strong><em>final project page</em></strong></a> only visualize the post inside <em>post folder</em> which have <em>featured: true</em>. </p>
+
+<h2 id="what-i-learned">What I learned</h2>
+
+<p>To search final project is difficult for my mind. 
+In the end I followed the way to learn something new thing about electronic and programming, unexplored world for me.</p>
+
+<p>here is list of “focus thing” that I will learn/improve:</p>
+
+<ul>
+  <li>understand electronics components</li>
+  <li>microcontroller programming </li>
+  <li>programming some micro for control it</li>
+  <li>wireless comunication between own “hardware made”</li>
+  <li>programming apps to control it</li>
+</ul>
+
+<p>in the end but not of minor importance, I want something <strong>modular!</strong></p>
+
+<h2 id="file">File</h2>
+
+<ul>
+  <li><a href="https://github.com/ifala/ifala.github.io">My website github file</a></li>
+  <li><a href="https://github.com/hmfaysal/Notepad">Original template hmfaysal website</a></li>
+  <li><a href="//localhost:4000/images/week/1/file/custom.css">custom.css</a></li>
+</ul>
 
 
             </div>
@@ -273,7 +360,7 @@ links:
         <div class="cf"></div>
         <div class="row text-center">
             <section class="notepad-post-share">
-                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;principles and practices, project management&quot;%20//localhost:4000/class_assignments/week1%20via%20&#64;ifala"
+                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Principles and practices, project management  &quot;%20//localhost:4000/class_assignments/week1%20via%20&#64;ifala"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
                     <i class="fa fa-twitter"></i>
                 </a>

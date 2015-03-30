@@ -59,7 +59,8 @@ tags: [Giacomo, Falaschi, twister, fabacademy, 2015, blog, classes, contea, casc
 		
 		<a href="http://www.fabacademy.org"><img src="{{ site.url }}/images/fab-academy2.jpg"></a>
 		<a href="http://www.fablabcascina.org">- FabLab Cascina</a><br><br>
-		<a href="http://fablabcontea.blogspot.com">- - FabLab Contea</a>
+		<a href="http://fablabcontea.blogspot.com">- - FabLab Contea</a><br><br><br>
+		<a href="http://ifala.github.io">*Github version of this site*</a>
   </div>
   <div class="small-12 large-8 columns">
 
@@ -81,7 +82,7 @@ In this site you will find everything about my final project and the reports fro
 
 {% for post in site.posts %}
       <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished"><strong>{{ post.date | date: "%d %B" }}</strong></time>
-		  <a href="{{ site.url }}{{ post.url }}" class="latest_updates">{{ post.description }} - {{ post.title }}</a></li>
+		  <a href="{{ site.url }}{{ post.url }}" class="latest_updates"><span class="6-psecondary radius label">{{ post.description }}</span> - {{ post.title }}</a></li>
 {% endfor %}
   </ul>
 
