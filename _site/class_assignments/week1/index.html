@@ -19,7 +19,7 @@ Description: Awesome dude, awesome life
 <meta charset="utf-8">
 <title>PRINCIPLES AND PRACTICES, PROJECT MANAGEMENT   &vert; GIACOMO FALASCHI</title>
 <meta name="description" content="week 1">
-<meta name="keywords" content="how-to">
+<meta name="keywords" content="jekyll, kramdown, gems, foundation">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
@@ -174,13 +174,99 @@ I’d like use terminal but inside github I have some repository already set, an
 
 <p>and so I have decided to continue to use the graphical version.</p>
 
+<p>for modify the site I downloaded <a href="http://macromates.com/">Textmate</a> , very useful to modify and write in various programming language.</p>
+
+<hr />
+
+<h3 id="install-jekyll">Install Jekyll</h3>
+
+<hr />
+
+<p>As described in <a href="http://jekyllrb.com/docs/installation/">this tutorial</a> the best way to install jekyll is via <a href="https://rubygems.org/pages/download">rubygems</a></p>
+
+<p>Workflow:</p>
+
+<ul>
+  <li>download/install <a href="https://rubygems.org/pages/download">rubygems</a></li>
+  <li>Follow <a href="http://jekyllrb.com/docs/installation/">Jekyll installation here</a></li>
+  <li>Via terminal (OSX) go to the cloned folder of website template..and :</li>
+</ul>
+
+<pre><code>
+$ jekyll serve
+
+</code></pre>
+
+<ul>
+  <li>now, inside http://localhost:4000/ you started a development server where you can control the update of your site before update your github folder by using commit and sinc command. </li>
+</ul>
+
+<hr />
+
+<h3 id="kramdown">Kramdown</h3>
+
+<hr />
+
+<p>For building a new post, you must create new file inside the folder _post with this type of configuration:</p>
+
+<p>file: 2015-01-31-week1.md</p>
+
+<pre><code>
+---
+layout: post //in this type of theme exist 3 type of layout: home - page - post 
+title: "Principles and practices, project management" // add name of article/post
+description: "week 1" // add some description 
+category: Class_assignments // add_category 
+tags: [jekyll, kramdown, gems, foundation] // add tags directly connected to post
+imagefeature: principles-and-practices.jpg // add in the root site an image that is visualize in the start of page with animation (I prefer redimension and add some filter into image)
+---  
+
+</code></pre>
+
+<p>Here you can write the text of your post/page…in KRAMDOWN </p>
+
+<ul>
+  <li>what is kramdown?</li>
+</ul>
+
+<p>kramdown is a sub language for programming easy web page.
+You write in kramdown (markdown alternative but very similar) and the jekyll serve translate/convert the code in html.</p>
+
+<ul>
+  <li>Why use kramdown/markdown and not direct html code?</li>
+</ul>
+
+<p>because is more fast and <strong>intuitive</strong> (for bold simply add before and after the world “**”)</p>
+
+<ul>
+  <li>where I can learn to use kramdown?</li>
+</ul>
+
+<p>Kramdown (markdown too) is really well documented, <a href="http://kramdown.gettalong.org/syntax.html">here</a> I finded all that I need to make page, insert image, tab, paragraphs etc etc.</p>
+
+<hr />
+
+<h3 id="foudation5">Foudation5</h3>
+
+<hr />
+
+<p>“Foudation is a responsive front-end framework” <a href="http://en.wikipedia.org/wiki/Foundation_(framework)">wikipedia</a></p>
+
+<p>using the pre-compiled CSS file I gave a modern apparence to my site.</p>
+
+<p>for a better experience of use consider to look the documentation <a href="http://foundation.zurb.com/docs/">here</a></p>
+
+<hr />
+
+<h3 id="font-anwsome">Font Anwsome</h3>
+
+<hr />
+
 <hr />
 
 <h3 id="top-menu">top menu</h3>
 
 <hr />
-
-<p>for modify _config.yml I have downloaded <a href="http://macromates.com/">Textmate</a> , very useful to modify and write in markdown and html/css</p>
 
 <p><img src="//localhost:4000/images/week/1/textmate.jpg" alt="verybig" /></p>
 
@@ -331,7 +417,9 @@ img[alt="verybig"] {
 
 <h2 id="what-i-learned">What I learned</h2>
 
-<p>To search final project is difficult for my mind. 
+<p>To build my own site, is funny ! jekyll-kramdown-foudation5 and also font anwsome are really easy to implement in the site, and online you can find a lot of example for using it!
+Definitely in this week I discovered a new method to build a very good site,fast and easy to update using github! 
+To search final project is difficult for my mind. 
 In the end I followed the way to learn something new thing about electronic and programming, unexplored world for me.</p>
 
 <p>here is list of “focus thing” that I will learn/improve:</p>
@@ -346,7 +434,7 @@ In the end I followed the way to learn something new thing about electronic and 
 
 <p>in the end but not of minor importance, I want something <strong>modular!</strong></p>
 
-<h2 id="file">File</h2>
+<h2 id="source-file">Source file</h2>
 
 <ul>
   <li><a href="https://github.com/ifala/ifala.github.io">My website github file</a></li>
