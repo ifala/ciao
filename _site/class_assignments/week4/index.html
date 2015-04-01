@@ -19,7 +19,7 @@ Description: Awesome dude, awesome life
 <meta charset="utf-8">
 <title>ELECTRONIC PRODUCTION &vert; GIACOMO FALASCHI</title>
 <meta name="description" content="week 4">
-<meta name="keywords" content="electronics, soldering, isp, programming, mill">
+<meta name="keywords" content="electronics, soldering, isp, programming, mill, 1/64” inch, 1/32” inch">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
@@ -149,26 +149,27 @@ Description: Awesome dude, awesome life
 
 <p>using <a href="http://fabmodules.org/">Fab Modules</a> and Roland MDX-20 Modela.</p>
 
-<p><img src="//localhost:4000/images/week/4/mill/1.jpg" alt="o" /> <img src="//localhost:4000/images/week/4/mill/2.jpg" alt="image" /></p>
-
 <p>I used :</p>
 
 <ul>
-  <li>1/64” inch bit for milling the traces</li>
+  <li>1/64” end mills bit for milling the traces</li>
 </ul>
 
-<p><img src="//localhost:4000/images/week/4/mill/fabisp_cmp.png" alt="0" /></p>
+<p><img src="//localhost:4000/images/week/4/mill/2.jpg" alt="normal" />
+<img src="//localhost:4000/images/week/4/mill/fabisp_cmp.png" alt="mini" /></p>
 
 <ul>
-  <li>1/32” inch bit for cut the fab isp key out of the “copper sheet”</li>
+  <li>1/32” end mills for cut the fab isp key out of the “copper sheet”</li>
 </ul>
 
-<p><img src="//localhost:4000/images/week/4/mill/fabisp_drd.png" alt="0" /></p>
+<p><img src="//localhost:4000/images/week/4/mill/fabisp_drd.png" alt="mini" /></p>
 
 <p>Useful to prevent a MDX-20 damage, is place a “sacrifical layer” on the bottom of the copper sheet</p>
 
 <p><em>sacrifical layer</em> 
 material layer placed under the copper plate, sacrificial in case of an increased pressure of the drill tip</p>
+
+<p><img src="//localhost:4000/images/week/4/mill/1.jpg" alt="normal" /> </p>
 
 <hr />
 
@@ -200,15 +201,90 @@ thanks to the “istructor tricks” it was very fast soldering components.</p>
 
 <p><img src="//localhost:4000/images/week/4/solder/tools.jpg" alt="o" /> </p>
 
-<p>during the soldering, I found very annoying skip and serach in my phone these three images, so I decided to collect them and put them close, in a single screen. I think is more easy when you proceed with soldering.</p>
+<p>during the soldering, I found very annoying skip and serach in my phone these three images, so I decided to collect them and put them close, in a single screen. I think is more easy when you proceed with soldering.
+I created a table list of material in order by soldering (suggest)</p>
 
-<p><img src="//localhost:4000/images/week/4/solder/fabisp_bom.jpg" alt="o" /></p>
+<table>
+  <thead>
+    <tr>
+      <th>bom list Fab ISP key</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+    <tr>
+      <th>Part code</th>
+      <th>Man.Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IC1</td>
+      <td>ATTINY44A-SSU-ND</td>
+      <td>ATTINY44</td>
+    </tr>
+    <tr>
+      <td>R1,R2</td>
+      <td>311-49.9FRCT-ND</td>
+      <td>Resistor 49.9 ohms</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>311-10.0KFRCT-ND</td>
+      <td>Resistor 10K</td>
+    </tr>
+    <tr>
+      <td>D1,D2</td>
+      <td>BZT52C3V3-FDICT-ND</td>
+      <td>Diode Zener 3.3v</td>
+    </tr>
+    <tr>
+      <td>R5</td>
+      <td>311-0.0ERCT-ND</td>
+      <td>Resistor 0K</td>
+    </tr>
+    <tr>
+      <td>R6</td>
+      <td>311-499FRCT-ND</td>
+      <td>Resistor 499 ohms</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td>399-4674-1-ND</td>
+      <td>Capacitor 0.1u</td>
+    </tr>
+    <tr>
+      <td>C4</td>
+      <td>445-1423-1-ND</td>
+      <td>Capacitor 1u</td>
+    </tr>
+    <tr>
+      <td>C1,C2</td>
+      <td>311-1150-1-ND</td>
+      <td>Capacitor8pF or 10pF</td>
+    </tr>
+    <tr>
+      <td>XTAL</td>
+      <td>644-1039-1-ND</td>
+      <td>Crystal 20Mhz</td>
+    </tr>
+    <tr>
+      <td>X2</td>
+      <td>AVRISPSMD</td>
+      <td>AVR3x2</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><img src="//localhost:4000/images/week/4/solder/fabisp_tbrd.png" alt="o" /></p>
+<p><img src="//localhost:4000/images/week/4/solder/fabisp_tbrd.png" alt="normal" /></p>
 
-<p><img src="//localhost:4000/images/week/4/mill/fabisp_cmp.png" alt="o" /> </p>
+<p><img src="//localhost:4000/images/week/4/mill/fabisp_cmp.png" alt="normal" /> </p>
+
+<p><a href="http://fab.cba.mit.edu/content/projects/fabispkey/index.html"><strong><em>original file by http://fab.cba.mit.edu</em></strong></a> </p>
 
 <p><img src="//localhost:4000/images/week/4/solder/2.jpg" alt="o" /></p>
+
+<p><strong>Final result without AVR3x2</strong></p>
 
 <hr />
 
@@ -238,9 +314,7 @@ thanks to the “istructor tricks” it was very fast soldering components.</p>
 
 <ul>
   <li>make clean</li>
-  <li>
-    <p>make hex</p>
-  </li>
+  <li>make hex</li>
   <li>sudo make fuse</li>
 </ul>
 
@@ -375,6 +449,17 @@ avrdude done. Thank you.
 </code></pre>
 
 <hr />
+
+<h3 id="source-files">Source files</h3>
+
+<ul>
+  <li><a href="/images/week/4/mill/fabisp_cmp.png"><i class="fa fa-file-image-o"></i> fabisp_cmp.png </a></li>
+  <li><a href="/images/week/4/mill/fabisp_drd.png"><i class="fa fa-file-image-o"></i> fabisp_drd.png </a></li>
+  <li><a href="/images/week/3/file/vinile.camm"><i class="fa fa-floppy-o"></i> vinile.camm </a></li>
+  <li><a href="/images/week/3/file/scimmia.png"><i class="fa fa-floppy-o"></i> monkey.png </a></li>
+  <li><a href="/images/week/3/file/scimmia.camm"><i class="fa fa-file-image-o"></i> monkey.camm </a></li>
+</ul>
+
 
             </div>
         </article>
