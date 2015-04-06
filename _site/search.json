@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "Molding and Casting",
+		  "category"   : "Class_assignments",
+		  "url"        : "//localhost:4000/class_assignments/week9",
+		  "date"       : "2015-04-06 00:00:00 +0200",
+		  "shortdate"  : "April 06, 2015"
+		} ,
+	
+		{
 		  "title"      : "Computer-Controlled Machining",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week8",

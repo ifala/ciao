@@ -68,6 +68,11 @@ callback([
   {
     "text": "Computer-Controlled Machining",
     "href": "//localhost:4000/class_assignments/week8"
+  } ,
+
+  {
+    "text": "Molding and Casting",
+    "href": "//localhost:4000/class_assignments/week9"
   } 
 
 ])
