@@ -152,7 +152,7 @@ Description: Awesome dude, awesome life
   <li><a href="http://www.machinablewax.com/product.php?product=30">Machinable wax</a> <a href="http://www.instructables.com/id/Machinable-Wax/">at home</a></li>
   <li><a href="http://www.smooth-on.com/Silicone-Rubber-an/c2_1113_1135/index.html">Mold MAX - silicone rubber</a></li>
   <li><a href="http://www.smooth-on.com/Urethane-Plastic-a/c5_1120_1206/index.html">Smooth-Cast® 325</a></li>
-  <li><a href="http://www.rolanddg.com/product/3d/3d/srm-20/index.html">roland srm-20</a></li>
+  <li><a href="http://www.rolanddg.com/product/3d/3d/srm-20/index.html">Roland srm-20</a></li>
 </ul>
 
 <h5 id="useful-tutorial">Useful Tutorial:</h5>
@@ -169,35 +169,95 @@ Description: Awesome dude, awesome life
 
 <hr />
 
+<p>During these weeks I’m doing a refurbishment of my house, and during the work I realized that “I miss” many plastic plate of my garage doors.</p>
+
+<p><img src="//localhost:4000/images/week/9/img/050.jpg" alt="mini" />
+<img src="//localhost:4000/images/week/9/img/051.jpg" alt="mini" />
+<img src="//localhost:4000/images/week/9/img/052.jpg" alt="mini" />
+<img src="//localhost:4000/images/week/9/img/053.jpg" alt="mini" /></p>
+
+<p><img src="//localhost:4000/images/week/9/img/055.jpg" alt="normal" />
+<img src="//localhost:4000/images/week/9/img/054.jpg" alt="normal" /></p>
+
+<p>I started to rebuilding by sketch mode, a new plastic plate but like Voronoy the front view !</p>
+
+<p><img src="//localhost:4000/images/week/9/img_solidw/2.JPG" alt="normal" /></p>
+
+<p>in prevision to create the block angle, I create these little parts, who permit me to have overhang resins during the melting time.</p>
+
+<p><img src="//localhost:4000/images/week/9/img_solidw/blocks_mill.JPG" alt="normal" /></p>
+
+<p><img src="//localhost:4000/images/week/9/img_solidw/blocks_silicon.JPG" alt="normal" /></p>
+
+<p>I prepared the final file to create the stl with a small border to contain the silicon Mold</p>
+
+<p><img src="//localhost:4000/images/week/9/img_solidw/assembly-final2.jpg" alt="normal" /></p>
+
+<p>ok, I’m ready for mill the blue WAX ! for my positive object!</p>
+
 <hr />
 
-<h1 id="machine-with-modela-40">Machine with Modela-40</h1>
+<h1 id="machine-positive-wax-with-srm-20">Machine positive WAX with SRM-20</h1>
 
 <hr />
 
-<p><img src="//localhost:4000/images/week/9/img/001.jpg" alt="normal" /></p>
+<p><img src="//localhost:4000/images/week/9/img/Roland-SRM-20-2.jpg" alt="normal" /></p>
 
-<p><img src="//localhost:4000/images/week/9/img/002.jpg" alt="normal" /></p>
+<p>For this assignment I used the SRM-20 machine with the 3mm flat milling tip.
+In the first, I started to play with fabmodules but the fabmodules stop process here the file, after set the wax rough cut.
+<img src="//localhost:4000/images/week/9/img/056.jpg" alt="normal" />
+the file is <a href="//localhost:4000//images/week/9/file/assembly_final2.STL">assembly_final2.STL</a></p>
 
-<p><img src="//localhost:4000/images/week/9/img/003.jpg" alt="003" /></p>
+<h2 id="switch-to-modela-player-4">switch to modela player 4</h2>
 
-<h2 id="software-setting">software setting</h2>
+<h3 id="software-setting">software setting</h3>
 
-<h2 id="error">Error!</h2>
+<p><img src="//localhost:4000/images/week/9/img/003.jpg" alt="normal" /></p>
 
-<p><img src="//localhost:4000/images/week/9/img/004.jpg" alt="004" /></p>
+<p>Following the <a href="http://fabacademy.org/archives/content/tutorials/General_Machine_Tutorials/Milling/ModelaPlayer4_tutorial_v2.html">tutorial</a> I create 2 process :</p>
 
-<p><img src="//localhost:4000/images/week/9/img/005.jpg" alt="005" /></p>
+<pre><code>- rough (milling 3mm square tool )
 
-<p><img src="//localhost:4000/images/week/9/img/007.jpg" alt="007" /></p>
+- finish (milling 3mm square tool )
+</code></pre>
 
-<p><img src="//localhost:4000/images/week/9/img/008.jpg" alt="008" /></p>
+<p>After set zero point (X,Y,Z) on imodela controller, you can start to mill!</p>
+
+<p><img src="//localhost:4000/images/week/9/img/vpanel_srm-20_en.jpg" alt="normal" /></p>
+
+<p><img src="//localhost:4000/images/week/9/img/001.jpg" alt="mini" /> <img src="//localhost:4000/images/week/9/img/002.jpg" alt="mini" /></p>
+
+<h2 id="error-1-before-the-end-of-milling">Error 1! (before the end of milling)</h2>
+
+<p><img src="//localhost:4000/images/week/9/img/004.jpg" alt="mini" />
+<img src="//localhost:4000/images/week/9/img/005.jpg" alt="mini" /></p>
+
+<p>in the really end part of milling, the SRM-20 suddenly stop and send this error:
+	“ The spindle motor experienced an excessive load or it is not mounted “
+in this error case, you must reboot the SRM-20.
+fortunately milling was over ! otherwise I would have to repeat the finish process.</p>
+
+<h2 id="error-2">Error 2</h2>
+
+<p>Unfortunally the little negative parts, for build the joint in the plastic plate, are too small for mill with 3mm square drill.</p>
+
+<p><img src="//localhost:4000/images/week/9/img/007.jpg" alt="normal" /></p>
+
+<p>I rebuild a file and I use the 2mm square drill.</p>
+
+<p><img src="//localhost:4000/images/week/9/img/008.jpg" alt="normal" /></p>
 
 <h2 id="final-result">Final result</h2>
 
-<p><img src="//localhost:4000/images/week/9/img/009.jpg" alt="009" />
-<img src="//localhost:4000/images/week/9/img/010.jpg" alt="010" />
-<img src="//localhost:4000/images/week/9/img/011.jpg" alt="011" /></p>
+<p>Despite my attempts to center the stl file in the wax, a bottom side to a few mm was milled so for the silicon molding I need a wall…</p>
+
+<p><img src="//localhost:4000/images/week/9/img/009.jpg" alt="009" /></p>
+
+<p><img src="//localhost:4000/images/week/9/img/010.jpg" alt="010" /></p>
+
+<p>looks parts circled green, are the same, one negative single circled (2mm square drill), and one positive double circled (3mm square drill) to match the corners maybe I should have used the tips more small..</p>
+
+<p><img src="//localhost:4000/images/week/9/img/011.jpg" alt="011" /></p>
 
 <hr />
 
@@ -207,8 +267,8 @@ Description: Awesome dude, awesome life
 
 <hr />
 
-<p><img src="//localhost:4000/images/week/9/img/013.jpg" alt="013" />
-<img src="//localhost:4000/images/week/9/img/014.jpg" alt="014" />
+<p><img src="//localhost:4000/images/week/9/img/013.jpg" alt="mini" />
+<img src="//localhost:4000/images/week/9/img/014.jpg" alt="mini" />
 <img src="//localhost:4000/images/week/9/img/015.jpg" alt="015" />
 <img src="//localhost:4000/images/week/9/img/016.jpg" alt="016" /></p>
 
