@@ -49,7 +49,19 @@
         <loc>//localhost:4000/page3/index.html</loc>
     </url>
     
+    <url>
+        <loc>//localhost:4000/page4/index.html</loc>
+    </url>
+    
 
+    
+    <url>
+        <loc>//localhost:4000/class_assignments/week10</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/finalproject/connection</loc>
+    </url>
     
     <url>
         <loc>//localhost:4000/class_assignments/week9</loc>
@@ -65,10 +77,6 @@
     
     <url>
         <loc>//localhost:4000/class_assignments/week6</loc>
-    </url>
-    
-    <url>
-        <loc>//localhost:4000/finalproject/connection</loc>
     </url>
     
     <url>
