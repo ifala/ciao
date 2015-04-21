@@ -19,7 +19,7 @@ Description: Awesome dude, awesome life
 <meta charset="utf-8">
 <title>INPUT DEVICE &vert; GIACOMO FALASCHI</title>
 <meta name="description" content="week 10">
-<meta name="keywords" content="eagle, input, device, attiny44, wax">
+<meta name="keywords" content="eagle, input, device, attiny44, joystick, touch pad fabacademy">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
@@ -145,18 +145,23 @@ Description: Awesome dude, awesome life
   <li><a href="www.fabmodules.org">FabModules</a></li>
 </ul>
 
+<h5 id="useful-links">Useful links:</h5>
+
+<ul>
+  <li><a href="http://forum.arduino.cc/index.php?topic=119455.0">HowTo calculate RGB resistor(arduino forum .cc - it)</a></li>
+  <li><a href="http://fab.cba.mit.edu/classes/MIT/863.10/people/matt.blackshaw/week8.html">touchpad - matt.blackshaw</a></li>
+  <li><a href="http://fab.cba.mit.edu/classes/863.11/people/matthew.keeter/multitouch/index.html">multitouch - matthew.keeter</a></li>
+  <li><a href="http://fabacademy.org/archives/2014/students/basile.fiore/classes/10_input_devices.html">tinymidi - fiore basile</a></li>
+  <li><a href="http://media.digikey.com/pdf/Data%20Sheets/CREE%20Power/CLV1A-FKB_Rev5.pdf">led rbg datasheet</a></li>
+</ul>
+
 <h5 id="materials---machine">Materials - Machine</h5>
 
 <ul>
-  <li><a href="http://www.machinablewax.com/product.php?product=30">Machinable wax</a> <a href="http://www.instructables.com/id/Machinable-Wax/">at home</a></li>
-  <li><a href="http://www.smooth-on.com/Silicone-Rubber-an/c2_1113_1135/index.html">Mold MAX 60 - silicone rubber</a></li>
-  <li><a href="http://www.smooth-on.com/Urethane-Plastic-a/c5_1120_1206/index.html">Smooth-Cast® 325</a></li>
-  <li><a href="http://www.rolanddg.com/product/3d/3d/srm-20/index.html">Roland srm-20</a></li>
+  <li>
+    <h6 id="roland-mdx-20httpwwwrolanddgcomproduct3d3dmdx-2015mdx-2015html"><a href="http://www.rolanddg.com/product/3d/3d/mdx-20_15/mdx-20_15.html">Roland MDX-20</a></h6>
+  </li>
 </ul>
-
-<p>led rbg datasheet</p>
-
-<p>http://media.digikey.com/pdf/Data%20Sheets/CREE%20Power/CLV1A-FKB_Rev5.pdf</p>
 
 <table>
   <tbody>
@@ -213,29 +218,38 @@ Description: Awesome dude, awesome life
   </tbody>
 </table>
 
-<h5 id="useful-tutorial">Useful Tutorial:</h5>
+<hr />
 
-<ul>
-  <li>HowTo calculate RGB resistor(it)](http://forum.arduino.cc/index.php?topic=119455.0)</li>
-</ul>
+<h1 id="twister-joystick--two-faced">Twister Joystick  two-faced</h1>
+
+<h3 id="eagle-design">Eagle design</h3>
 
 <hr />
 
-<h1 id="design-twister-joystick---double-sided">Design Twister Joystick - Double sided</h1>
+<p>As described in my <a href="//localhost:4000//finalproject/schedule/">schedule page</a> for my final project I will need an hardware panel control.
+I’m really interested to step response project like <a href="http://fab.cba.mit.edu/classes/MIT/863.10/people/matt.blackshaw/week8.html">touchpad</a>and <a href="http://fab.cba.mit.edu/classes/863.11/people/matthew.keeter/multitouch/index.html">multitouch</a>.
+For my joystick (hardware panel control), I need only 4 button (I want to be sensitive to the touch) and one RGB led.</p>
 
-<h3 id="eagle">Eagle</h3>
+<p><img src="//localhost:4000/images/week/10/monocrome/sch.png" alt="normal" /></p>
+
+<p><img src="//localhost:4000/images/week/10/monocrome/topebottom.png" alt="normal" /> </p>
+
+<p><img src="//localhost:4000/images/week/10/monocrome/board_front.png" alt="mini" /> 
+<img src="//localhost:4000/images/week/10/monocrome/holes.png" alt="mini" /></p>
+
+<p><img src="//localhost:4000/images/week/10/monocrome/board_back.png" alt="normal" /> </p>
+
+<p>The back board is mirrored on Y axes, remember it when you mill the board!</p>
+
+<hr />
+
+<h1 id="to-mill-board-two-faced">to Mill Board two-faced</h1>
 
 <hr />
 
 <hr />
 
-<h1 id="board-soldering">Board soldering</h1>
-
-<hr />
-
-<hr />
-
-<h1 id="measure-">Measure !</h1>
+<h1 id="measure-test-">Measure TEST !</h1>
 
 <hr />
 
@@ -247,14 +261,15 @@ Description: Awesome dude, awesome life
 
 <h1 id="file">File</h1>
 
-<h2 id="design-solidworks">Design (solidworks)</h2>
+<h2 id="design-eagle">Design Eagle</h2>
 
 <ul>
-  <li><a href="//localhost:4000/images/week/9/solidw/2.2.SLDPRT">TwisterJoy_eagle_board</a></li>
-  <li><a href="//localhost:4000/images/week/9/solidw/blocks_silicon.SLDPRT">TwisterJoy_eagle_scheme</a></li>
-  <li><a href="//localhost:4000/images/week/9/solidw/vasca2.SLDPRT">board_front</a></li>
-  <li><a href="//localhost:4000/images/week/9/solidw/assembly final2.SLDASM">board_back</a></li>
-  <li><a href="//localhost:4000/images/week/9/solidw/vasca2.SLDPRT">cutting</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/schema.brd"><i class="fa fa-floppy-o"></i> TwisterJoy_eagle_board</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/schema.sch"><i class="fa fa-floppy-o"></i> TwisterJoy_eagle_scheme</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/board_front.png"><i class="fa fa-file-image-o"></i> board_front</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/holes.png"><i class="fa fa-file-image-o"></i> board_pads</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/board_back.png"><i class="fa fa-file-image-o"></i> board_back</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/cut_front.png"><i class="fa fa-file-image-o"></i> cutting</a></li>
 </ul>
 
             </div>
