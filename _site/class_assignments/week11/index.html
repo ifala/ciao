@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+    __  ____  ______________  _______ ___    __ 
+   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
+  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
+ / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
+/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
+                                                     
+====================================================
+Author: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.0
+Description: Awesome dude, awesome life
+====================================================
+-->
+<head>
+<meta charset="utf-8">
+<title>OUTPUT DEVICE &vert; GIACOMO FALASCHI</title>
+<meta name="description" content="week 11">
+<meta name="keywords" content="eagle, output, device, attiny44, servo, fabacademy, 5v, 3.3v">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="//localhost:4000/images/input_device.jpg">
+
+<meta name="twitter:title" content="output device">
+<meta name="twitter:description" content="week 11">
+<meta name="twitter:creator" content="@ifala">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="output device">
+<meta property="og:description" content="week 11">
+<meta property="og:url" content="//localhost:4000/class_assignments/week11">
+<meta property="og:site_name" content="Giacomo Falaschi">
+<meta property="og:image" content="//localhost:4000/images/input_device.jpg">
+
+
+
+
+
+<link rel="canonical" href="//localhost:4000/class_assignments/week11">
+<link href="//localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Giacomo Falaschi Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//localhost:4000/assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/post.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/custom.css">
+	
+
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="//localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="//localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="//localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+
+        <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
+            <header class="notepad-post-header">
+                <div class="bg-img"></div>
+                
+                <div class="notepad-post-menu-header">
+
+                    <a class="notepad-blog-logo" href="//localhost:4000">
+                        <img src="//localhost:4000/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li class="active">
+                    <a href="//localhost:4000/">Home</a>
+                 </li>
+
+            <li class="active">
+                    <a href="//localhost:4000/about">aboutME</a>
+                 </li>
+
+            <li class="active">
+                    <a href="//localhost:4000/final_project">final project</a>
+                 </li>
+
+            <li class="active">
+                    <a href="//localhost:4000/classes">classes</a>
+                 </li>
+            
+    </ul>
+
+</div>
+            </div>
+
+            <div class="notepad-post-title bg-check">
+                <h1>output device</h1>
+            </div>
+            <div class="bg-img"></div>
+        </header>
+        <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+        <img src="//localhost:4000/images/input_device.jpg" alt="cover-image" />
+
+        <article class="notepad-post-content post">
+            <div><h3 id="weeklyassignments-">Weekly_Assignments :</h3>
+
+<pre><code>-  add an output device to a microcontroller board you've designed and program it to do something
+</code></pre>
+
+<h5 id="software">Software</h5>
+
+<ul>
+  <li>Eletronics Design : <a href="http://www.cadsoftusa.com/download-eagle/">Eagle Freeware</a></li>
+  <li><a href="www.fabmodules.org">FabModules</a></li>
+</ul>
+
+<h5 id="useful-links">Useful links:</h5>
+
+<ul>
+  <li><a href="//localhost:4000//class_assignments/week10/">calculate RGB resistor</a></li>
+  <li><a href="http://media.digikey.com/pdf/Data%20Sheets/CREE%20Power/CLV1A-FKB_Rev5.pdf">led rbg datasheet</a></li>
+  <li><a href="">servo datasheet</a></li>
+</ul>
+
+<h5 id="materials---machine">Materials - Machine</h5>
+
+<ul>
+  <li>
+    <h6 id="roland-mdx-20httpwwwrolanddgcomproduct3d3dmdx-2015mdx-2015html"><a href="http://www.rolanddg.com/product/3d/3d/mdx-20_15/mdx-20_15.html">Roland MDX-20</a></h6>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>component name</strong></td>
+      <td><strong>value</strong></td>
+      <td><strong>library_name.lbr</strong></td>
+    </tr>
+    <tr>
+      <td>ATTINY44-SSU</td>
+      <td>ATTINY44 SMD</td>
+      <td>fab</td>
+    </tr>
+    <tr>
+      <td>CAPACITOR1206</td>
+      <td>1uf</td>
+      <td>01_FAB_RHello</td>
+    </tr>
+    <tr>
+      <td>RESISTOR1206</td>
+      <td>10k</td>
+      <td>01_FAB_RHello</td>
+    </tr>
+    <tr>
+      <td>AVRISPSMD</td>
+      <td>2X03 SMD</td>
+      <td>fab</td>
+    </tr>
+    <tr>
+      <td>FTDI-SMD-HEADER</td>
+      <td>1X06SMD</td>
+      <td>fab</td>
+    </tr>
+    <tr>
+      <td>2x M04PTH</td>
+      <td>1X03</td>
+      <td>SparkFun-Connectors</td>
+    </tr>
+    <tr>
+      <td>M04PTH</td>
+      <td>1X04</td>
+      <td>SparkFun-Connectors</td>
+    </tr>
+    <tr>
+      <td>2x RESISTOR1206</td>
+      <td>4.99</td>
+      <td>01_FAB_RHello</td>
+    </tr>
+    <tr>
+      <td>RESISTOR1206</td>
+      <td>100</td>
+      <td>01_FAB_RHello</td>
+    </tr>
+    <tr>
+      <td>SJ_2S</td>
+      <td>SOLDER JUMPER</td>
+      <td>SparkFun-Retired</td>
+    </tr>
+    <tr>
+      <td>LM3480IM4</td>
+      <td>REGULATOR 3.3v</td>
+      <td>SparkFun-PowerIC</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="rgb-33v-servo-5v-board">RGB 3.3v Servo 5v board</h1>
+
+<h3 id="eagle-design">Eagle design</h3>
+
+<hr />
+
+<hr />
+
+<h1 id="milling-board">Milling Board</h1>
+
+<hr />
+
+<hr />
+
+<h1 id="programming">Programming!</h1>
+
+<hr />
+
+<h2 id="final-output-result">Final output result</h2>
+
+<hr />
+
+<h1 id="conclusion">Conclusion</h1>
+
+<hr />
+
+<h1 id="file">File</h1>
+
+<h2 id="design-eagle">Design Eagle</h2>
+
+<ul>
+  <li><a href="//localhost:4000/images/week/10/monocrome/schema.brd"><i class="fa fa-floppy-o"></i> xxxxxx</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/schema.sch"><i class="fa fa-floppy-o"></i> xxxxxx</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/board_front.png"><i class="fa fa-file-image-o"></i> xxxxxx</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/holes.png"><i class="fa fa-file-image-o"></i> xxxxxx</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/board_back.png"><i class="fa fa-file-image-o"></i> xxxxxx</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/cut_front.png"><i class="fa fa-file-image-o"></i> xxxxxx</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/joystick_4pad+rgb.zip"><i class="fa fa-floppy-o"></i> xxxxxx</a></li>
+</ul>
+
+            </div>
+        </article>
+        <div class="cf"></div>
+        <div class="row text-center">
+            <section class="notepad-post-share">
+                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;output device&quot;%20//localhost:4000/class_assignments/week11%20via%20&#64;ifala"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=//localhost:4000/class_assignments/week11"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="google-icon" href="https://plus.google.com/share?url=//localhost:4000/class_assignments/week11"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </section>
+        </div>
+        <div class="cf"></div>
+        
+
+
+    <footer class="notepad-site-footer">
+    <div class="copyright">
+         <section>This work is licensed under a <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</section><br /><section> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></section>
+    </div>
+    <div class="social-icons">
+        
+        
+        <a href="http://twitter.com/ifala">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        <a href="http://instagram.com/jake_falaschi">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-instagram fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="http://github.com/ifala">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="http://facebook.com/falaschi">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer> 
+</main>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="//localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="//localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="//localhost:4000/assets/js/foundation.min.js"></script>
+    <script src="//localhost:4000/assets/js/vendor/background-check.js"></script>
+    <script src="//localhost:4000/assets/js/vendor/post-header-animations.js"></script>
+    <script src="//localhost:4000/assets/js/notepad.js"></script>
+    <script src="//localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="//localhost:4000/assets/js/vendor/nprogress.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+    <script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43076649-2', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script> 
+</body>
+</html>

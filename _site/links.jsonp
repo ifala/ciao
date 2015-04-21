@@ -78,6 +78,11 @@ callback([
   {
     "text": "input device",
     "href": "//localhost:4000/class_assignments/week10"
+  } ,
+
+  {
+    "text": "output device",
+    "href": "//localhost:4000/class_assignments/week11"
   } 
 
 ])
