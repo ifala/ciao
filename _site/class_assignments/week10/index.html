@@ -191,13 +191,23 @@ Description: Awesome dude, awesome life
       <td>fab</td>
     </tr>
     <tr>
-      <td>4x RESISTOR1206</td>
-      <td>1x04</td>
+      <td>2x M04PTH</td>
+      <td>1X04</td>
+      <td>SparkFun-Connectors</td>
+    </tr>
+    <tr>
+      <td>2x M04PTH</td>
+      <td>1X04</td>
       <td>SparkFun-Connectors</td>
     </tr>
     <tr>
       <td>RESISTOR1206</td>
       <td>10k</td>
+      <td>01_FAB_RHello</td>
+    </tr>
+    <tr>
+      <td>4x RESISTOR1206</td>
+      <td>100</td>
       <td>01_FAB_RHello</td>
     </tr>
     <tr>
@@ -209,11 +219,6 @@ Description: Awesome dude, awesome life
       <td>LED-TRICOLOR-SMD</td>
       <td>led rgb SMD</td>
       <td>SparkFun-LED</td>
-    </tr>
-    <tr>
-      <td>2x M04PTH</td>
-      <td>1X04</td>
-      <td>SparkFun-Connectors</td>
     </tr>
   </tbody>
 </table>
@@ -232,20 +237,38 @@ For my joystick (hardware panel control), I need only 4 button (I want to be sen
 
 <p><img src="//localhost:4000/images/week/10/monocrome/sch.png" alt="normal" /></p>
 
+<p>The board have 1M resistor in corrispondence of the step trace, and 3x 100 ohm resistor for RGB led 
+I read the value on datasheet and apply the formula for find the exact color resistor R=(V-Vdrop)/I where:</p>
+
+<p>Example For Red pin (rgb smd led)</p>
+
+<ul>
+  <li>V= 5v</li>
+  <li>Vdrop = 2v</li>
+  <li>I = 0.02</li>
+</ul>
+
+<p>= 150ohm (in this case in accord with my local istructor I use a 100 ohm resistor)</p>
+
 <p><img src="//localhost:4000/images/week/10/monocrome/topebottom.png" alt="normal" /> </p>
+
+<p>I design the back board in eagle with rgb led and the reference blue-square which correspond to the hole on the front side board.
+In prevision to import all file in illustrator for design the back board’s step, I designed the square on eagle slightly more large in order to prevent the missing correspondence during the milling.</p>
+
+<hr />
+
+<h1 id="milling-board-two-faced">Milling Board two-faced</h1>
+
+<hr />
 
 <p><img src="//localhost:4000/images/week/10/monocrome/board_front.png" alt="mini" /> 
 <img src="//localhost:4000/images/week/10/monocrome/holes.png" alt="mini" /></p>
 
+<p>I imported all file in illustrator for design the distance between the “reference point” and the boarder on holes.png file, needful for mill the back of the board.</p>
+
 <p><img src="//localhost:4000/images/week/10/monocrome/board_back.png" alt="normal" /> </p>
 
 <p>The back board is mirrored on Y axes, remember it when you mill the board!</p>
-
-<hr />
-
-<h1 id="to-mill-board-two-faced">to Mill Board two-faced</h1>
-
-<hr />
 
 <hr />
 
