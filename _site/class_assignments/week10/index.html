@@ -232,8 +232,15 @@ Description: Awesome dude, awesome life
 <hr />
 
 <p>As described in my <a href="//localhost:4000//finalproject/schedule/">schedule page</a> for my final project I will need an hardware panel control.
-I’m really interested to step response project like <a href="http://fab.cba.mit.edu/classes/MIT/863.10/people/matt.blackshaw/week8.html">touchpad</a>and <a href="http://fab.cba.mit.edu/classes/863.11/people/matthew.keeter/multitouch/index.html">multitouch</a>.
+I’m really interested to step response project like <a href="http://fab.cba.mit.edu/classes/MIT/863.10/people/matt.blackshaw/week8.html">touchpad</a> and <a href="http://fab.cba.mit.edu/classes/863.11/people/matthew.keeter/multitouch/index.html">multitouch</a>.
 For my joystick (hardware panel control), I need only 4 button (I want to be sensitive to the touch) and one RGB led.</p>
+
+<ul>
+  <li>2 pads for turn (clockwise and counterclockwise)</li>
+  <li>1 pads for change cube (switch to another cube)</li>
+  <li>1 pads for change the color of the cube </li>
+  <li>RGB led for visualizing the color cube changing</li>
+</ul>
 
 <p><img src="//localhost:4000/images/week/10/monocrome/sch.png" alt="normal" /></p>
 
@@ -252,6 +259,8 @@ I read the value on datasheet and apply the formula for find the exact color res
 
 <p><img src="//localhost:4000/images/week/10/monocrome/topebottom.png" alt="normal" /> </p>
 
+<p>during the design of the tace I had some problems with avr VCC , so I decided to power my board (also during the its programming) with USB-FTDI. </p>
+
 <p>I design the back board in eagle with rgb led and the reference blue-square which correspond to the hole on the front side board.
 In prevision to import all file in illustrator for design the back board’s step, I designed the square on eagle slightly more large in order to prevent the missing correspondence during the milling.</p>
 
@@ -264,23 +273,63 @@ In prevision to import all file in illustrator for design the back board’s ste
 <p><img src="//localhost:4000/images/week/10/monocrome/board_front.png" alt="mini" /> 
 <img src="//localhost:4000/images/week/10/monocrome/holes.png" alt="mini" /></p>
 
+<p><img src="//localhost:4000/images/week/10/monocrome/offsett+reference.jpg" alt="normal" /> </p>
+
 <p>I imported all file in illustrator for design the distance between the “reference point” and the boarder on holes.png file, needful for mill the back of the board.</p>
 
-<p><img src="//localhost:4000/images/week/10/monocrome/board_back.png" alt="normal" /> </p>
+<p><img src="//localhost:4000/images/week/10/monocrome/appunti.jpg" alt="normal" /> 
+<img src="//localhost:4000/images/week/10/monocrome/ERROR_switch.jpg" alt="mini" />
+<img src="//localhost:4000/images/week/10/monocrome/offset_fabmodules.jpg" alt="mini" /></p>
 
-<p>The back board is mirrored on Y axes, remember it when you mill the board!</p>
+<p>Despite my note, I don’t have add start-offset, set on the front layer, so I wrong the first try of my twofaced board…!</p>
+
+<p><img src="//localhost:4000/images/week/10/monocrome/board_back.png" alt="mini" /> 
+<img src="//localhost:4000/images/week/10/monocrome/reference+back.jpg" alt="mini" /> </p>
+
+<p>Then remenber that back board is mirrored on Y axes and ADD start-offset (adding on the first layer), remember it when you mill the board!</p>
+
+<p>My local instructor suggest me to use a resistor wire to solder the passageways from front to bottom board, very fast and easy!</p>
+
+<p><img src="//localhost:4000/images/week/10/monocrome/solder_switch1.jpg" alt="mini" /> 
+<img src="//localhost:4000/images/week/10/monocrome/solder_switch2.jpg" alt="mini" /> 
+<img src="//localhost:4000/images/week/10/monocrome/solder_switch3.jpg" alt="mini" /> </p>
 
 <hr />
 
-<h1 id="measure-test-">Measure TEST !</h1>
+<h1 id="test-">TEST !</h1>
 
 <hr />
 
-<h2 id="final-result">Final result</h2>
+<p>I download the code of <a href="http://fabacademy.org/archives/2014/students/basile.fiore/classes/10_input_devices.html">tinymidi - fiore basile</a>and I modified the code by using my output and input corresponding pin. </p>
+
+<p>After some test, I lower threshold value: </p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>#define down_threshold 700</td>
+      <td>–&gt; #define down_threshold 500</td>
+    </tr>
+    <tr>
+      <td>#define down_threshold 740</td>
+      <td>–&gt; #define up_threshold 550</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>I studied the tinymidi C code, that was perfect for my future application, but I want make in the future a new variant or simply use a neil python for measure the effective touch sensing.</p>
+
+<h2 id="final-output-result">Final output result</h2>
+
+<p>VIDEO</p>
 
 <hr />
+<p>#Conclusion
+<em>**</em></p>
 
-<h1 id="conclusion">Conclusion</h1>
+<p>I’m really happy in this moment, because for the first time I design a new one board without anybody’s help, I understand now something about eletronics, capacitor, resistor , diode, and also something new about AVR programming!</p>
+
+<p>For lack of time, I wasn’t able to develop an interface that would allow me to see move the twister cube with the variables sent by my joystick via usb-FTDI, definitely want to do it!</p>
 
 <h1 id="file">File</h1>
 
@@ -293,6 +342,7 @@ In prevision to import all file in illustrator for design the back board’s ste
   <li><a href="//localhost:4000/images/week/10/monocrome/holes.png"><i class="fa fa-file-image-o"></i> board_pads</a></li>
   <li><a href="//localhost:4000/images/week/10/monocrome/board_back.png"><i class="fa fa-file-image-o"></i> board_back</a></li>
   <li><a href="//localhost:4000/images/week/10/monocrome/cut_front.png"><i class="fa fa-file-image-o"></i> cutting</a></li>
+  <li><a href="//localhost:4000/images/week/10/monocrome/cut_front.png"><i class="fa fa-floppy-o"></i> cutting</a></li>
 </ul>
 
             </div>
