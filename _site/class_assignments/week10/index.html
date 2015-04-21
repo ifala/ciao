@@ -232,19 +232,19 @@ Description: Awesome dude, awesome life
 <hr />
 
 <p>As described in my <a href="//localhost:4000//finalproject/schedule/">schedule page</a> for my final project I will need an hardware panel control.
-I’m really interested to step response project like <a href="http://fab.cba.mit.edu/classes/MIT/863.10/people/matt.blackshaw/week8.html">touchpad</a> and <a href="http://fab.cba.mit.edu/classes/863.11/people/matthew.keeter/multitouch/index.html">multitouch</a>.
-For my joystick (hardware panel control), I need only 4 button (I want to be sensitive to the touch) and one RGB led.</p>
+I’m really interested into step response projects like <a href="http://fab.cba.mit.edu/classes/MIT/863.10/people/matt.blackshaw/week8.html">touchpad</a> and <a href="http://fab.cba.mit.edu/classes/863.11/people/matthew.keeter/multitouch/index.html">multitouch</a>.
+For my joystick (hardware panel control), I only need 4 button (I want it to be sensitive to touch) and one RGB led.</p>
 
 <ul>
-  <li>2 pads for turn (clockwise and counterclockwise)</li>
-  <li>1 pads for change cube (switch to another cube)</li>
-  <li>1 pads for change the color of the cube </li>
+  <li>2 pads for turning (clockwise and counterclockwise)</li>
+  <li>1 pads for changing cube (switch to another cube)</li>
+  <li>1 pads for changing the color of the cube </li>
   <li>RGB led for visualizing the color cube changing</li>
 </ul>
 
 <p><img src="//localhost:4000/images/week/10/monocrome/sch.png" alt="normal" /></p>
 
-<p>The board have 1M resistor in corrispondence of the step trace, and 3x 100 ohm resistor for RGB led 
+<p>The board has 1M resistor in corrispondence of the step trace, and 3x 100 ohm resistor for RGB led 
 I read the value on datasheet and apply the formula for find the exact color resistor R=(V-Vdrop)/I where:</p>
 
 <p>Example For Red pin (rgb smd led)</p>
@@ -259,10 +259,10 @@ I read the value on datasheet and apply the formula for find the exact color res
 
 <p><img src="//localhost:4000/images/week/10/monocrome/topebottom.png" alt="normal" /> </p>
 
-<p>during the design of the tace I had some problems with avr VCC , so I decided to power my board (also during the its programming) with USB-FTDI. </p>
+<p>during the design of the trace I had some problems with avr VCC , so I decided to power my board (also during the programming) with USB-FTDI. </p>
 
-<p>I design the back board in eagle with rgb led and the reference blue-square which correspond to the hole on the front side board.
-In prevision to import all file in illustrator for design the back board’s step, I designed the square on eagle slightly more large in order to prevent the missing correspondence during the milling.</p>
+<p>For designing the steps on the back of board in eagle with rgb led and the reference blue-square which correspond to the hole on the front side board.
+In prevision to import all files in illustrator for designing the step on the back of the board, I designed the square on eagle slightly larger in order to prevent the missing correspondence during the milling.</p>
 
 <hr />
 
@@ -275,20 +275,20 @@ In prevision to import all file in illustrator for design the back board’s ste
 
 <p><img src="//localhost:4000/images/week/10/monocrome/offsett+reference.jpg" alt="normal" /> </p>
 
-<p>I imported all file in illustrator for design the distance between the “reference point” and the boarder on holes.png file, needful for mill the back of the board.</p>
+<p>I imported all files in illustrator for designing the distance between the “reference point” and the boarder on holes.png file, needful for milling the back of the board.</p>
 
 <p><img src="//localhost:4000/images/week/10/monocrome/appunti.jpg" alt="normal" /> 
 <img src="//localhost:4000/images/week/10/monocrome/ERROR_switch.jpg" alt="mini" />
 <img src="//localhost:4000/images/week/10/monocrome/offset_fabmodules.jpg" alt="mini" /></p>
 
-<p>Despite my note, I don’t have add start-offset, set on the front layer, so I wrong the first try of my twofaced board…!</p>
+<p>Despite my notes, I didn’t add start-offset, set on the front layer, so I mistaken the first try of my twofaced board…!</p>
 
 <p><img src="//localhost:4000/images/week/10/monocrome/board_back.png" alt="mini" /> 
 <img src="//localhost:4000/images/week/10/monocrome/reference+back.jpg" alt="mini" /> </p>
 
 <p>Then remenber that back board is mirrored on Y axes and ADD start-offset (adding on the first layer), remember it when you mill the board!</p>
 
-<p>My local instructor suggest me to use a resistor wire to solder the passageways from front to bottom board, very fast and easy!</p>
+<p>Fiore suggests me to use a resistor wire to solder the passageways from the front to the bottom board, very fast and easy!</p>
 
 <p><img src="//localhost:4000/images/week/10/monocrome/solder_switch1.jpg" alt="mini" /> 
 <img src="//localhost:4000/images/week/10/monocrome/solder_switch2.jpg" alt="mini" /> 
@@ -300,9 +300,9 @@ In prevision to import all file in illustrator for design the back board’s ste
 
 <hr />
 
-<p>I download the code of <a href="http://fabacademy.org/archives/2014/students/basile.fiore/classes/10_input_devices.html">tinymidi - fiore basile</a>and I modified the code by using my output and input corresponding pin. </p>
+<p>I downloaded the code of <a href="http://fabacademy.org/archives/2014/students/basile.fiore/classes/10_input_devices.html">tinymidi - fiore basile</a>and I modified the code by using my output and input corresponding pin. </p>
 
-<p>After some test, I lower threshold value: </p>
+<p>After some tests, the threshold values: </p>
 
 <table>
   <tbody>
@@ -317,7 +317,7 @@ In prevision to import all file in illustrator for design the back board’s ste
   </tbody>
 </table>
 
-<p>I studied the tinymidi C code, that was perfect for my future application, but I want make in the future a new variant or simply use a neil python for measure the effective touch sensing.</p>
+<p>I studied the tinymidi C code, that was perfect for my future application, but I want make a new variant in the future or simply use a neil python for measuring the effective touch sensing.</p>
 
 <h2 id="final-output-result">Final output result</h2>
 
@@ -331,9 +331,9 @@ In prevision to import all file in illustrator for design the back board’s ste
 
 <hr />
 
-<p>I’m really happy in this moment, because for the first time I design a new one board without anybody’s help, I understand now something about eletronics, capacitor, resistor , diode, and also something new about AVR programming!</p>
+<p>I’m really happy at the moment, because for the first time I designed a new one board without anybody’s help, I can understand now something about eletronics, capacitors, resistors , diodes, and also something new about AVR programming!</p>
 
-<p>For lack of time, I wasn’t able to develop an interface that would allow me to see move the twister cube with the variables sent by my joystick via usb-FTDI, definitely want to do it!</p>
+<p>Due to lack of time, I wasn’t able to develop an interface that would allow me to see moving the twister cube with the variables sent by my joystick via usb-FTDI, but definitely want to do it!</p>
 
 <h1 id="file">File</h1>
 
