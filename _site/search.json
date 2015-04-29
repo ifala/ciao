@@ -89,7 +89,7 @@
 		} ,
 	
 		{
-		  "title"      : "servo hack",
+		  "title"      : "movement cube mechanism",
 		  "category"   : "finalproject",
 		  "url"        : "//localhost:4000/finalproject/servo",
 		  "date"       : "2015-02-15 00:00:00 +0100",
@@ -97,7 +97,7 @@
 		} ,
 	
 		{
-		  "title"      : "pin sketch",
+		  "title"      : "electronic board",
 		  "category"   : "finalproject",
 		  "url"        : "//localhost:4000/finalproject/pinsketch",
 		  "date"       : "2015-02-10 00:00:00 +0100",

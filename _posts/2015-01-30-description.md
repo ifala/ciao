@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "project description"
-description: 
+description: finalproject
 headline: 
 modified: 2015-02-19
 category: finalproject

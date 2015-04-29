@@ -76,14 +76,16 @@ In this site you will find everything about my final project and the reports fro
 <a href="{{ site.url }}/finalproject/description/"><span class="tiny button success">description</span></a>
 
 
-
 <h5>Latest Updates:</h5> 
   <ul class="latest_updates">
 
 {% for post in site.posts %}
-      <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished"><strong>{{ post.date | date: "%d %B" }}</strong></time>
-		  <a href="{{ site.url }}{{ post.url }}" class="latest_updates"><span class="6-psecondary radius label">{{ post.description }}</span> - {{ post.title }}</a></li>
+      <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+		  <a href="{{ site.url }}{{ post.url }}" class="latest_updates"><span class="6-psecondary radius label">{{ post.date | date: "%d %b" }} | {{ post.description }}</time></span> - {{ post.title }}</a></li>
 {% endfor %}
   </ul>
+  
 
 </div>
+
+

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "pin sketch"
-description: 
+title: "electronic board"
+description: finalproject
 headline: 
 modified: 2015-02-11
 category: finalproject
 tags: [finalproject]
-imagefeature: 
+imagefeature:
 mathjax: 
 chart: 
 comments: false

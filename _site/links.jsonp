@@ -21,12 +21,12 @@ callback([
   } ,
 
   {
-    "text": "pin sketch",
+    "text": "electronic board",
     "href": "//localhost:4000/finalproject/pinsketch"
   } ,
 
   {
-    "text": "servo hack",
+    "text": "movement cube mechanism",
     "href": "//localhost:4000/finalproject/servo"
   } ,
 

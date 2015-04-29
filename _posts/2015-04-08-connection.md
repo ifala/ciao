@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "connection"
-description: 
+description: finalproject
 headline: 
-modified: 2015-02-22
+modified: 2015-04-08
 category: finalproject
 tags: [finalproject]
 imagefeature: 
