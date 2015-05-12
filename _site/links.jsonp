@@ -83,6 +83,21 @@ callback([
   {
     "text": "output device",
     "href": "//localhost:4000/class_assignments/week11"
+  } ,
+
+  {
+    "text": "Networking and Communitation",
+    "href": "//localhost:4000/class_assignments/week13"
+  } ,
+
+  {
+    "text": "Application and progreamming\"",
+    "href": "//localhost:4000/class_assignments/week14"
+  } ,
+
+  {
+    "text": "Application and progreamming\"",
+    "href": "//localhost:4000/class_assignments/week15"
   } 
 
 ])

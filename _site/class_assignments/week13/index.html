@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+    __  ____  ______________  _______ ___    __ 
+   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
+  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
+ / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
+/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
+                                                     
+====================================================
+Author: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.0
+Description: Awesome dude, awesome life
+====================================================
+-->
+<head>
+<meta charset="utf-8">
+<title>NETWORKING AND COMMUNITATION &vert; GIACOMO FALASCHI</title>
+<meta name="description" content="week 13">
+<meta name="keywords" content="eagle, Networking, esp8266, attiny44, servo, fabacademy, 5v, 3.3v, rgb led">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="//localhost:4000/images/networking_communication.jpg">
+
+<meta name="twitter:title" content="Networking and Communitation">
+<meta name="twitter:description" content="week 13">
+<meta name="twitter:creator" content="@ifala">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Networking and Communitation">
+<meta property="og:description" content="week 13">
+<meta property="og:url" content="//localhost:4000/class_assignments/week13">
+<meta property="og:site_name" content="Giacomo Falaschi">
+<meta property="og:image" content="//localhost:4000/images/networking_communication.jpg">
+
+
+
+
+
+<link rel="canonical" href="//localhost:4000/class_assignments/week13">
+<link href="//localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Giacomo Falaschi Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//localhost:4000/assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/post.css">
+    <link rel="stylesheet" href="//localhost:4000/assets/css/custom.css">
+	
+
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="//localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="//localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="//localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+
+        <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
+            <header class="notepad-post-header">
+                <div class="bg-img"></div>
+                
+                <div class="notepad-post-menu-header">
+
+                    <a class="notepad-blog-logo" href="//localhost:4000">
+                        <img src="//localhost:4000/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li class="active">
+                    <a href="//localhost:4000/">Home</a>
+                 </li>
+
+            <li class="active">
+                    <a href="//localhost:4000/about">aboutME</a>
+                 </li>
+
+            <li class="active">
+                    <a href="//localhost:4000/final_project">final project</a>
+                 </li>
+
+            <li class="active">
+                    <a href="//localhost:4000/classes">classes</a>
+                 </li>
+            
+    </ul>
+
+</div>
+            </div>
+
+            <div class="notepad-post-title bg-check">
+                <h1>Networking and Communitation</h1>
+            </div>
+            <div class="bg-img"></div>
+        </header>
+        <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+        <img src="//localhost:4000/images/networking_communication.jpg" alt="cover-image" />
+
+        <article class="notepad-post-content post">
+            <div><h3 id="weeklyassignments-">Weekly_Assignments :</h3>
+
+<pre><code>-  design and build a wired &amp;/or wireless network connecting at least two processors
+</code></pre>
+
+<h5 id="useful-links">Useful links:</h5>
+
+<ul>
+  <li><a href="http://rancidbacon.com/files/kiwicon8/ESP8266_WiFi_Module_Quick_Start_Guide_v_1.0.4.pdf">ESP8266 Quick Start Guide</a></li>
+  <li><a href="">xxxxxxx</a></li>
+  <li><a href="">xxxxxxx</a></li>
+</ul>
+
+<h5 id="materials---machinea">Materials - Machinea</h5>
+
+<ul>
+  <li>
+    <h6 id="esp8266httpswwwolimexcomproductsiotmod-wifi-esp8266-devopen-source-hardware"><a href="https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware">ESP8266</a></h6>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="what-i-want">What I want</h1>
+
+<h3 id="introduction">introduction</h3>
+
+<hr />
+
+<p>The idea was to create a single component (esp8266 + servo5vRGB3.3) to control my twister cube from a smartphone or computer via WIFI, for the moment I want test only via computer.
+To control the </p>
+
+<h3 id="nodemcu-firmware">NodeMCU firmware</h3>
+
+<ul>
+  <li>download and install python</li>
+  <li>Download and install serialPY</li>
+  <li>download <a href="https://github.com/themadinventor/esptool/blob/master/esptool.py">esptool.py</a></li>
+</ul>
+
+<p>select firmware in this case for ESP01 download nodemcu-firmware-master/pre_build/0.9.4/514k-flash/nodemcu_512k_latest.bin</p>
+
+<p>open terminal and send this command</p>
+
+<p>python esptool.py –port /dev/yournameport(tty.etcetc) write_flash 0x000000 /Users/ifala/Downloads/nodemcu-firmware-master/pre_build/0.9.4/512k-flash/nodemcu_512k_latest.bin </p>
+
+<p>now I have install the default nodemcu firmware inside the ESP01</p>
+
+<p>to programming the esp01 you must write 2 file 
+and upload with ESPlorer (for osx)</p>
+
+<p>v</p>
+
+<h3 id="server">SERVER</h3>
+
+<h3 id="client">CLIENT</h3>
+
+<hr />
+
+<h1 id="programming">Programming!</h1>
+
+<hr />
+
+<p>To test the RGB and the servo CODE by Neil I modified the code originally created for the attiny45 and adapted it for attiny44.</p>
+
+<ul>
+  <li>I re-set the pin direction/number</li>
+</ul>
+
+<h2 id="final-output-result">Final output result</h2>
+
+<p><a href="//localhost:4000/images/week/11/programming/rgb.zip"><i class="fa fa-floppy-o"></i> RGB_attiny44 code</a></p>
+
+<div class="flex-video widescreen vimeo">
+  <iframe src="http://player.vimeo.com/video/126343689" width="400" height="225" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+<p><a href="//localhost:4000/images/week/11/programming/servo.zip"><i class="fa fa-floppy-o"></i> SERVO_attiny44 code</a></p>
+
+<div class="flex-video widescreen vimeo">
+  <iframe src="http://player.vimeo.com/video/126343369" width="400" height="225" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+<hr />
+
+<h1 id="conclusion">Conclusion</h1>
+
+<hr />
+
+<p>Now I really want to try to write the code to control this board directly from the olimex esp8266!
+I tried to find some tutorials to use esp8266. Since I still haven’t found anything special, I would like to write a similar code that gets the commands directly from the FTDI to control servo and RGB. </p>
+
+<p>For sure before the networking week, I would have found or written a code simulating the functioning of my cube, so that I can test it via WIFI (using esp8266).</p>
+
+<h1 id="file">File</h1>
+
+<ul>
+  <li><a href="//localhost:4000/images/week/11/programming/rgb.zip"><i class="fa fa-floppy-o"></i> RGB_attiny44 code</a></li>
+  <li><a href="//localhost:4000/images/week/11/programming/servo.zip"><i class="fa fa-floppy-o"></i> SERVO_attiny44 code</a></li>
+  <li><a href="//localhost:4000/images/week/11/board/board.png"><i class="fa fa-file-image-o"></i> board.png</a></li>
+  <li><a href="//localhost:4000/images/week/11/board/board_cut.png"><i class="fa fa-file-image-o"></i> board_cut.png</a></li>
+  <li><a href="//localhost:4000/images/week/11/eagle/servo5RGB3.zip"><i class="fa fa-floppy-o"></i> eagle schematic and board servo5RGB3.zip </a></li>
+</ul>
+
+
+            </div>
+        </article>
+        <div class="cf"></div>
+        <div class="row text-center">
+            <section class="notepad-post-share">
+                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Networking and Communitation&quot;%20//localhost:4000/class_assignments/week13%20via%20&#64;ifala"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=//localhost:4000/class_assignments/week13"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="google-icon" href="https://plus.google.com/share?url=//localhost:4000/class_assignments/week13"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </section>
+        </div>
+        <div class="cf"></div>
+        
+
+
+    <footer class="notepad-site-footer">
+    <div class="copyright">
+         <section>This work is licensed under a <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</section><br /><section> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></section>
+    </div>
+    <div class="social-icons">
+        
+        
+        <a href="http://twitter.com/ifala">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        <a href="http://instagram.com/jake_falaschi">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-instagram fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="http://github.com/ifala">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="http://facebook.com/falaschi">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer> 
+</main>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="//localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="//localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="//localhost:4000/assets/js/foundation.min.js"></script>
+    <script src="//localhost:4000/assets/js/vendor/background-check.js"></script>
+    <script src="//localhost:4000/assets/js/vendor/post-header-animations.js"></script>
+    <script src="//localhost:4000/assets/js/notepad.js"></script>
+    <script src="//localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="//localhost:4000/assets/js/vendor/nprogress.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+    <script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43076649-2', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script> 
+</body>
+</html>
