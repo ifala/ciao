@@ -1,27 +1,27 @@
 [
 	
 		{
-		  "title"      : "Application and progreamming&quot;",
-		  "category"   : "Class_assignments",
-		  "url"        : "//localhost:4000/class_assignments/week15",
-		  "date"       : "2015-05-12 00:00:00 +0200",
-		  "shortdate"  : "May 12, 2015"
-		} ,
-	
-		{
-		  "title"      : "Application and progreamming&quot;",
+		  "title"      : "Application and programming&quot;",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week14",
-		  "date"       : "2015-05-09 00:00:00 +0200",
-		  "shortdate"  : "May 09, 2015"
+		  "date"       : "2015-05-10 00:00:00 +0200",
+		  "shortdate"  : "May 10, 2015"
 		} ,
 	
 		{
-		  "title"      : "Networking and Communitation",
+		  "title"      : "Networking and Communication",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week13",
 		  "date"       : "2015-05-05 00:00:00 +0200",
 		  "shortdate"  : "May 05, 2015"
+		} ,
+	
+		{
+		  "title"      : "Composite Material",
+		  "category"   : "Class_assignments",
+		  "url"        : "//localhost:4000/class_assignments/week12",
+		  "date"       : "2015-04-29 00:00:00 +0200",
+		  "shortdate"  : "April 29, 2015"
 		} ,
 	
 		{
