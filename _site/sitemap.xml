@@ -53,7 +53,15 @@
         <loc>//localhost:4000/page4/index.html</loc>
     </url>
     
+    <url>
+        <loc>//localhost:4000/page5/index.html</loc>
+    </url>
+    
 
+    
+    <url>
+        <loc>//localhost:4000/class_assignments/week15</loc>
+    </url>
     
     <url>
         <loc>//localhost:4000/class_assignments/week14</loc>
