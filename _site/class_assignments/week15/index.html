@@ -150,47 +150,87 @@ You can control via smartphone, PC, tablet simply connect to his wifi network.</
 
 <h4 id="whos-done-what-beforehand">Who’s done what beforehand?</h4>
 
+<p><a href="http://rero.com.my">RERO - Cube Servo - Modular type robotic servo</a></p>
+
+<p><img src="//localhost:4000/images/week/15/cube_servo.jpg" alt="normal" />
+<img src="//localhost:4000/images/week/15/cube_servo2.jpg" alt="normal" /></p>
+
+<p><a href="http://www.bartneck.de/publications/2009/supportPrototypingInteractiveSocialRobots/index.html">Developing Novel Extensions to Support Prototyping for Interactive Social Robots</a></p>
+
+<p><img src="//localhost:4000/images/week/15/figure03_thumb.jpg" alt="normal" /></p>
+
+<p><a href="http://www.holgermatthes.de/bricks/en/powerfunctions.php">Power function lego tecnics</a></p>
+
+<p><img src="//localhost:4000/images/week/15/8882-1.jpg" alt="normal" />
+<img src="//localhost:4000/images/week/15/pf-family.jpg" alt="normal" /></p>
+
+<p><a href="http://brickset.com/sets/870-1/Technical-Motor-4-5-V">LEGO 1977 Technical Motor 4.5 v </a></p>
+
+<p><img src="//localhost:4000/images/week/15/lego_1970.jpg" alt="normal" /></p>
+
+<p>LEGO 1960 Technical Motor </p>
+
+<p><img src="//localhost:4000/images/week/15/1960s_lego_battery_box_and_light_brick_1.jpg" alt="normal" /></p>
+
 <h4 id="what-materials-and-components-will-be-required">What materials and components will be required?</h4>
 
-<p>PLA Rolls blue, green, yellow and red
-white acrilic
-one micro-servo motors
-one ESP8266 rev A
-one RGB3.3-Servo5 pcb built in Output device week.
-one RGB led common catode
-one battery 9v</p>
+<ul>
+  <li>PLA Rolls blue, green, yellow and red</li>
+  <li>white acrilic</li>
+  <li>one micro-servo motors</li>
+  <li>one ESP8266 rev A</li>
+  <li>one RGB3.3-Servo5 pcb built in Output device week.</li>
+  <li>one RGB led common catode</li>
+  <li>one battery 9v</li>
+</ul>
 
 <h4 id="where-will-they-come-from">Where will they come from?</h4>
 
+<p>All electronics for RGB3.3-Servo5 pcb came from the fablab inventory (except <a href="http://www.ti.com/lit/ds/symlink/lm3940.pdf">LM3940 1-A</a> )
+I find a very good Pla rolls by <a href="http://colorfabb.com/pla-pha">ColorFabb</a><br />
+acrilic sheet and battery buyed from local store
+ESP 8266 rev A by <a href="https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware">Olimex</a></p>
+
 <h4 id="how-much-will-it-cost">How much will it cost?</h4>
 
-<p>Printed parts ~4 Euros
-Servo motors HXT900 9g- 2.37 Euros
-white acrilic A4 format (sufficent for 2 cube)- 6 euros
-ESP8266 rev A - 5.50 Euros
-RGB3.3-Servo5 pcb componets - 5 Euros
-RGB led common catode - 0.20 euros
-Vinyl stikers - 3 euros</p>
+<ul>
+  <li>Printed parts ~3 Euros</li>
+  <li>Servo motors HXT900 9g- 2.37 Euros</li>
+  <li>white acrilic A4 format (sufficent for 2 cube)- 6 euros</li>
+  <li>ESP8266 rev A - 5.50 Euros</li>
+  <li>RGB3.3-Servo5 pcb componets - 4 Euros</li>
+  <li>RGB led common catode - 0.20 euros</li>
+  <li>Vinyl stikers - 2 euros</li>
+</ul>
+
+<p>Total 23,07 euros</p>
 
 <h4 id="what-parts-and-systems-will-be-made">What parts and systems will be made?</h4>
 
 <p>Physical parts:</p>
 
-<p>Lasercut acrilyc case - Solidworks + Autocad (offset kerf)
-3d Printed - Solidworks 
-	   - cube angle
-	   - mechanism for cube rotation 
-	   - Lego faces (can be also molded)</p>
+<p>Lasercut acrilyc case - Solidworks + Autocad (offset kerf)</p>
 
-<p>Laser cut acrilic external case 
-Stickers for the enclosure
-RGB3.3-Servo5 pcb</p>
+<p>3d Printed</p>
+
+<ul>
+  <li>Solidworks </li>
+  <li>cube angle</li>
+  <li>mechanism for cube rotation </li>
+  <li>Lego faces
+  (It can be also molded)</li>
+  <li>Laser cut acrilic external case </li>
+  <li>Stickers for the enclosure</li>
+  <li>RGB3.3-Servo5 pcb</li>
+</ul>
 
 <p>Software:</p>
 
-<p>Web app interface integrated inside the memory of eaech ESP8266 - javascript
-LuaMcu firmware, with servo + RGB library call + Client SERVER switch.
-Wifi trasmission.</p>
+<ul>
+  <li>Web app interface integrated inside the memory of eaech ESP8266 - javascript</li>
+  <li>LuaMcu firmware, with servo + RGB library call + Client SERVER switch.</li>
+  <li>Wifi trasmission.</li>
+</ul>
 
 <h4 id="what-processes-will-be-used">What processes will be used?</h4>
 
@@ -206,13 +246,26 @@ Wifi trasmission.</p>
 
 <h4 id="what-tasks-need-to-be-completed">What tasks need to be completed?</h4>
 
+<p>1 - improve the visual quality fo the web app</p>
+
+<p>2 - Test the rotation movment</p>
+
+<p>3 - Test the server-client connection between cubes</p>
+
+<p>4 - Build at least 4 twister cube for perform Demostration</p>
+
 <h4 id="what-is-the-schedule">What is the schedule?</h4>
-<p>May 20-22	  Modify Servo+RGB pcb for integrate 9v battery and switch button
-May 22-26	  Complete the App and add some beauty icons on web interface
-May 26-30	  To build 4 or 6 twister cube for create a demo test
-May 31-June 10	  </p>
+
+<p>May 20-22	  Modify Servo+RGB pcb for integrate 9v battery and switch button</p>
+
+<p>May 22-26	  Complete the App and add some beauty icons on web interface</p>
+
+<p>May 26-30	  To build 4 or 6 twister cube for create a demo test</p>
+
+<p>May 31-June 10	  </p>
 
 <h4 id="how-will-it-be-evaluated">How will it be evaluated?</h4>
+
 <p>The evaluation will be carried by making a demo test to demostrate the easy connection with server and client connection, set the color of each cube for undestand the movment and build some things with cubes and perform a demo test. A further tests will be showing during the fab11 for the amusing children and adults alike.</p>
 
 
