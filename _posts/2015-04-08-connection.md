@@ -12,6 +12,55 @@ chart:
 comments: false
 featured: true
 ---
+	2015-05-05
+I tested some connection between server and client but I have some problem, in order:
+- SERVER SIDE: After changing the init.lua now the http server can start normally in the start boot, the server side accept the APP twister command.
+- CLIENT SIDE: I tryed to change init.lua code for start a wifi.STATION (wifiConfig.mode = 1), after the boot client don't like connecting at server:
+
+log output:
+
+	NodeMCU 0.9.6 build 20150406  powered by Lua 5.1.4
+	set (mode=1)
+	MAC: 	18-FE-34-9C-5C-C4
+	chip: 	10247364
+	heap: 	16224
+
+	Communication with MCU...
+	...Got answer! AutoDetect firmware...
+
+	Can't autodetect firmware, because proper answer not received.
+
+	> 
+	> 
+	> 
+	> Connecting to WiFi Access Point ...
+	Connecting to WiFi Access Point ...
+	Connecting to WiFi Access Point ...
+	Connecting to WiFi Access Point ...
+	Connecting to WiFi Access Point ...
+	Faild to connect to WiFi Access Point.
+	print(ip)
+	nil
+
+only after send command via ftdi take an ip address:
+
+	> ip = wifi.sta.getip()
+	> print(ip)
+	192.168.4.2
+	
+
+start manually http server:
+
+	> dofile("httpserver.lc")(80)
+	nodemcu-httpserver running at http://192.168.4.2:80
+	
+
+
+But If I try to connect direcly via web browser.. the client not respond!
+
+
+
+
 	2015-04-08
 	
 After discuss with my instructor, 
