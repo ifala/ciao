@@ -12,7 +12,9 @@ chart:
 comments: false
 featured: true
 ---
+
 	2015-05-05
+
 I tested some connection between server and client but I have some problem, in order:
 - SERVER SIDE: After changing the init.lua now the http server can start normally in the start boot, the server side accept the APP twister command.
 - CLIENT SIDE: I tryed to change init.lua code for start a wifi.STATION (wifiConfig.mode = 1), after the boot client don't like connecting at server:
