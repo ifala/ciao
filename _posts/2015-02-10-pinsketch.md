@@ -12,6 +12,16 @@ chart:
 comments: false
 featured: true
 ---
+
+	2015-05-10
+
+LM3940 1-A ! I wrong the linear voltage regulator in RGB 3.3v Servo 5v board !
+After discover that ESP 01 was insufficent to do what I want...I need to redisign my breakout board for integrate the ESP8266 rev A by Olimex, add a Button (maybe direct from Gpio pin of the WiFi board)
+
+
+
+
+
 ![6]({{ site.url }}/images/finalproject/pin/6.jpg)
 
 Schematic plan:
