@@ -15,11 +15,17 @@ featured: true
 
 	2015-05-10
 
-LM3940 1-A ! I wrong the linear voltage regulator in RGB 3.3v Servo 5v board !
+LM3480 is to be replaced by LM3940 1-A  ! I wrong the linear voltage regulator in RGB 3.3v Servo 5v board !
 After discover that ESP 01 was insufficent to do what I want...I need to redisign my breakout board for integrate the ESP8266 rev A by Olimex, add a Button (maybe direct from Gpio pin of the WiFi board)
 
 
+	2015-04-21
 
+output device: I created a similar breakout pcb board, to interface ESP with ATTYNY44.
+- I had to undestand better the battery features and the mini servo for insert a proper voltage regulator (by now I used a LM3480).
+
+
+	2015-02-11
 
 
 ![6]({{ site.url }}/images/finalproject/pin/6.jpg)
