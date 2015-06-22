@@ -19,7 +19,7 @@ Description: Awesome dude, awesome life
 <meta charset="utf-8">
 <title>NETWORKING AND COMMUNICATION &vert; GIACOMO FALASCHI</title>
 <meta name="description" content="week 13">
-<meta name="keywords" content="eagle, Networking, esp8266, attiny44, servo, fabacademy, 5v, 3.3v, rgb led">
+<meta name="keywords" content="eagle, Networking, attiny44, servo, fabacademy, attiny45, NODE-44">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
@@ -141,54 +141,77 @@ Description: Awesome dude, awesome life
 <h5 id="useful-links">Useful links:</h5>
 
 <ul>
-  <li><a href="http://rancidbacon.com/files/kiwicon8/ESP8266_WiFi_Module_Quick_Start_Guide_v_1.0.4.pdf">ESP8266 Quick Start Guide</a></li>
-  <li><a href="">xxxxxxx</a></li>
-  <li><a href="">xxxxxxx</a></li>
+  <li><a href="http://academy.cba.mit.edu/content/tutorials/akf/networking_serial_bus.html">Networking - Hello Serial Bus - AS220</a></li>
+  <li><a href="//localhost:4000/finalproject/connection/">my experience on ESP8266 Config </a></li>
 </ul>
 
-<h5 id="materials---machinea">Materials - Machinea</h5>
+<h5 id="what-i-have-used">What I have used:</h5>
 
 <ul>
   <li>
-    <h6 id="esp8266httpswwwolimexcomproductsiotmod-wifi-esp8266-devopen-source-hardware"><a href="https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware">ESP8266</a></h6>
+    <h6 id="eletronics-design--eagle-freewarehttpwwwcadsoftusacomdownload-eagle">Eletronics Design : <a href="http://www.cadsoftusa.com/download-eagle/">Eagle Freeware</a></h6>
+  </li>
+  <li>
+    <h6 id="roland-mdx-20httpwwwrolanddgcomproduct3d3dmdx-2015mdx-2015html"><a href="http://www.rolanddg.com/product/3d/3d/mdx-20_15/mdx-20_15.html">Roland MDX-20</a></h6>
+  </li>
+  <li>
+    <h6 id="soldering-station">Soldering Station</h6>
+  </li>
+  <li>
+    <h6 id="hellobus45bridgecad-boardhttpacademycbamiteduclassesnetworkingcommunicationsbushellobus45bridgepng-traceshttpacademycbamiteduclassesnetworkingcommunicationsbushellobus45nodetracespng-interiorhttpacademycbamiteduclassesnetworkingcommunicationsbushellobus45nodeinteriorpng">hello.bus.45.bridge.cad <a href="http://academy.cba.mit.edu/classes/networking_communications/bus/hello.bus.45.bridge.png">board</a> <a href="http://academy.cba.mit.edu/classes/networking_communications/bus/hello.bus.45.node.traces.png">traces</a> <a href="http://academy.cba.mit.edu/classes/networking_communications/bus/hello.bus.45.node.interior.png">interior</a></h6>
   </li>
 </ul>
 
 <hr />
 
-<h1 id="what-i-want">What I want</h1>
-
 <h3 id="introduction">introduction</h3>
 
 <hr />
 
-<p>The idea was to create a single component (esp8266 + servo5vRGB3.3) to control my twister cube from a smartphone or computer via WIFI, for the moment I want test only via computer.
-To control the </p>
+<p>First of all, as suggested by many of the previous students of FabAcademy, I started by reading the tutorial from the guys from Providence: <a href="http://academy.cba.mit.edu/content/tutorials/akf/networking_serial_bus.html">Networking - Hello Serial Bus - AS220</a> 
+Then I downloaded the files needed to mill the bridge and node boards.
+It has been a lucky guess to check all the components I had before starting to mill the pcbs (all with attiny 45), since I only found one attiny 45 and many attiny 44. 
+So I decided to create a node with attiny 44 e to reuse the original bridge with attiny 45 (whith any changes from the original). </p>
 
-<h3 id="nodemcu-firmware">NodeMCU firmware</h3>
+<hr />
 
-<ul>
-  <li>download and install python</li>
-  <li>Download and install serialPY</li>
-  <li>download <a href="https://github.com/themadinventor/esptool/blob/master/esptool.py">esptool.py</a></li>
-</ul>
+<h3 id="node-44-node-creation-with-attiny44">NODE-44 (node creation with attiny44)</h3>
 
-<p>In this cas, select firmware for ESP01 and download nodemcu-firmware-master/pre_build/0.9.4/514k-flash/nodemcu_512k_latest.bin</p>
+<hr />
 
-<p>open terminal and send this command</p>
+<p>I brought the components on Eagle and I started to dedign the new board. The attiny 44 has much more available pins than the 45, so the idea is to build a board that can make the empty pins available, so that they can be connected to another board with sensors or other outputs through the available pins.</p>
 
-<p>python esptool.py –port /dev/yournameport(tty.etcetc) write_flash 0x000000 /Users/ifala/Downloads/nodemcu-firmware-master/pre_build/0.9.4/512k-flash/nodemcu_512k_latest.bin </p>
+<p><img src="//localhost:4000/images/week/13/node-44.png" alt="Node 44" /></p>
 
-<p>now I have install the default nodemcu firmware inside the ESP01</p>
+<p>As you can see from the image, the green pins are used to connect the node 44 to anoother board, where they will host i.e. some sensors.
+It would be interesting to create a little protocol to read the value of the sensors, just directly calling the corresponding node.</p>
 
-<p>to programming the esp01 you must write 2 files 
-and upload with ESPlorer (for osx)</p>
+<p>For creating the files .png I used the usual workflow, by now working and proved.</p>
 
-<p>v</p>
+<p>eagle 
+for circuit design —&gt; export monocrome 1000 pixel
+- drill.png file, only the hole layer
+- trace.png file, circuit+hole layer
+- cut.png file, only the contour layer (bottom layer in this case)</p>
 
-<h3 id="server">SERVER</h3>
+<p>photoshop 
+to import aeverything in one single file, in the same position and export again the single file.</p>
 
-<h3 id="client">CLIENT</h3>
+<p>FabModules
+1/64 for trace.png
+1/32 for drill.png and cut.png</p>
+
+<p><img src="//localhost:4000/images/week/13/trace1.png" alt="normal" /></p>
+
+<p style="color:gray; font-size: 80%; text-align: center; margin-top: -30px;">trace1.png</p>
+
+<p><img src="//localhost:4000/images/week/13/drill.png" alt="normal" /></p>
+
+<p style="color:gray; font-size: 80%; text-align: center;">drill.png</p>
+
+<p><img src="//localhost:4000/images/week/13/cut.png" alt="normal" /></p>
+
+<p style="color:gray; font-size: 80%; text-align: center; margin-top: -30px;">cut.png</p>
 
 <hr />
 
@@ -196,19 +219,64 @@ and upload with ESPlorer (for osx)</p>
 
 <hr />
 
-<p>To test the RGB and the servo CODE by Neil I modified the code originally created for the attiny45 and adapted it for attiny44.</p>
+<h3 id="bridge-attiny45">Bridge attiny45</h3>
 
-<ul>
-  <li>I re-set the pin direction/number</li>
-</ul>
+<p>I only modified the code string regarding the name of the node on the hello.bus.45.c code:</p>
+
+<pre><code>#define node_id '0'
+</code></pre>
+
+<p>and I have than uploaded everything via fab isp and my Make (modified in order to upload on the attiny 45). </p>
+
+<h3 id="node-44">NODE-44</h3>
+
+<p>By changing the MCU I had to make more changes, but nothing too hard: I surprised myself indeed, by uploading everything at the first try, without making any mistakes with the code and the readdress of the pins.</p>
+
+<p>I analyzed the code and modified the input, output and led pins.
+Of course, inserting node 1. </p>
+
+<pre><code>#define led_port PORTA
+#define led_direction DDRA
+#define led_pin (1 &lt;&lt; PA6)
+
+#define serial_port PORTB
+#define serial_direction DDRB
+#define serial_pins PINB
+#define serial_pin_in (1 &lt;&lt; PB0)
+#define serial_pin_out (1 &lt;&lt; PB1)
+
+#define node_id '1'
+</code></pre>
 
 <h2 id="final-output-result">Final output result</h2>
+
+<div class="flex-video widescreen vimeo">
+  <iframe src="http://player.vimeo.com/video/130766008" width="400" height="225" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
 
 <hr />
 
 <h1 id="conclusion">Conclusion</h1>
 
 <hr />
+
+<p>In this class I learnt the importance of the small microcontrollers such as the attiny 44 and attiny 45. I feel very lucky, since I got to see the network work right away, even though I had to create a board with another MCU! Actually, I am satisfied about this assignment, but not completely since I would have liked to create a shield too with some sensors for node 44, that could than be questioned (perhaps creating a specific protocol!) 
+It is definetely something I will do, because creating a network like this has very small costs and make the whole project extremely scalable and modular.
+I already have in mind many projects that can feature a system like this…that’s great!</p>
+
+<ul>
+  <li>in addition for my <a href="//localhost:4000/final_project/">final project</a> I have created a easy protocol for control servo motor and RGB led by using ESP8266</li>
+</ul>
+
+<h1 id="source-file">Source File</h1>
+
+<ul>
+  <li><a href="//localhost:4000/images/week/13/node44shield.psd"><i class="fa fa-file-image-o"></i> node44shield.psd</a></li>
+  <li><a href="//localhost:4000/images/week/13/file/rgb.zip"><i class="fa fa-floppy-o"></i> Node-44 #C code</a></li>
+  <li><a href="//localhost:4000/images/week/13/trace1.png"><i class="fa fa-file-image-o"></i> NODE-44_trace1.png</a></li>
+  <li><a href="//localhost:4000/images/week/13/drill.png"><i class="fa fa-file-image-o"></i> NODE-44_drill.png</a></li>
+  <li><a href="//localhost:4000/images/week/13/cut.png"><i class="fa fa-file-image-o"></i> NODE-44_cut.png</a></li>
+</ul>
 
 
             </div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "connection"
+title: "Programming"
 description: finalproject
 headline: 
 modified: 2015-04-08
@@ -13,9 +13,33 @@ comments: false
 featured: true
 ---
 
+	2015-05-08
+
+The idea was to create a single component (esp8266 + servo5vRGB3.3) to control my twister cube from a smartphone or computer via WIFI, for the moment I want test only via computer.
+To control the 
+
+### NodeMCU firmware
+
+- download and install python
+- Download and install serialPY
+- download [esptool.py](https://github.com/themadinventor/esptool/blob/master/esptool.py)
+
+In this cas, select firmware for ESP01 and download nodemcu-firmware-master/pre_build/0.9.4/514k-flash/nodemcu_512k_latest.bin
+
+open terminal and send this command
+
+python esptool.py --port /dev/yournameport(tty.etcetc) write_flash 0x000000 /Users/ifala/Downloads/nodemcu-firmware-master/pre_build/0.9.4/512k-flash/nodemcu_512k_latest.bin 
+
+now I have install the default nodemcu firmware inside the ESP01
+
+to programming the esp01 you must write 2 files 
+and upload with ESPlorer (for osx)
+
+updating soon
+
 	2015-05-05
 
-![IMG 20150519 221044]({{ site.url }}/images/images/finalproject/connection/IMG_20150519_221044.jpg)
+![IMG 20150519 221044]({{ site.url }}/images/finalproject/connection/IMG_20150519_221044.jpg)
 
 I tested some connection between server and client but I have some problem, in order:
 - SERVER SIDE: After changing the init.lua now the http server can start normally in the start boot, the server side accept the APP twister command.

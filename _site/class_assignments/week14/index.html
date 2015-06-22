@@ -17,7 +17,7 @@ Description: Awesome dude, awesome life
 -->
 <head>
 <meta charset="utf-8">
-<title>APPLICATION AND PROGRAMMING &vert; GIACOMO FALASCHI</title>
+<title>INTERFACE AND APPLICATION PROGRAMMING &vert; GIACOMO FALASCHI</title>
 <meta name="description" content="week 14">
 <meta name="keywords" content="Programming, js, java script, Application, esp8266, attiny44, servo, fabacademy, 5v, 3.3v, rgb led">
 
@@ -25,14 +25,14 @@ Description: Awesome dude, awesome life
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="//localhost:4000/images/application_programming.jpg">
 
-<meta name="twitter:title" content="Application and programming">
+<meta name="twitter:title" content="Interface and application programming">
 <meta name="twitter:description" content="week 14">
 <meta name="twitter:creator" content="@ifala">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Application and programming">
+<meta property="og:title" content="Interface and application programming">
 <meta property="og:description" content="week 14">
 <meta property="og:url" content="//localhost:4000/class_assignments/week14">
 <meta property="og:site_name" content="Giacomo Falaschi">
@@ -125,7 +125,7 @@ Description: Awesome dude, awesome life
             </div>
 
             <div class="notepad-post-title bg-check">
-                <h1>Application and programming</h1>
+                <h1>Interface and application programming</h1>
             </div>
             <div class="bg-img"></div>
         </header>
@@ -141,7 +141,6 @@ Description: Awesome dude, awesome life
 <h5 id="useful-links">Useful links:</h5>
 
 <ul>
-  <li><a href="http://rancidbacon.com/files/kiwicon8/ESP8266_WiFi_Module_Quick_Start_Guide_v_1.0.4.pdf">ESP8266 WiFi Module Quick Start Guide</a></li>
   <li><a href="http://www.lua.org">http://www.lua.org</a></li>
   <li><a href="https://github.com/nodemcu/nodemcu-firmware">NodeMCU firmware</a></li>
   <li><a href="https://github.com/marcoskirsch/nodemcu-httpserver">NodeMCU http server</a></li>
@@ -152,6 +151,15 @@ Description: Awesome dude, awesome life
 <ul>
   <li>
     <h6 id="esp8266httpswwwolimexcomproductsiotmod-wifi-esp8266-devopen-source-hardware"><a href="https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware">ESP8266</a></h6>
+  </li>
+  <li>
+    <h6 id="servorgb-boardlocalhost4000classassignmentsweek11"><a href="//localhost:4000/class_assignments/week11/">servo+RGB board</a></h6>
+  </li>
+  <li>
+    <h6 id="micro-servo">micro servo</h6>
+  </li>
+  <li>
+    <h6 id="rgb-led">RGB LED</h6>
   </li>
 </ul>
 
@@ -201,8 +209,45 @@ PORT CLOSED
 <p><img src="//localhost:4000/images/week/14/3.png" alt="mini" /></p>
 
 <p>In the second attempt I used ESP8266 revA by olimex - 
-This time, the mcu is way more powerful, since it has a 2mb capacity and I can upload all, without errors.
-A problem is that it is unable to auto-config the SAP (software access point) when starting
+This time, the mcu is way more powerful, since it has a 2mb capacity and I can upload all, without errors.</p>
+
+<p>In github I have find a good <a href="https://github.com/marcoskirsch/nodemcu-httpserver">code by marcoskirsch</a> for start to undestand better the lua setting of esp8266, and I start to work above this</p>
+
+<pre><code>
+	local wifiConfig = {}
+
+	-- wifi.STATION         -- station: join a WiFi network
+	-- wifi.AP              -- access point: create a WiFi network
+	-- wifi.STATIONAP  -- both station and access point
+	wifiConfig.mode = wifi.STATIONAP  -- both station and access point
+
+	wifiConfig.accessPointConfig = {}
+	wifiConfig.accessPointConfig.ssid = "xxxxx"   -- Name of the SSID you want to create
+	wifiConfig.accessPointConfig.pwd = "xxxxxx"    -- WiFi password - at least 8 characters
+
+	wifiConfig.stationPointConfig = {}
+	wifiConfig.stationPointConfig.ssid = "YYYYYYY"    -- Name of the WiFi network you want to join
+	wifiConfig.stationPointConfig.pwd =  "YYYYYYY"            -- Password for the WiFi network
+
+	-- Tell the chip to connect to the access point
+
+	wifi.setmode(wifiConfig.mode)
+	print('set (mode='..wifi.getmode()..')')
+	print('MAC: ',wifi.sta.getmac())
+	print('chip: ',node.chipid())
+	print('heap: ',node.heap())
+
+	wifi.ap.config(wifiConfig.accessPointConfig)
+	wifi.sta.config(wifiConfig.stationPointConfig.ssid, wifiConfig.stationPointConfig.pwd)
+	wifiConfig = nil
+	collectgarbage()
+
+	-- End WiFi configuration
+</code></pre>
+
+<p>I set the config mode to wifi.STATIONAP, with this configuration your ESP connect to your wifi-network and create his own SSID , so you can connect direct or over your existing network.</p>
+
+<p>A problem is that I’m unable to start http-server over the STATIONAP (it is called also SAP = software access point)
 but if I give manually (via FTDI) the command:</p>
 
 <pre><code>
@@ -210,145 +255,42 @@ but if I give manually (via FTDI) the command:</p>
 
 </code></pre>
 
-<p>the server starts normally, so I decided to use Attiny44 to give this command (via RX pin of ESP) with a delay after the power on.</p>
+<p>the server starts normally, so I decided to modify the code to give this command after a delay from the power on.</p>
 
 <pre><code>
-&gt; c_ÇÏRSöfJSúfJSúâîá
-
-NodeMCU 0.9.6 build 20150406  powered by Lua 5.1.4
-set (mode=3)
-MAC: .18-FE-34-9C-5C-BA
-chip: .10247354
-heap: .13808
-&gt; 
-&gt; 
-&gt; IP: .nil
-	dofile("httpserver.lc")(80)
-	nodemcu-httpserver running at http://192.168.4.1:80
-	&gt; Requested URI: /
-	Requested URI: /cubetto.lua?id=led&amp;param=255,0,0
-	Received command!.led
-	Params.255,0,0
-	Blinking led
-	1255,0,0Requested URI: /cubetto.lua?id=servo&amp;param=0
-	Received command!.servo
-	Params.0
-Moving servo
-00Requested URI: /cubetto.lua?id=servo&amp;param=180
-Received command!.servo
-Params.180
-Moving servo
-0180
+-- tmr.alarm(0, 10000, 1, function()
+-- 	local ip = wifi.sta.getip()
+-- 	dofile("httpserver.lua")(80)
+-- end)
 
 </code></pre>
+
+<p>OK ! the server HTTP is UP ! on internet via my router and local connect direct by is own network!
+great succes!</p>
 
 <p><img src="//localhost:4000/images/week/14/4.png" alt="normal" /></p>
 
 <h3 id="app-js">APP JS</h3>
 
-<p>I start with a sample html file and I give some commands using jquery.min.js
+<p>Now I must write some code in javascript and HTML, to put inside a index.html page, served by ESP8266.
+In this page I can command servo motor and led rbg, using button.</p>
+
+<p>I start to write the code using jquery.min.js
 but…</p>
 
 <p>The library is too slow to have a response on http server over the ESP8266!
-So my instructor (Fiore) suggested me to remove the jquery.min.js library, because it is much bigger than what I need for my opertions. Basically, it is unuseful for me. I removed the call to the jquery file from index, and replaced it including the javascript code directly in the page.	</p>
+So my instructor (Fiore Basile) suggested me to remove the jquery.min.js library, because it is much bigger than what I need for my opertions. Basically, it is unuseful for me. I removed the call to the jquery file from index, and replaced it including the javascript code directly in the page.	</p>
 
 <pre><code>
 	&lt;script src="jquery.min.js"&gt;&lt;/script&gt;
 	&lt;script type="text/javascript"&gt;
-	
-		
-		$(document).ready(function(){
-			
-			var command = function (commandID, param) {
-			
-			$.get("http://192.168.4.1:80/command?id=" + commandID + "&amp;param=" + param, function (){
-				
-				console.log ("comando eseguito");
-				
-			}
-			
-				
-			)};
-			
-			
-			
 			$(".rgb_red").click(function(){
 				command("led", "255,0,0");
-			
-			});
-				
-			$(".rgb_blue").click(function(){
-				command("led", "0,0,255");
-			});
-			$(".rgb_green").click(function(){
-				command("led", "0,255,0");
-			});
-			
-			$(".servo_right").click(function(){
-				command("servo", "180");
-			});
-			$(".servo_left").click(function(){
-				command("servo", "0");
-			
-			});
-		});
-	&lt;/script&gt;
-
 </code></pre>
 
 <p>and I replaced it with :</p>
 
 <pre><code>
-		&lt;script type="text/javascript"&gt;
-	
-	
-		var command = function(commandID, param) {
-			var url = '/cubetto.lua?id=' + commandID + '&amp;param=' + param;
-			console.log(url);
-		        xmlHttp = new XMLHttpRequest();
-		        xmlHttp.onreadystatechange = processRequest;
-		        xmlHttp.open("GET", url, true);
-		        xmlHttp.send( null );
-		}
-
-		     function processRequest()
-		     {
-		        if(xmlHttp.readyState == 0)
-		        {
-		           document.getElementById("label").innerHTML = 'Initalizing...';
-		           document.getElementById("label").className = "initalizing";
-		        }
-		        else if(xmlHttp.readyState == 1)
-		        {
-		           document.getElementById("label").innerHTML = 'Server connection established.';
-		           document.getElementById("label").className = "connection";
-		        }
-		        else if(xmlHttp.readyState == 2)
-		        {
-		           document.getElementById("label").innerHTML = 'Request received.';
-		           document.getElementById("label").className = "received";
-		        }
-		        else if(xmlHttp.readyState == 3)
-		        {
-		           document.getElementById("label").innerHTML = 'Processing request.';
-		           document.getElementById("label").className = "processing";
-		        }
-		        else if(xmlHttp.readyState == 4)
-		        {
-		           if(xmlHttp.status == 200)
-		           {
-		              document.getElementById("label").innerHTML = xmlHttp.responseText;
-		              document.getElementById("label").className = "ok";
-		              sleep(300);
-		              document.getElementById("label").className = "start";
-		           }
-		           else if(xmlHttp.status == 400)
-		           {
-		              document.getElementById("label").innerHTML = 'Bad request.';
-		              document.getElementById("label").className = "bad";
-		           }
-		        }
-		     }
 		     function sleep(milliseconds){
 		        var start = new Date().getTime();
 		        for (var i = 0; i &lt; 1e7; i++)
@@ -364,45 +306,163 @@ So my instructor (Fiore) suggested me to remove the jquery.min.js library, becau
 					
 		     document.getElementById('rgb_red').addEventListener("click", function(){
 					command("led", "255,0,0");
-			
-				});
-	   	     document.getElementById('rgb_blue').addEventListener("click", function(){
-	   				command("led", "0,255,0");
-		
-	   			});
-	   	     document.getElementById('rgb_green').addEventListener("click", function(){
-	   				command("led", "0,0,255");
-	
-	   			});
-	   	     document.getElementById('servo_left').addEventListener("click", function(){
-	   				command("servo", "180");
-
-	   			});
-	      	     document.getElementById('servo_right').addEventListener("click", function(){
-	      				command("servo", "0");
-
-	      			});
-				
-		&lt;/script&gt;
-
 
 </code></pre>
+
+<p>WOW! right now I have an http server up on a small ESP8266 (programmed in LUA), and a index.html (write in javascript-html)
+but I still miss something……hhehehe the C code for the ATTINY !</p>
 
 <hr />
 
 <h1 id="servo--rgb-boardattiny44-programming">(servo + rgb board)Attiny44 Programming</h1>
 
 <hr />
-<p>Modifying Neil’s sketch “Hello Echo” I made the two rx and tx pins by olimex interface and I connected the rx and tx pins by olimex to the relativ reception and trasmission pins on my servo rgb board, that I had predisposed for this purpose.
-Thanks to the board I built I am able to power the wifi module directly via the 3.3V.</p>
 
-<p>In the picture you can see I use the ftdi connector only to power all the system. This is a temporary solution, waiting to find an adequate battery able to interface rgb board.</p>
+<p>Modifying Neil’s sketch “Hello Echo” I made the two rx and tx pins by olimex interface and I connected the rx and tx pins by olimex to the relative reception and trasmission pins on my servo rgb board, that I had predisposed for this purpose.</p>
 
-<p><img src="//localhost:4000/images/week/14/1.png" alt="normal" /></p>
+<p>I define in-out pin</p>
 
-<h2 id="esp8266-app">Esp8266 app</h2>
+<pre><code>#define serial_port PORTB
+#define serial_direction DDRB
+#define serial_pins PINB
+#define serial_pin_in (1 &lt;&lt; PB0)
+#define serial_pin_out (1 &lt;&lt; PB1)
+</code></pre>
+
+<p>and servo and rgb led pin</p>
+
+<pre><code>#define servo_port PORTA
+#define servo_direction DDRA
+#define servo_pin (1&lt;&lt;PA6)
+
+#define red_led_port PORTA
+#define red_led_direction DDRA
+#define red (1 &lt;&lt; PA3)
+
+#define green_led_port PORTA
+#define green_led_direction DDRA
+#define green (1 &lt;&lt; PA2)
+
+#define blue_led_port PORTA
+#define blue_led_direction DDRA
+#define blue (1 &lt;&lt; PA1)
+</code></pre>
+
+<p>after “get char” and “put char” neil’s code..
+I declare “accendiled” (set led on) and “muoviservo” (move servo) function, </p>
+
+<p>“accendiled” (set led on):
+- set a variable to command LedRGB (0,0,0)</p>
+
+<p>“muoviservo” (move servo):
+- moltiply a value for 100 and add 500 for set the position of servo motor</p>
+
+<pre><code>	void accendiLed(int r, int g, int b){
+
+
+		// /put_string(&amp;serial_port, serial_pin_out, "Accendi led");
+
+		if (r == 0) {
+			set(red_led_port,red);
+		} else {
+	 		clear(red_led_port,red);
+		}
+		if (g == 0) {
+			set(green_led_port,green);
+		} else {
+			clear(green_led_port,green);
+		}
+		if (b == 0) {
+			set(blue_led_port,blue);
+		} else {
+			clear(blue_led_port,blue);
+		}
+	}
+
+	void muoviServo(int gradi){
+
+		put_char(&amp;serial_port, serial_pin_out, 'A');
+		OCR1A = 500+(100*gradi);
+		position_delay();
+	}
+</code></pre>
+
+<p>in the end I set the variable “doCommand”</p>
+
+<ul>
+  <li>if the first character read is 0 the code enter inside the accendiLed fuction, and I set 4 IF for the second charater read:</li>
+</ul>
+
+<p>00 = off
+01 = red (255,0,0) 
+02 = green (0,255,0) 
+03 = blue (0,0,255) </p>
+
+<ul>
+  <li>with the first character read is 1 the code enter inside the muoviservo fuction, and I set a second charather variable value ( 1 to 9 )</li>
+</ul>
+
+<p>11 = 500+(100<em>1) corresponding to 180 counterclockwise
+19 = 500+(100</em>9) corresponding to 180 clockwise</p>
+
+<p>(for now I want test only this 2 servo value by the javascript app, but the code can turn at more angle)</p>
+
+<pre><code>void doCommand(char cmd, char param){
+	if (cmd == '0'){
+		int p = atoi(&amp;param);
+		//led
+		if (p==0) accendiLed(0,0,0);
+		if (p==1) accendiLed(255,0,0);
+		if (p==2) accendiLed(0,255,0);
+		if (p==3) accendiLed(0,0,255);
+	
+	}
+	if (cmd == '1'){
+		int p = atoi(&amp;param);
+		muoviServo(p);
+		// if (param == 0){
+		// 	muoviServo(0);
+		// } else {
+		// 	muoviServo(1);
+		// }
+	
+	}
+}
+</code></pre>
+
+<p>inside the </p>
+
+<pre><code>int main(void) {
+</code></pre>
+
+<p>I set the clock divider, and initialize the servo phase and frequency, frequecy in the case of the micro servo is 20 ms that corresponding at ICR1 = 20000
+in order to prevent some strange code passed by TX from ESP8266 I add a condition for execute the code only if the first character is “#” </p>
+
+<pre><code>   index = 0;
+   put_string(&amp;serial_port, serial_pin_out, "Init.");
+   while (1) {
+      get_char(&amp;serial_pins, serial_pin_in, &amp;chr);
+      if (chr=='\n'){
+	      char t='t';
+	      put_char(&amp;serial_pins, serial_pin_out, t);
+      }
+      if (chr=='#') {
+	      index=0;
+	      get_char(&amp;serial_pins, serial_pin_in, &amp;chr);
+              cmd = chr;
+	      get_char(&amp;serial_pins, serial_pin_in, &amp;chr);
+	      doCommand(cmd, chr);
+</code></pre>
+
+<p>Thanks to the board that I built in <a href="//localhost:4000/_posts/week/14/1.png">output device</a> I am able to power the wifi module directly via the 3.7V lipo battery (test!).</p>
+
+<h2 id="esp8266-app--demo">Esp8266 app + DEMO</h2>
 
 <p><img src="//localhost:4000/images/week/14/app.png" alt="app" /></p>
+
+<div class="flex-video widescreen vimeo">
+  <iframe src="http://player.vimeo.com/video/130618455" width="400" height="225" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
 
 <hr />
 
@@ -415,13 +475,20 @@ Nonetheless I would have liked to write an app using nodejs and I think I will h
 
 <p>I found the main difficulties in the debug phase of the Esp, but I solved them simply changing the module and getting a more powerfull one, even if this is not the way I like the most. The difference between the two pieces is only a couple of dollars and I think that a couple of dollars are really worth it.</p>
 
+<h1 id="source-file">Source File</h1>
+
+<ul>
+  <li><a href="//localhost:4000/images/week/14/file/Lua_java.zip"><i class="fa fa-floppy-o"></i> index.html+LUAserver</a></li>
+  <li><a href="//localhost:4000/images/week/14/file/attinyCode.zip"><i class="fa fa-floppy-o"></i> attiny44 C code</a></li>
+</ul>
+
 
             </div>
         </article>
         <div class="cf"></div>
         <div class="row text-center">
             <section class="notepad-post-share">
-                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Application and programming&quot;%20//localhost:4000/class_assignments/week14%20via%20&#64;ifala"
+                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Interface and application programming&quot;%20//localhost:4000/class_assignments/week14%20via%20&#64;ifala"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
                     <i class="fa fa-twitter"></i>
                 </a>

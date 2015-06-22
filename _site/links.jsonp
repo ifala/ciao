@@ -21,12 +21,12 @@ callback([
   } ,
 
   {
-    "text": "electronic board",
+    "text": "Electronic board",
     "href": "//localhost:4000/finalproject/pinsketch"
   } ,
 
   {
-    "text": "movement cube mechanism",
+    "text": "Molding - 3dprinting - Laser cutting",
     "href": "//localhost:4000/finalproject/servo"
   } ,
 
@@ -71,22 +71,22 @@ callback([
   } ,
 
   {
-    "text": "connection",
+    "text": "Programming",
     "href": "//localhost:4000/finalproject/connection"
   } ,
 
   {
-    "text": "input device",
+    "text": "Input device",
     "href": "//localhost:4000/class_assignments/week10"
   } ,
 
   {
-    "text": "output device",
+    "text": "Output device",
     "href": "//localhost:4000/class_assignments/week11"
   } ,
 
   {
-    "text": "Composite Material",
+    "text": "Composites",
     "href": "//localhost:4000/class_assignments/week12"
   } ,
 
@@ -96,13 +96,23 @@ callback([
   } ,
 
   {
-    "text": "Application and programming",
+    "text": "Interface and application programming",
     "href": "//localhost:4000/class_assignments/week14"
   } ,
 
   {
     "text": "Application and Implication",
     "href": "//localhost:4000/class_assignments/week15"
+  } ,
+
+  {
+    "text": "invention, intellectual property, and income",
+    "href": "//localhost:4000/class_assignments/week16"
+  } ,
+
+  {
+    "text": "Project Development",
+    "href": "//localhost:4000/class_assignments/Project%20Development"
   } 
 
 ])

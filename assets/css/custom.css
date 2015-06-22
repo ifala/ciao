@@ -30,6 +30,8 @@ img[alt="normal"] {
 
 img[alt="big"] { 
   max-width:  600px; 
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform; 
 }
 
 img[alt="verybig"] { 

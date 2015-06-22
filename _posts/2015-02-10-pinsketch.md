@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "electronic board"
+title: "Electronic board"
 description: finalproject
 headline: 
 modified: 2015-02-11

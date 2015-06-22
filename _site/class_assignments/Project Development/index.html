@@ -17,32 +17,32 @@ Description: Awesome dude, awesome life
 -->
 <head>
 <meta charset="utf-8">
-<title>COMPOSITE MATERIAL &vert; GIACOMO FALASCHI</title>
-<meta name="description" content="week 12">
-<meta name="keywords" content="ping pong, tennis table, balsa, wood, linen, lino, composit materials, fabacademy">
+<title>PROJECT DEVELOPMENT &vert; GIACOMO FALASCHI</title>
+<meta name="description" content="week 17">
+<meta name="keywords" content="evalutation, twistercube">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="//localhost:4000/images/composite_material.jpg">
+<meta name="twitter:image" content="//localhost:4000/images/project_development.jpg">
 
-<meta name="twitter:title" content="Composite Material">
-<meta name="twitter:description" content="week 12">
+<meta name="twitter:title" content="Project Development">
+<meta name="twitter:description" content="week 17">
 <meta name="twitter:creator" content="@ifala">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Composite Material">
-<meta property="og:description" content="week 12">
-<meta property="og:url" content="//localhost:4000/class_assignments/week12">
+<meta property="og:title" content="Project Development">
+<meta property="og:description" content="week 17">
+<meta property="og:url" content="//localhost:4000/class_assignments/Project%20Development">
 <meta property="og:site_name" content="Giacomo Falaschi">
-<meta property="og:image" content="//localhost:4000/images/composite_material.jpg">
+<meta property="og:image" content="//localhost:4000/images/project_development.jpg">
 
 
 
 
 
-<link rel="canonical" href="//localhost:4000/class_assignments/week12">
+<link rel="canonical" href="//localhost:4000/class_assignments/Project%20Development">
 <link href="//localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Giacomo Falaschi Feed">
 
 
@@ -125,114 +125,177 @@ Description: Awesome dude, awesome life
             </div>
 
             <div class="notepad-post-title bg-check">
-                <h1>Composite Material</h1>
+                <h1>Project Development</h1>
             </div>
             <div class="bg-img"></div>
         </header>
         <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
-        <img src="//localhost:4000/images/composite_material.jpg" alt="cover-image" />
+        <img src="//localhost:4000/images/project_development.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><h3 id="weeklyassignments-">Weekly_Assignments :</h3>
+            <div><h3 id="table-of-contents">Table of contents</h3>
 
-<pre><code>-  
+<p>I used many pages for documenting my project, so you will need to look at those pages first:</p>
+
+<p><a href="//localhost:4000/finalproject/description/">Project description and overall requirements</a> </p>
+
+<p><a href="//localhost:4000/finalproject/schedule/">Schedule</a></p>
+
+<p><a href="//localhost:4000/final_project/">Project blog</a></p>
+
+<p><a href="//localhost:4000/finalproject/servo/">Mechanical Design</a></p>
+
+<p><a href="//localhost:4000/class_assignments/week16/">Dissemination, Licensing and Business model</a></p>
+
+<p><a href="//localhost:4000/">Frequently Asked Questions</a> – mancante</p>
+
+<p><a href="//localhost:4000/">Project results</a> – mancante</p>
+
+<h3 id="final-project-presentation-functionality">final project presentation functionality:</h3>
+
+<p>Micro servo motion 180 degrees (clockwise - counterclockwise)
+Web interface integrated inside ESP8266
+RGB led control
+Lego compatible molding parts
+Lua http server/client</p>
+
+<p>prototype architecture:</p>
+
+<p>network:</p>
+
+<p>electronic:</p>
+
+<h3 id="components-used-and-bom-can-be-found-on-the-applications-and-implications-page">Components used and BOM can be found on the applications and implications page.</h3>
+
+<p>In this project I focused my attention on the communication between different programming languages, so I used a board with attiny 44 to manage both the Led RGB and the servo motor: it has been very challenging and improving to create my own electronic components and, in this process, I realized that with the many pins of ESP8266 olimex it is possible to directly manage both the servo and the led rgb via the board itself.</p>
+
+<h3 id="parts-case-and-accessorize">Parts, Case and accessorize</h3>
+
+<h4 id="dprinting">3dprinting</h4>
+
+<p>The mechanical parts of the project (motion and rotation) are 3d printed, as well as the 4 corners connecting the Lego compatible parts and 3 little pieces needed for the setting of the servo motor inside the cube. All these components can  be easily 3d printed in PLA at 90~100 mm/sec. </p>
+
+<p>The components to be printed are:</p>
+
+<ul>
+  <li>4x angular</li>
+  <li>servo adapter</li>
+  <li>ring adapter</li>
+  <li>rotating lego face (optionally you can mold it)</li>
+</ul>
+
+<h4 id="lasercut">lasercut</h4>
+
+<p>All the faces of the cube are in 2mm plexyglass and are laser cutted (80% power and 60% speed). In order to have a good result it is important to carefully calculate the kerf, to obtein the perfect connection between the faces.
+The whole project is parametric, with variables for material thickness and cube size.</p>
+
+<h4 id="milling-and-molding">Milling and molding</h4>
+
+<p>For molding the LEgo faces I used the Roland MDX-40 mill, with machinable wax and Vectrics software following these settings:</p>
+
+<ul>
+  <li>roughing mill: drill 3.18 mm</li>
+  <li>fine mill: drill 1/64 mm</li>
+</ul>
+
+<p>2 passages at 45 degrees and 2 passages at 90 degrees</p>
+
+<p>for making the negative I tested various materials, such as: </p>
+
+<pre><code>tipi di silicone rubber utilizzati da inserire
 </code></pre>
 
-<h5 id="useful-links">Useful links:</h5>
+<p>The best material is absolutely the one from Prochima, because is very elastic even though it is probably less resistant than others in a high quantity of molding.</p>
+
+<h4 id="resin-casting">Resin Casting</h4>
+
+<p>Twister needs a translucent resin, that allows everyone to see the color of the internal led rgb, so I used: </p>
+
+<pre><code>tipo di resina 
+</code></pre>
+
+<p>Using this resin it is really important to carefully calculate the wight of the two materials to be mixed, beacuse even slightly changing the proportions you won’t have the translucent effect we need for this project.</p>
+
+<h3 id="programming-twister-cube">Programming Twister cube</h3>
+
+<p>Software setup</p>
 
 <ul>
-  <li><a href="http://sport-kid.net/ping-pong-paddle-dimensions.html">ping pong paddle dimension</a></li>
-  <li><a href="https://www.google.com/patents/US4324400?dq=table+tennis&amp;hl=it&amp;sa=X&amp;ei=1kZTVfSOOMOvygOU-oHQCg&amp;ved=0CC4Q6AEwAjge">1982 patent composite paddle</a></li>
-  <li><a href="https://www.google.com/patents/US1961473?dq=table+tennis+paddle&amp;hl=it&amp;sa=X&amp;ei=Y0xTVaP7KImgsgH3r4GwBA&amp;ved=0CEoQ6AEwBQ">1902 patent!</a></li>
+  <li>install #C code in servoRGB board</li>
+  <li>install node mcu firmware 0.9.6 </li>
 </ul>
 
-<h5 id="materials">Materials</h5>
+<p>For networking with yout smartphone - home router:</p>
 
 <ul>
-  <li>
-    <h6 id="epoxy-resin">epoxy resin</h6>
-  </li>
-  <li>
-    <h6 id="linen">Linen</h6>
-  </li>
-  <li>
-    <h6 id="balsa-sheet">Balsa sheet</h6>
-  </li>
+  <li>connect to wifi-networking with your smartphone - PC - MAC - Tablet ( Access point for share it used internet connection)</li>
+  <li>discover your assigned ip, usually under android network is 192.168.43.xxx, in home-router network 192.168.1.xxx</li>
 </ul>
 
-<h5 id="machine">Machine</h5>
+<p>modify all init lua: ( client1, client2, server)</p>
+
+<pre><code>-- Tell the chip to connect to the access point
+
+wifi.setmode(wifiConfig.mode)
+
+cfg =
+  {
+    ip="192.168.43.101",  -- 192.168.XXX.101
+    netmask="255.255.255.0", -- your network netmask ...
+    gateway="192.168.43.1" -- your router gateway 192.168.xxx.1
+  }
+  wifi.sta.setip(cfg)
+</code></pre>
+
+<p>modify all http/index.htlm file: ( client1, client2, server)</p>
+
+<pre><code>var ipaddress = ['192.168.43.101', '192.168.43.102'];  &lt;!-- ['192.168.XXX.101', '192.168.XXX.102'] --&gt;
+</code></pre>
 
 <ul>
-  <li>
-    <h6 id="lasercut">Lasercut</h6>
-    <p>-</p>
-  </li>
+  <li>flash Lua code (with html/javascript app)</li>
 </ul>
 
-<hr />
+<h3 id="downloads">Downloads</h3>
 
-<h1 id="project-ping-pong-paddle">Project: ping pong paddle</h1>
+<p>Electronics:</p>
 
-<h3 id="introduction">introduction</h3>
+<p>ESP8266 Breakout Board: brd, sch, etching, milling</p>
 
-<hr />
+<p>3D Printed files:</p>
 
-<p>Spring being in the air and hot weather arriving, I wanted to live again my long and hot hours spent playing tennis table in the very same room of the newborn FabLab Contea I run. 
-I started looking for all the infos needed to build a tennis table paddle as professional as possible.
-After investigating on the patents (almost all of them has expired) to check the correct measurements, I projected my own racket trying to suit the international rules (at least 80% wooden composition).
-The composit project I am going to create will be linen, balsa and epoxy resin.</p>
+<p>Angular
+motor adapter
+intersect rotate
+red lego rotate</p>
 
-<h3 id="mill-press-form">Mill. Press. Form</h3>
+<p>Laser CUT:</p>
 
-<p>Before proceeding with the laser cutting of the components, I wanted to create a sample. So I milled a positive and a negative of the racket, in order to better use the vacuum seal. </p>
+<p>Single face (cube complete)
+internal stars</p>
 
-<h3 id="laser-parts">Laser parts</h3>
-<p>Since the layers forming my composit material project are very thin, I decided to cut them with the laser.
-For me this is a new eperience, since I had never tried cutting fibers like linen with laser cut. </p>
+<p>Software :</p>
 
-<h3 id="milling-the-handle">Milling the handle</h3>
-<p>The longest and most delicate milling is the one for the curved part of the handle.
-It will be glued to the main body of the paddle.</p>
+<p>Breakout board v0.3 - FirmwareProtocol
+ESP8266 - firmware - Application</p>
 
-<hr />
-
-<h1 id="building-process">Building process</h1>
-
-<hr />
-
-<p>foto</p>
-
-<h2 id="final-finishing">Final finishing</h2>
-
-<p>On the two faces of the paddle, where the surface is smooth, I will glue two sheets of plastic and rubber and put it again under pressure until the glue dries.</p>
-
-<p>I now cut the exceeding parts of the sheets…and my own paddle is ready. </p>
-
-<hr />
-
-<h1 id="conclusion">Conclusion</h1>
-
-<hr />
-
-<p>Since I was very young, I played tennis table with my father. He used to have his own paddle he made with his own hands, even if it was terrible and I was even unable to use it. I never really got over this. What a better payback than building my own paddle?</p>
-
-<p>I wonder if my paddle suits the official rules of the International Tennis Table Federation (ITTS) or if it can be used in a regular championship…or in a match at my place?</p>
-
+<p>Github Project
+All the files will be hosted on Github and improved there</p>
 
             </div>
         </article>
         <div class="cf"></div>
         <div class="row text-center">
             <section class="notepad-post-share">
-                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Composite Material&quot;%20//localhost:4000/class_assignments/week12%20via%20&#64;ifala"
+                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Project Development&quot;%20//localhost:4000/class_assignments/Project%20Development%20via%20&#64;ifala"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
                     <i class="fa fa-twitter"></i>
                 </a>
-                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=//localhost:4000/class_assignments/week12"
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=//localhost:4000/class_assignments/Project%20Development"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
                     <i class="fa fa-facebook"></i>
                 </a>
-                <a class="google-icon" href="https://plus.google.com/share?url=//localhost:4000/class_assignments/week12"
+                <a class="google-icon" href="https://plus.google.com/share?url=//localhost:4000/class_assignments/Project%20Development"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
                     <i class="fa fa-google-plus"></i>
                 </a>

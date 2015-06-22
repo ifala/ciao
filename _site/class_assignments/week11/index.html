@@ -25,14 +25,14 @@ Description: Awesome dude, awesome life
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="//localhost:4000/images/output_device.jpg">
 
-<meta name="twitter:title" content="output device">
+<meta name="twitter:title" content="Output device">
 <meta name="twitter:description" content="week 11">
 <meta name="twitter:creator" content="@ifala">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="output device">
+<meta property="og:title" content="Output device">
 <meta property="og:description" content="week 11">
 <meta property="og:url" content="//localhost:4000/class_assignments/week11">
 <meta property="og:site_name" content="Giacomo Falaschi">
@@ -125,7 +125,7 @@ Description: Awesome dude, awesome life
             </div>
 
             <div class="notepad-post-title bg-check">
-                <h1>output device</h1>
+                <h1>Output device</h1>
             </div>
             <div class="bg-img"></div>
         </header>
@@ -148,7 +148,7 @@ Description: Awesome dude, awesome life
 <h5 id="useful-links">Useful links:</h5>
 
 <ul>
-  <li><a href="//localhost:4000//class_assignments/week10/">calculate RGB resistor</a></li>
+  <li><a href="//localhost:4000/class_assignments/week10/">calculate RGB resistor</a></li>
   <li><a href="http://media.digikey.com/pdf/Data%20Sheets/CREE%20Power/CLV1A-FKB_Rev5.pdf">led rbg datasheet</a></li>
   <li><a href="http://datasheet.sparkgo.com.br/SG90Servo.pdf">servo datasheet</a></li>
 </ul>
@@ -187,7 +187,21 @@ Description: Awesome dude, awesome life
 
 <p><img src="//localhost:4000/images/week/11/final_.jpg" alt="big" /></p>
 
-<p>**LM3480 after discuss with my local instructor is insufficent for transmit power at ESP8266.</p>
+<h3 id="update-0316">UPDATE 03/16</h3>
+
+<p>**LM3480-3.3 after discuss with my local instructor is insufficent for transmit power at ESP8266.
+<a href="http://docs-europe.electrocomponents.com/webdocs/13d5/0900766b813d54a0.pdf">from datasheet</a></p>
+
+<p>VIN =VNOM +1.5V 1mA≤IOUT ≤100mA</p>
+
+<p>max Iout is 100mA !</p>
+
+<p>in according to ESP8266 <a href="https://docs.google.com/file/d/0B9hyK_DA6VIiSWNRZ29sdG1UOVU/edit?pli=1">datasheet</a></p>
+
+<p>in chapter 7 under “current consumption”
+the minimum consumption in Transmit 802.11n, MCS7, POUT=+14dBm is 135mA !!!!!!</p>
+
+<p>After reading carefully the ESP8266 rev A olimex datasheet I discover that the Input high voltage is 3.6v so I decided to re-build my RGBservo board without regulator, for test with a 3.7v lipo battery.</p>
 
 <hr />
 
@@ -222,7 +236,7 @@ I tryed to find some tutorial to use esp8266, or write some similar code that li
 
 <p>For sure before the networking week, I must redisign the board with the hole in place of the pin connector, to improve the board and make it more compact!</p>
 
-<h1 id="file">File</h1>
+<h1 id="source-file">Source File</h1>
 
 <ul>
   <li><a href="//localhost:4000/images/week/11/programming/rgb.zip"><i class="fa fa-floppy-o"></i> RGB_attiny44 code</a></li>
@@ -238,7 +252,7 @@ I tryed to find some tutorial to use esp8266, or write some similar code that li
         <div class="cf"></div>
         <div class="row text-center">
             <section class="notepad-post-share">
-                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;output device&quot;%20//localhost:4000/class_assignments/week11%20via%20&#64;ifala"
+                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Output device&quot;%20//localhost:4000/class_assignments/week11%20via%20&#64;ifala"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
                     <i class="fa fa-twitter"></i>
                 </a>
