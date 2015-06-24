@@ -3,13 +3,13 @@
 		{
 		  "title"      : "Project Development",
 		  "category"   : "Class_assignments",
-		  "url"        : "//localhost:4000/class_assignments/Project%20Development",
+		  "url"        : "//localhost:4000/class_assignments/Project_Development",
 		  "date"       : "2015-06-11 00:00:00 +0200",
 		  "shortdate"  : "June 11, 2015"
 		} ,
 	
 		{
-		  "title"      : "invention, intellectual property, and income",
+		  "title"      : "Invention, intellectual property, and income",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week16",
 		  "date"       : "2015-06-02 00:00:00 +0200",

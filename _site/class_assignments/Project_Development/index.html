@@ -34,7 +34,7 @@ Description: Awesome dude, awesome life
 <meta property="og:type" content="article">
 <meta property="og:title" content="Project Development">
 <meta property="og:description" content="week 17">
-<meta property="og:url" content="//localhost:4000/class_assignments/Project%20Development">
+<meta property="og:url" content="//localhost:4000/class_assignments/Project_Development">
 <meta property="og:site_name" content="Giacomo Falaschi">
 <meta property="og:image" content="//localhost:4000/images/project_development.jpg">
 
@@ -42,7 +42,7 @@ Description: Awesome dude, awesome life
 
 
 
-<link rel="canonical" href="//localhost:4000/class_assignments/Project%20Development">
+<link rel="canonical" href="//localhost:4000/class_assignments/Project_Development">
 <link href="//localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Giacomo Falaschi Feed">
 
 
@@ -147,10 +147,6 @@ Description: Awesome dude, awesome life
 
 <p><a href="//localhost:4000/class_assignments/week16/">Dissemination, Licensing and Business model</a></p>
 
-<p><a href="//localhost:4000/">Frequently Asked Questions</a> – mancante</p>
-
-<p><a href="//localhost:4000/">Project results</a> – mancante</p>
-
 <h3 id="final-project-presentation-functionality">final project presentation functionality:</h3>
 
 <p>Micro servo motion 180 degrees (clockwise - counterclockwise)
@@ -159,17 +155,33 @@ RGB led control
 Lego compatible molding parts
 Lua http server/client</p>
 
-<p>prototype architecture:</p>
+<h3 id="prototype-architecture">prototype architecture:</h3>
 
-<p>network:</p>
+<p><img src="//localhost:4000/images/week/17/front.jpg" alt="Front" /></p>
 
-<p>electronic:</p>
+<p><img src="//localhost:4000/images/week/17/rear.jpg" alt="Rear" /></p>
 
-<h3 id="components-used-and-bom-can-be-found-on-the-applications-and-implications-page">Components used and BOM can be found on the applications and implications page.</h3>
+<h3 id="network">network:</h3>
+
+<p><img src="//localhost:4000/images/networking_map.jpg" alt="Networking Map" /></p>
+
+<h3 id="electronic">electronic:</h3>
+
+<p><img src="//localhost:4000/images/week/17/electronic.jpg" alt="Electronic" /></p>
+
+<h3 id="programming">programming:</h3>
+
+<p><img src="//localhost:4000/images/week/17/programming.jpg" alt="Programming" /></p>
+
+<h3 id="components-used-and-bom">Components used and BOM</h3>
+
+<p><a href="//localhost:4000/class_assignments/week15/">list can be found on the applications and implications page.</a></p>
 
 <p>In this project I focused my attention on the communication between different programming languages, so I used a board with attiny 44 to manage both the Led RGB and the servo motor: it has been very challenging and improving to create my own electronic components and, in this process, I realized that with the many pins of ESP8266 olimex it is possible to directly manage both the servo and the led rgb via the board itself.</p>
 
 <h3 id="parts-case-and-accessorize">Parts, Case and accessorize</h3>
+
+<p><img src="//localhost:4000/images/week/17/cube.jpg" alt="Cube" /></p>
 
 <h4 id="dprinting">3dprinting</h4>
 
@@ -191,7 +203,7 @@ The whole project is parametric, with variables for material thickness and cube 
 
 <h4 id="milling-and-molding">Milling and molding</h4>
 
-<p>For molding the LEgo faces I used the Roland MDX-40 mill, with machinable wax and Vectrics software following these settings:</p>
+<p>For molding the Lego faces I used the Roland MDX-40 mill, with machinable wax and Vectrics software following these settings:</p>
 
 <ul>
   <li>roughing mill: drill 3.18 mm</li>
@@ -202,8 +214,17 @@ The whole project is parametric, with variables for material thickness and cube 
 
 <p>for making the negative I tested various materials, such as: </p>
 
-<pre><code>tipi di silicone rubber utilizzati da inserire
-</code></pre>
+<ul>
+  <li>Mold MAX 60 - silicone rubber</li>
+</ul>
+
+<p><img src="//localhost:4000/images/week/17/smoothcast.jpg" alt="mini" /></p>
+
+<ul>
+  <li>Prochima GLS-50 </li>
+</ul>
+
+<p><img src="//localhost:4000/images/week/17/prochima.jpg" alt="mini" /></p>
 
 <p>The best material is absolutely the one from Prochima, because is very elastic even though it is probably less resistant than others in a high quantity of molding.</p>
 
@@ -211,8 +232,11 @@ The whole project is parametric, with variables for material thickness and cube 
 
 <p>Twister needs a translucent resin, that allows everyone to see the color of the internal led rgb, so I used: </p>
 
-<pre><code>tipo di resina 
-</code></pre>
+<ul>
+  <li>Smooth-Cast® 325</li>
+</ul>
+
+<p><img src="//localhost:4000/images/week/17/casting.jpg" alt="Casting" /></p>
 
 <p>Using this resin it is really important to carefully calculate the wight of the two materials to be mixed, beacuse even slightly changing the proportions you won’t have the translucent effect we need for this project.</p>
 
@@ -260,24 +284,39 @@ cfg =
 
 <p>Electronics:</p>
 
-<p>ESP8266 Breakout Board: brd, sch, etching, milling</p>
+<ul>
+  <li>ESP8266 Breakout Board: brd, sch, etching, milling</li>
+</ul>
 
 <p>3D Printed files:</p>
 
-<p>Angular
-motor adapter
-intersect rotate
-red lego rotate</p>
+<ul>
+  <li>Angular</li>
+  <li>motor adapter</li>
+  <li>intersect rotate</li>
+  <li>red lego rotate</li>
+</ul>
+
+<p>Molding Lego file:</p>
+
+<ul>
+  <li>Positive</li>
+  <li>Negative</li>
+</ul>
 
 <p>Laser CUT:</p>
 
-<p>Single face (cube complete)
-internal stars</p>
+<ul>
+  <li>Single face (cube complete)</li>
+  <li>internal stars</li>
+</ul>
 
 <p>Software :</p>
 
-<p>Breakout board v0.3 - FirmwareProtocol
-ESP8266 - firmware - Application</p>
+<ul>
+  <li>Breakout board v0.3 - FirmwareProtocol</li>
+  <li>ESP8266 - firmware - Application</li>
+</ul>
 
 <p>Github Project
 All the files will be hosted on Github and improved there</p>
@@ -287,15 +326,15 @@ All the files will be hosted on Github and improved there</p>
         <div class="cf"></div>
         <div class="row text-center">
             <section class="notepad-post-share">
-                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Project Development&quot;%20//localhost:4000/class_assignments/Project%20Development%20via%20&#64;ifala"
+                share it !<a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Project Development&quot;%20//localhost:4000/class_assignments/Project_Development%20via%20&#64;ifala"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
                     <i class="fa fa-twitter"></i>
                 </a>
-                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=//localhost:4000/class_assignments/Project%20Development"
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=//localhost:4000/class_assignments/Project_Development"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
                     <i class="fa fa-facebook"></i>
                 </a>
-                <a class="google-icon" href="https://plus.google.com/share?url=//localhost:4000/class_assignments/Project%20Development"
+                <a class="google-icon" href="https://plus.google.com/share?url=//localhost:4000/class_assignments/Project_Development"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
                     <i class="fa fa-google-plus"></i>
                 </a>

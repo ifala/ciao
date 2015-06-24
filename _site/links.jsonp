@@ -106,13 +106,13 @@ callback([
   } ,
 
   {
-    "text": "invention, intellectual property, and income",
+    "text": "Invention, intellectual property, and income",
     "href": "//localhost:4000/class_assignments/week16"
   } ,
 
   {
     "text": "Project Development",
-    "href": "//localhost:4000/class_assignments/Project%20Development"
+    "href": "//localhost:4000/class_assignments/Project_Development"
   } 
 
 ])

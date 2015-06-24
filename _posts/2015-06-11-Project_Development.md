@@ -21,9 +21,7 @@ I used many pages for documenting my project, so you will need to look at those 
 
 [Dissemination, Licensing and Business model]({{ site.url }}/class_assignments/week16/)
 
-[Frequently Asked Questions]({{ site.url }}/) -- mancante
 
-[Project results]({{ site.url }}/) -- mancante
 
 ###final project presentation functionality:
 
@@ -33,22 +31,36 @@ RGB led control
 Lego compatible molding parts
 Lua http server/client
 
-prototype architecture:
+###prototype architecture:
 
-network:
+![Front]({{ site.url }}/images/week/17/front.jpg)
 
-electronic:
+![Rear]({{ site.url }}/images/week/17/rear.jpg)
+
+###network:
+
+![Networking Map]({{ site.url }}/images/networking_map.jpg)
+
+###electronic:
+
+![Electronic]({{ site.url }}/images/week/17/electronic.jpg)
+
+###programming:
+
+![Programming]({{ site.url }}/images/week/17/programming.jpg)
 
 
+###Components used and BOM 
 
-
-###Components used and BOM can be found on the applications and implications page.
+[list can be found on the applications and implications page.]({{ site.url }}/class_assignments/week15/)
 
 In this project I focused my attention on the communication between different programming languages, so I used a board with attiny 44 to manage both the Led RGB and the servo motor: it has been very challenging and improving to create my own electronic components and, in this process, I realized that with the many pins of ESP8266 olimex it is possible to directly manage both the servo and the led rgb via the board itself.
 
 
 
 ###Parts, Case and accessorize
+
+![Cube]({{ site.url }}/images/week/17/cube.jpg)
 
 ####3dprinting
 
@@ -69,7 +81,7 @@ The whole project is parametric, with variables for material thickness and cube 
 
 ####Milling and molding
 
-For molding the LEgo faces I used the Roland MDX-40 mill, with machinable wax and Vectrics software following these settings:
+For molding the Lego faces I used the Roland MDX-40 mill, with machinable wax and Vectrics software following these settings:
 
 
 - roughing mill: drill 3.18 mm
@@ -79,7 +91,13 @@ For molding the LEgo faces I used the Roland MDX-40 mill, with machinable wax an
 
 for making the negative I tested various materials, such as: 
 
-	tipi di silicone rubber utilizzati da inserire
+- Mold MAX 60 - silicone rubber
+
+![mini]({{ site.url }}/images/week/17/smoothcast.jpg)
+
+- Prochima GLS-50 
+
+![mini]({{ site.url }}/images/week/17/prochima.jpg)
 
 The best material is absolutely the one from Prochima, because is very elastic even though it is probably less resistant than others in a high quantity of molding.
 
@@ -87,7 +105,9 @@ The best material is absolutely the one from Prochima, because is very elastic e
 
 Twister needs a translucent resin, that allows everyone to see the color of the internal led rgb, so I used: 
 
-	tipo di resina 
++ Smooth-Cast® 325
+
+![Casting]({{ site.url }}/images/week/17/casting.jpg)
 
 Using this resin it is really important to carefully calculate the wight of the two materials to be mixed, beacuse even slightly changing the proportions you won't have the translucent effect we need for this project.
 
@@ -131,27 +151,31 @@ modify all http/index.htlm file: ( client1, client2, server)
 
 Electronics:
 
-ESP8266 Breakout Board: brd, sch, etching, milling
+- ESP8266 Breakout Board: brd, sch, etching, milling
 
 
 3D Printed files:
 
-Angular
-motor adapter
-intersect rotate
-red lego rotate
+- Angular
+- motor adapter
+- intersect rotate
+- red lego rotate
 
+Molding Lego file:
+
+- Positive
+- Negative
 
 Laser CUT:
 
-Single face (cube complete)
-internal stars
+- Single face (cube complete)
+- internal stars
 
 
 Software :
 
-Breakout board v0.3 - FirmwareProtocol
-ESP8266 - firmware - Application
+- Breakout board v0.3 - FirmwareProtocol
+- ESP8266 - firmware - Application
 
 
 Github Project

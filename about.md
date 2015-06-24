@@ -25,7 +25,7 @@ chart: true
 	  <br><a href="http://www.syskrack.org">Giuseppe Porsia (1984-2013)</a>.
 	  <br>
 	  <br>
-	  Also for not letting his memory and the projects we where thinking about together fade away, I decided to pursuit my experience in this area.</p>
+	  Also for not letting his memory and the projects we were thinking about together fade away, I decided to pursuit my experience in this area.</p>
     </div>
     <div class="small-12 medium-6 columns">
 		
