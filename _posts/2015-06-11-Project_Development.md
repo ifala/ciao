@@ -146,36 +146,39 @@ modify all http/index.htlm file: ( client1, client2, server)
 - flash Lua code (with html/javascript app)
 
 
-###Downloads
+##Downloads
 
 
-Electronics:
+
+####Electronics:
 
 - ESP8266 Breakout Board: brd, sch, etching, milling
 
 
-3D Printed files:
+####3D Printed files:
 
-- Angular
-- motor adapter
-- intersect rotate
-- red lego rotate
-
-Molding Lego file:
-
-- Positive
-- Negative
-
-Laser CUT:
-
-- Single face (cube complete)
-- internal stars
+- Angular [(support included)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle_support.stl) [(no support)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle.stl)
+- [Motor adapter]()
+- [Intersect rotate]()
+- [Red lego rotate]()
 
 
-Software :
+####Molding Lego file:
 
-- Breakout board v0.3 - FirmwareProtocol
-- ESP8266 - firmware - Application
+- Positive : [roughing]() , [fine]()
+- Negative : [roughing]() , [fine]()
+
+
+####Laser CUT:
+
+- Single face [(no kerf)]({{ site.url }}/images/week/17/download_twister/Lasercut/single_face.DXF)
+- Internal stars [(no kerf)]({{ site.url }}/images/week/17/download_twister/Lasercut/motor_laser_adapter.DXF)
+
+
+####Software :
+
+- Breakout board v0.3 - [FirmwareProtocol]({{ site.url }}/images/week/17/download_twister/software/breakoutB.zip)
+- ESP8266 - [firmware]({{ site.url }}/images/week/17/download_twister/software/nodemcu_integer_0.9.6-dev_20150406.bin) - [Application]({{ site.url }}/images/week/17/download_twister/software/application.zip)
 
 
 Github Project
