@@ -163,7 +163,6 @@ modify all http/index.htlm file: ( client1, client2, server)
 
 
 - Angular [(support included STL)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle_support.stl) [(no support)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle.stl)
-- Motor adapter [STL]({{ site.url }}/images/week/17/download_twister/3dprinted/motor_adapter.STL)
 - Intersect rotate [STL]({{ site.url }}/images/week/17/download_twister/3dprinted/Intersect_rotate.STL)
 - Red lego rotate [STL]({{ site.url }}/images/week/17/download_twister/3dprinted/Red_lego_rotate.STL)
 
