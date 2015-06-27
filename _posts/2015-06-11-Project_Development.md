@@ -154,9 +154,7 @@ modify all http/index.htlm file: ( client1, client2, server)
 *etching 1/64 - milling 1/32 - cut 1/32*
 
 - ESP8266 Breakout Board: [brd]({{ site.url }}/images/week/17/download_twister/electronic/breakoutBoard_03.brd), [sch]({{ site.url }}/images/week/17/download_twister/electronic/breakoutBoard_03.sch)
-
 + Top: [top etching]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/top_eaching.png), [top holes]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/top_hole.png)
-
 + Bottom: [bottom test]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/bottom_hole_test.png), [bottom etching]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/bottom_eching.png), [bottom cut]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/bottom_cut.png)
 
 
@@ -165,12 +163,8 @@ modify all http/index.htlm file: ( client1, client2, server)
 
 
 - Angular [(support included STL)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle_support.stl) [(no support)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle.stl)
- 
 - Motor adapter [STL]({{ site.url }}/images/week/17/download_twister/3dprinted/motor_adapt.STL)
- 
- 
 - Intersect rotate [STL]({{ site.url }}/images/week/17/download_twister/3dprinted/Intersect_rotate.STL)
-
 - Red lego rotate [STL]({{ site.url }}/images/week/17/download_twister/3dprinted/Red_lego_rotate.STL)
 
 
