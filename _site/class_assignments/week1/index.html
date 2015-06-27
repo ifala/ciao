@@ -165,12 +165,32 @@ Description: Awesome dude, awesome life
 
 <hr />
 
-<p>I have clone a <a href="https://github.com/hmfaysal/Notepad">template website</a> in my mac, I try to use also git via terminal and github with any problem.
-I’d like use terminal but inside github I have some repository already set, and in startup it ask me this :</p>
+<p>I have download a <a href="https://github.com/hmfaysal/Notepad">template website</a> in my mac and I try to use git via terminal :</p>
 
-<p><img src="//localhost:4000/images/week/1/giterror.jpg" alt="normal" /></p>
+<p>First I cloned the repository locally:</p>
 
-<p>and so I have decided to continue to use the graphical version.</p>
+<pre><code>git clone https://github.com/ifala/ifala.github.io
+</code></pre>
+
+<p>Then I copy the site inside my own folder called “sito_fabacademy”, and added it and its files to virtual index:</p>
+
+<pre><code>git add -A .
+</code></pre>
+
+<p>With the modifications inside virtual index, I can now commit to my local repository:</p>
+
+<pre><code>git commit -m "sito"
+</code></pre>
+
+<p>Just before pushing (command - git push) I pulled, so I’m sure that if anybody in the meanwhile made any push I get his modifications:</p>
+
+<pre><code>git pull origin master
+</code></pre>
+
+<p>Finally I pushed my modifications on the remote repository:</p>
+
+<pre><code>git push origin master
+</code></pre>
 
 <p>for modify the site I downloaded <a href="http://macromates.com/">Textmate</a> , very useful to modify and write in various programming language.</p>
 

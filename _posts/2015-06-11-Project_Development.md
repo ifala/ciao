@@ -151,34 +151,43 @@ modify all http/index.htlm file: ( client1, client2, server)
 
 
 ####Electronics:
+*etching 1/64 - milling 1/32 - cut 1/32*
 
-- ESP8266 Breakout Board: brd, sch, etching, milling
+- ESP8266 Breakout Board: [brd]({{ site.url }}/images/week/17/download_twister/electronic/breakoutBoard_03.brd), [sch]({{ site.url }}/images/week/17/download_twister/electronic/breakoutBoard_03.sch)
++ Top: [top etching]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/top_eaching.png), [top holes]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/top_hole.png)
++ Bottom: [bottom test]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/bottom_hole_test.png), [bottom etching]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/bottom_eching.png), [bottom cut]({{ site.url }}/images/week/17/download_twister/electronic/fabmodules_png/bottom_cut.png)
 
 
 ####3D Printed files:
+*pla - 80 mm/sec - 40 mm/sec outer shell*
 
-- Angular [(support included)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle_support.stl) [(no support)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle.stl)
-- [Motor adapter]()
-- [Intersect rotate]()
-- [Red lego rotate]()
+
+- Angular [(support included STL)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle_support.stl) [(no support)]({{ site.url }}/images/week/17/download_twister/3dprinted/angle.stl)
+- Motor adapter [STL]({{ site.url }}/images/week/17/download_twister/3dprinted/Motor_adapter.STL)
+- Intersect rotate [STL]({{ site.url }}/images/week/17/download_twister/3dprinted/Intersect_rotate.STL)
+- Red lego rotate [STL]({{ site.url }}/images/week/17/download_twister/3dprinted/Red_lego_rotate.STL)
 
 
 ####Molding Lego file:
-
-- Positive : [roughing]() , [fine]()
-- Negative : [roughing]() , [fine]()
+*roughing 3.18 - fine 1/32*
 
 
-####Laser CUT:
+- Lego Positive : [STL]({{ site.url }}/images/week/17/download_twister/Molding/Lego_positive.STL) [roughing]() , [fine]()
+- Lego Negative : [STL]({{ site.url }}/images/week/17/download_twister/Molding/Lego_negative.STL) [roughing]() , [fine]()
 
-- Single face [(no kerf)]({{ site.url }}/images/week/17/download_twister/Lasercut/single_face.DXF)
-- Internal stars [(no kerf)]({{ site.url }}/images/week/17/download_twister/Lasercut/motor_laser_adapter.DXF)
+
+####Laser CUT
+*power 100% - speed 65%*
+
+
+- Single face [(no kerf DXF)]({{ site.url }}/images/week/17/download_twister/Lasercut/single_face.DXF)
+- Internal stars [(no kerf DXF)]({{ site.url }}/images/week/17/download_twister/Lasercut/motor_laser_adapter.DXF)
 
 
 ####Software :
 
 - Breakout board v0.3 - [FirmwareProtocol]({{ site.url }}/images/week/17/download_twister/software/breakoutB.zip)
-- ESP8266 - [firmware]({{ site.url }}/images/week/17/download_twister/software/nodemcu_integer_0.9.6-dev_20150406.bin) - [Application]({{ site.url }}/images/week/17/download_twister/software/application.zip)
+- ESP8266 - [Firmware]({{ site.url }}/images/week/17/download_twister/software/nodemcu_integer_0.9.6-dev_20150406.bin) - [Application]({{ site.url }}/images/week/17/download_twister/software/application.zip)
 
 
 Github Project
