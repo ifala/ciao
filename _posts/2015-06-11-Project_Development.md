@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project Development
-description: "week 17"
+description: "week 18"
 category: Class_assignments
 tags: [evalutation, twistercube ]
 imagefeature: project_development.jpg
@@ -23,7 +23,7 @@ I used many pages for documenting my project, so you will need to look at those 
 
 
 
-###final project presentation functionality:
+###Tinal project presentation functionality:
 
 Micro servo motion 180 degrees (clockwise - counterclockwise)
 Web interface integrated inside ESP8266
@@ -31,21 +31,21 @@ RGB led control
 Lego compatible molding parts
 Lua http server/client
 
-###prototype architecture:
+###Prototype architecture:
 
 ![Front]({{ site.url }}/images/week/17/front.jpg)
 
 ![Rear]({{ site.url }}/images/week/17/rear.jpg)
 
-###network:
+###Network:
 
 ![Networking Map]({{ site.url }}/images/networking_map.jpg)
 
-###electronic:
+###Electronic:
 
 ![Electronic]({{ site.url }}/images/week/17/electronic.jpg)
 
-###programming:
+###Programming:
 
 ![Programming]({{ site.url }}/images/week/17/programming.jpg)
 
@@ -73,7 +73,7 @@ The components to be printed are:
 - ring adapter
 - rotating lego face (optionally you can mold it)
 
-####lasercut
+####Lasercut
 
 All the faces of the cube are in 2mm plexyglass and are laser cutted (80% power and 60% speed). In order to have a good result it is important to carefully calculate the kerf, to obtein the perfect connection between the faces.
 The whole project is parametric, with variables for material thickness and cube size.
