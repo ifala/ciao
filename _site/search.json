@@ -33,6 +33,14 @@
 		} ,
 	
 		{
+		  "title"      : "Electronic board",
+		  "category"   : "finalproject",
+		  "url"        : "//localhost:4000/finalproject/pinsketch",
+		  "date"       : "2015-05-17 00:00:00 +0200",
+		  "shortdate"  : "May 17, 2015"
+		} ,
+	
+		{
 		  "title"      : "Molding - 3dprinting - Laser cutting",
 		  "category"   : "finalproject",
 		  "url"        : "//localhost:4000/finalproject/servo",
@@ -150,14 +158,6 @@
 		  "url"        : "//localhost:4000/class_assignments/week3",
 		  "date"       : "2015-02-16 00:00:00 +0100",
 		  "shortdate"  : "February 16, 2015"
-		} ,
-	
-		{
-		  "title"      : "Electronic board",
-		  "category"   : "finalproject",
-		  "url"        : "//localhost:4000/finalproject/pinsketch",
-		  "date"       : "2015-02-10 00:00:00 +0100",
-		  "shortdate"  : "February 10, 2015"
 		} ,
 	
 		{

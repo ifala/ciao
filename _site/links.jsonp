@@ -21,11 +21,6 @@ callback([
   } ,
 
   {
-    "text": "Electronic board",
-    "href": "//localhost:4000/finalproject/pinsketch"
-  } ,
-
-  {
     "text": "Computer-controlled cutting",
     "href": "//localhost:4000/class_assignments/week3"
   } ,
@@ -98,6 +93,11 @@ callback([
   {
     "text": "Molding - 3dprinting - Laser cutting",
     "href": "//localhost:4000/finalproject/servo"
+  } ,
+
+  {
+    "text": "Electronic board",
+    "href": "//localhost:4000/finalproject/pinsketch"
   } ,
 
   {

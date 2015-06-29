@@ -13,32 +13,22 @@ comments: false
 featured: true
 ---
 
+	2015-06-14
+
+![img app]({{ site.url }}/images/finalproject/programming.jpg)
 
 
-	2015-04-22
+	2015-05-10
 
+[Interface and application programming]({{ site.url }}/class_assignments/week14/)
 
-
-### NodeMCU firmware
-
-- download and install python
-- Download and install serialPY
-- download [esptool.py](https://github.com/themadinventor/esptool/blob/master/esptool.py)
-
-In this case, select firmware for ESP01 and download nodemcu-firmware-master/pre_build/0.9.4/514k-flash/nodemcu_512k_latest.bin
-
-open terminal and send this command
-
-python esptool.py --port /dev/yournameport(tty.etcetc) write_flash 0x000000 /Users/ifala/Downloads/nodemcu-firmware-master/pre_build/0.9.4/512k-flash/nodemcu_512k_latest.bin 
-
-now I have install the default nodemcu firmware inside the ESP01
-
-to programming the esp01 you must write 2 files 
-and upload with ESPlorer (for osx)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QjE1MgSE-bo" frameborder="0" allowfullscreen></iframe>
 
 
 
 	2015-05-05
+
+### ESP8266 test
 
 ![IMG 20150519 221044]({{ site.url }}/images/finalproject/connection/IMG_20150519_221044.jpg)
 
@@ -88,7 +78,22 @@ start manually http server:
 But If I try to connect direcly via web browser.. the client not respond!
 
 
+### NodeMCU firmware
 
+- download and install python
+- Download and install serialPY
+- download [esptool.py](https://github.com/themadinventor/esptool/blob/master/esptool.py)
+
+In this case, select firmware for ESP01 and download nodemcu-firmware-master/pre_build/0.9.4/514k-flash/nodemcu_512k_latest.bin
+
+open terminal and send this command
+
+python esptool.py --port /dev/yournameport(tty.etcetc) write_flash 0x000000 /Users/ifala/Downloads/nodemcu-firmware-master/pre_build/0.9.4/512k-flash/nodemcu_512k_latest.bin 
+
+now I have install the default nodemcu firmware inside the ESP01
+
+to programming the esp01 you must write 2 files 
+and upload with ESPlorer (for osx)
 
 	2015-04-08
 	
