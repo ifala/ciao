@@ -1,14 +1,6 @@
 [
 	
 		{
-		  "title"      : "Mechanical design, machine design",
-		  "category"   : "Class_assignments",
-		  "url"        : "//localhost:4000/class_assignments/week16",
-		  "date"       : "2015-06-25 00:00:00 +0200",
-		  "shortdate"  : "June 25, 2015"
-		} ,
-	
-		{
 		  "title"      : "Programming",
 		  "category"   : "finalproject",
 		  "url"        : "//localhost:4000/finalproject/connection",
@@ -30,6 +22,14 @@
 		  "url"        : "//localhost:4000/class_assignments/week17",
 		  "date"       : "2015-06-02 00:00:00 +0200",
 		  "shortdate"  : "June 02, 2015"
+		} ,
+	
+		{
+		  "title"      : "Mechanical design, machine design",
+		  "category"   : "Class_assignments",
+		  "url"        : "//localhost:4000/class_assignments/week16",
+		  "date"       : "2015-05-25 00:00:00 +0200",
+		  "shortdate"  : "May 25, 2015"
 		} ,
 	
 		{

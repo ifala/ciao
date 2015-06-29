@@ -101,6 +101,11 @@ callback([
   } ,
 
   {
+    "text": "Mechanical design, machine design",
+    "href": "//localhost:4000/class_assignments/week16"
+  } ,
+
+  {
     "text": "Invention, intellectual property, and income",
     "href": "//localhost:4000/class_assignments/week17"
   } ,
@@ -113,11 +118,6 @@ callback([
   {
     "text": "Programming",
     "href": "//localhost:4000/finalproject/connection"
-  } ,
-
-  {
-    "text": "Mechanical design, machine design",
-    "href": "//localhost:4000/class_assignments/week16"
   } 
 
 ])
