@@ -16,6 +16,7 @@ featured: true
 	2015-06-14
 
 After presenting the project on June the 10th, I have tried to improve the graphic interface of my project, but I unfortunately have some issues with some answering delay of the Esp8266, probably due to the images I put into the app.
+
 ![img app]({{ site.url }}/images/finalproject/programming.jpg)
 
 

@@ -21,7 +21,30 @@ Finally, with the changes I had in mind from the 0.2 version, I can now present 
 
 ![mini]({{ site.url }}/images/finalproject/electronic/IMG_20150614_105702.jpg)
 
-![mini]({{ site.url }}/images/finalproject/electronic/front_each.png)
+![Schemtic]({{ site.url }}/images/finalproject/electronic/schemtic.png)
+
+![Schematic2]({{ site.url }}/images/finalproject/electronic/schematic2.png)
+
+![Board]({{ site.url }}/images/finalproject/electronic/board.png)
+
+![Board Bottom]({{ site.url }}/images/finalproject/electronic/board_bottom.png)
+
+Component List:
+
+2x 0k resistor
+2x 4.99ohm resistor
+1x 100ohm resistor
+1x 10k resistor
+1x 10uf capacitor
+1x attiny44
+
+3x2 JP connector
+4x1 JP connector
+3x1 JP connector
+2x 2x1 JP connector
+
+
+
 
 	2015-05-10
 
