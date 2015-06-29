@@ -64,11 +64,19 @@
     </url>
     
     <url>
+        <loc>//localhost:4000/finalproject/connection</loc>
+    </url>
+    
+    <url>
         <loc>//localhost:4000/class_assignments/Project_Development</loc>
     </url>
     
     <url>
         <loc>//localhost:4000/class_assignments/week17</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/finalproject/rgb</loc>
     </url>
     
     <url>
@@ -104,10 +112,6 @@
     </url>
     
     <url>
-        <loc>//localhost:4000/finalproject/connection</loc>
-    </url>
-    
-    <url>
         <loc>//localhost:4000/class_assignments/week9</loc>
     </url>
     
@@ -129,10 +133,6 @@
     
     <url>
         <loc>//localhost:4000/class_assignments/week4</loc>
-    </url>
-    
-    <url>
-        <loc>//localhost:4000/finalproject/rgb</loc>
     </url>
     
     <url>

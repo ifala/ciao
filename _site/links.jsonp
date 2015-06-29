@@ -26,11 +26,6 @@ callback([
   } ,
 
   {
-    "text": "Design",
-    "href": "//localhost:4000/finalproject/rgb"
-  } ,
-
-  {
     "text": "Electronic production",
     "href": "//localhost:4000/class_assignments/week4"
   } ,
@@ -58,11 +53,6 @@ callback([
   {
     "text": "Molding and Casting",
     "href": "//localhost:4000/class_assignments/week9"
-  } ,
-
-  {
-    "text": "Programming",
-    "href": "//localhost:4000/finalproject/connection"
   } ,
 
   {
@@ -106,6 +96,11 @@ callback([
   } ,
 
   {
+    "text": "Design",
+    "href": "//localhost:4000/finalproject/rgb"
+  } ,
+
+  {
     "text": "Invention, intellectual property, and income",
     "href": "//localhost:4000/class_assignments/week17"
   } ,
@@ -113,6 +108,11 @@ callback([
   {
     "text": "Project Development",
     "href": "//localhost:4000/class_assignments/Project_Development"
+  } ,
+
+  {
+    "text": "Programming",
+    "href": "//localhost:4000/finalproject/connection"
   } ,
 
   {

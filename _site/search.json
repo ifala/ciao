@@ -9,6 +9,14 @@
 		} ,
 	
 		{
+		  "title"      : "Programming",
+		  "category"   : "finalproject",
+		  "url"        : "//localhost:4000/finalproject/connection",
+		  "date"       : "2015-06-14 00:00:00 +0200",
+		  "shortdate"  : "June 14, 2015"
+		} ,
+	
+		{
 		  "title"      : "Project Development",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/Project_Development",
@@ -22,6 +30,14 @@
 		  "url"        : "//localhost:4000/class_assignments/week17",
 		  "date"       : "2015-06-02 00:00:00 +0200",
 		  "shortdate"  : "June 02, 2015"
+		} ,
+	
+		{
+		  "title"      : "Design",
+		  "category"   : "finalproject",
+		  "url"        : "//localhost:4000/finalproject/rgb",
+		  "date"       : "2015-05-20 00:00:00 +0200",
+		  "shortdate"  : "May 20, 2015"
 		} ,
 	
 		{
@@ -89,14 +105,6 @@
 		} ,
 	
 		{
-		  "title"      : "Programming",
-		  "category"   : "finalproject",
-		  "url"        : "//localhost:4000/finalproject/connection",
-		  "date"       : "2015-04-08 00:00:00 +0200",
-		  "shortdate"  : "April 08, 2015"
-		} ,
-	
-		{
 		  "title"      : "Molding and Casting",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/week9",
@@ -142,14 +150,6 @@
 		  "url"        : "//localhost:4000/class_assignments/week4",
 		  "date"       : "2015-02-22 00:00:00 +0100",
 		  "shortdate"  : "February 22, 2015"
-		} ,
-	
-		{
-		  "title"      : "Design",
-		  "category"   : "finalproject",
-		  "url"        : "//localhost:4000/finalproject/rgb",
-		  "date"       : "2015-02-21 00:00:00 +0100",
-		  "shortdate"  : "February 21, 2015"
 		} ,
 	
 		{
