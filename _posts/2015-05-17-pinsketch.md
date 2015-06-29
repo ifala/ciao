@@ -94,7 +94,7 @@ After discover that ESP 01 was insufficent to do what I want...I need to redisig
 - I had to undestand better the battery features and the mini servo for insert a proper voltage regulator (by now I used a LM3480).
 
 
-	2015-02-11
+	2015-03-11
 
 
 ![6]({{ site.url }}/images/finalproject/pin/6.jpg)
