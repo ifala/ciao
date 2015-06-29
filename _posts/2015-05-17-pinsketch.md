@@ -31,17 +31,17 @@ Finally, with the changes I had in mind from the 0.2 version, I can now present 
 
 Component List:
 
-2x 0k resistor
-2x 4.99ohm resistor
-1x 100ohm resistor
-1x 10k resistor
-1x 10uf capacitor
-1x attiny44
+- 2x 0k resistor
+- 2x 4.99ohm resistor
+- 1x 100ohm resistor
+- 1x 10k resistor
+- 1x 10uf capacitor
+- 1x attiny44
 
-3x2 JP connector
-4x1 JP connector
-3x1 JP connector
-2x 2x1 JP connector
+- 3x2 JP connector
+- 4x1 JP connector
+- 3x1 JP connector
+- 2x 2x1 JP connector
 
 
 
