@@ -113,6 +113,11 @@ callback([
   {
     "text": "Project Development",
     "href": "//localhost:4000/class_assignments/Project_Development"
+  } ,
+
+  {
+    "text": "Mechanical design, machine design",
+    "href": "//localhost:4000/class_assignments/week16"
   } 
 
 ])

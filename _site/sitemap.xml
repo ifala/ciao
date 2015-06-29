@@ -60,6 +60,10 @@
 
     
     <url>
+        <loc>//localhost:4000/class_assignments/week16</loc>
+    </url>
+    
+    <url>
         <loc>//localhost:4000/class_assignments/Project_Development</loc>
     </url>
     

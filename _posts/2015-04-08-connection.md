@@ -13,10 +13,11 @@ comments: false
 featured: true
 ---
 
-	2015-05-08
 
-The idea was to create a single component (esp8266 + servo5vRGB3.3) to control my twister cube from a smartphone or computer via WIFI, for the moment I want test only via computer.
-To control the 
+
+	2015-04-22
+
+
 
 ### NodeMCU firmware
 
@@ -24,7 +25,7 @@ To control the
 - Download and install serialPY
 - download [esptool.py](https://github.com/themadinventor/esptool/blob/master/esptool.py)
 
-In this cas, select firmware for ESP01 and download nodemcu-firmware-master/pre_build/0.9.4/514k-flash/nodemcu_512k_latest.bin
+In this case, select firmware for ESP01 and download nodemcu-firmware-master/pre_build/0.9.4/514k-flash/nodemcu_512k_latest.bin
 
 open terminal and send this command
 
@@ -35,7 +36,7 @@ now I have install the default nodemcu firmware inside the ESP01
 to programming the esp01 you must write 2 files 
 and upload with ESPlorer (for osx)
 
-updating soon
+
 
 	2015-05-05
 
