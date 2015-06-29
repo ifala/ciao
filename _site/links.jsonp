@@ -26,17 +26,12 @@ callback([
   } ,
 
   {
-    "text": "Molding - 3dprinting - Laser cutting",
-    "href": "//localhost:4000/finalproject/servo"
-  } ,
-
-  {
     "text": "Computer-controlled cutting",
     "href": "//localhost:4000/class_assignments/week3"
   } ,
 
   {
-    "text": "RGB",
+    "text": "Design",
     "href": "//localhost:4000/finalproject/rgb"
   } ,
 
@@ -98,6 +93,11 @@ callback([
   {
     "text": "Interface and application programming",
     "href": "//localhost:4000/class_assignments/week14"
+  } ,
+
+  {
+    "text": "Molding - 3dprinting - Laser cutting",
+    "href": "//localhost:4000/finalproject/servo"
   } ,
 
   {

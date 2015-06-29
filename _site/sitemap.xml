@@ -76,6 +76,10 @@
     </url>
     
     <url>
+        <loc>//localhost:4000/finalproject/servo</loc>
+    </url>
+    
+    <url>
         <loc>//localhost:4000/class_assignments/week14</loc>
     </url>
     
@@ -129,10 +133,6 @@
     
     <url>
         <loc>//localhost:4000/class_assignments/week3</loc>
-    </url>
-    
-    <url>
-        <loc>//localhost:4000/finalproject/servo</loc>
     </url>
     
     <url>
