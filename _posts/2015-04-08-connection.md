@@ -15,16 +15,17 @@ featured: true
 
 	2015-06-14
 
+After presenting the project on June the 10th, I have tried to improve the graphic interface of my project, but I unfortunately have some issues with some answering delay of the Esp8266, probably due to the images I put into the app.
 ![img app]({{ site.url }}/images/finalproject/programming.jpg)
 
 
 	2015-05-10
 
-[Interface and application programming]({{ site.url }}/class_assignments/week14/)
+After the [Interface and application programming]({{ site.url }}/class_assignments/week14/) week I developped a protocol in C with a web interface written in Javascript. This video is a short demo of the functioning of that interface:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QjE1MgSE-bo" frameborder="0" allowfullscreen></iframe>
 
-
+I would like to improve the web interface to give it a nicer look.
 
 	2015-05-05
 

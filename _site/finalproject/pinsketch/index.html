@@ -135,7 +135,9 @@ Description: Awesome dude, awesome life
             <div><pre><code>2015-05-17
 </code></pre>
 
-<h1 id="break-board-v03">break board v0.3</h1>
+<h1 id="breakout-board-v03">breakout board v0.3</h1>
+
+<p>Finally, with the changes I had in mind from the 0.2 version, I can now present the final board I am going to use for the final project.</p>
 
 <p><img src="//localhost:4000/images/finalproject/electronic/IMG_20150614_105702.jpg" alt="mini" /></p>
 
@@ -144,7 +146,9 @@ Description: Awesome dude, awesome life
 <pre><code>2015-05-10
 </code></pre>
 
-<h1 id="break-board-v02">break board v0.2</h1>
+<h1 id="breakout-board-v02">breakout board v0.2</h1>
+
+<p>In the 0.2 version I wanted to use a double face and double layer board, trying to correct some mistakes of the previous version and taking the regulator off, since I tried to power all the device with a 3.7v battery.</p>
 
 <p><img src="//localhost:4000/images/finalproject/electronic/IMG_20150606_122901.jpg" alt="mini" />
 <img src="//localhost:4000/images/finalproject/electronic/IMG_20150606_122913.jpg" alt="mini" /></p>
@@ -152,14 +156,22 @@ Description: Awesome dude, awesome life
 <p><img src="//localhost:4000/images/finalproject/electronic/IMG_20150606_132249.jpg" alt="mini" />
 <img src="//localhost:4000/images/finalproject/electronic/IMG_20150606_150132.jpg" alt="mini" /></p>
 
+<p>Unfortunately, as you can deduce from the picture on the right, I still have some trouble with the battery connector: since I used the male Jp pins available in the FabLab either than the specific ones for the battery.
+After using the battery a few times, the connector on the breakout board side, unplugged.
+In this board version the ground and voltage cable of the servo motor were inverted, as well as the voltage and green pins of the led RGB connector.</p>
+
+<h2 id="battery-test">Battery test</h2>
+
+<p>Even if I made a few mistakes, I managed to do some tests with a 3.7v / 200mA minibattery. Both the servo and the led didn’t have any issues in powering and checking the full battery voltage with the tester I always found a value around 3.63v max, coherent with the Esp 8266 datasheet.</p>
+
 <pre><code>2015-04-29
 </code></pre>
 
 <h1 id="breakout-board-v01">breakout board v0.1</h1>
 
-<p>Dopo molte ricerche su internet, ho deciso di provare a fare la nuova scheda senza voltage regulator, in quanto leggendo bene il datasheet del ESP8266 ho trovato che riesce a lavorare con un voltaggio massimo di 3.6 v e con assorbimenti variabili min 0.5 uA e max 215 mA.</p>
+<p>After many reserching on Internet, I decided to try the new board without voltage regulator, because, carefully reading the datasheet of the Esp8266, I realized that it is able to work with a maximum voltage of 3.6v and variable absorptions (min 0.5 uA / max 215 mA).</p>
 
-<p>la prima scheda che ho creato partendo dallo schematich scaricato dal sito dell’<a href="https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware">DEV esp8266 revA</a></p>
+<p>The first board I created from the shematich downloaded from the <a href="https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware">DEV esp8266 revA</a> website.</p>
 
 <p><img src="//localhost:4000/images/finalproject/electronic/IMG_20150527_190502.jpg" alt="mini" />
 <img src="//localhost:4000/images/finalproject/electronic/IMG_20150527_190537.jpg" alt="mini" />

@@ -15,18 +15,19 @@ featured: true
 
 	2015-05-17
 
-#break board v0.3
+#breakout board v0.3
 
-
+Finally, with the changes I had in mind from the 0.2 version, I can now present the final board I am going to use for the final project.
 
 ![mini]({{ site.url }}/images/finalproject/electronic/IMG_20150614_105702.jpg)
 
 ![mini]({{ site.url }}/images/finalproject/electronic/front_each.png)
 
-
 	2015-05-10
 
-#break board v0.2
+#breakout board v0.2
+
+In the 0.2 version I wanted to use a double face and double layer board, trying to correct some mistakes of the previous version and taking the regulator off, since I tried to power all the device with a 3.7v battery.
 
 ![mini]({{ site.url }}/images/finalproject/electronic/IMG_20150606_122901.jpg)
 ![mini]({{ site.url }}/images/finalproject/electronic/IMG_20150606_122913.jpg)
@@ -34,13 +35,21 @@ featured: true
 ![mini]({{ site.url }}/images/finalproject/electronic/IMG_20150606_132249.jpg)
 ![mini]({{ site.url }}/images/finalproject/electronic/IMG_20150606_150132.jpg)
 
+Unfortunately, as you can deduce from the picture on the right, I still have some trouble with the battery connector: since I used the male Jp pins available in the FabLab either than the specific ones for the battery.
+After using the battery a few times, the connector on the breakout board side, unplugged.
+In this board version the ground and voltage cable of the servo motor were inverted, as well as the voltage and green pins of the led RGB connector.
+
+##Battery test
+
+Even if I made a few mistakes, I managed to do some tests with a 3.7v / 200mA minibattery. Both the servo and the led didn't have any issues in powering and checking the full battery voltage with the tester I always found a value around 3.63v max, coherent with the Esp 8266 datasheet.
+
 	2015-04-29
 
 #breakout board v0.1
 
-Dopo molte ricerche su internet, ho deciso di provare a fare la nuova scheda senza voltage regulator, in quanto leggendo bene il datasheet del ESP8266 ho trovato che riesce a lavorare con un voltaggio massimo di 3.6 v e con assorbimenti variabili min 0.5 uA e max 215 mA.
+After many reserching on Internet, I decided to try the new board without voltage regulator, because, carefully reading the datasheet of the Esp8266, I realized that it is able to work with a maximum voltage of 3.6v and variable absorptions (min 0.5 uA / max 215 mA).
 
-la prima scheda che ho creato partendo dallo schematich scaricato dal sito dell'[DEV esp8266 revA](https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware)
+The first board I created from the shematich downloaded from the [DEV esp8266 revA](https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware) website.
 
 
 ![mini]({{ site.url }}/images/finalproject/electronic/IMG_20150527_190502.jpg)
