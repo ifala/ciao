@@ -60,10 +60,6 @@
 
     
     <url>
-        <loc>//localhost:4000/finalproject/connection</loc>
-    </url>
-    
-    <url>
         <loc>//localhost:4000/class_assignments/Project_Development</loc>
     </url>
     
@@ -89,6 +85,10 @@
     
     <url>
         <loc>//localhost:4000/finalproject/servo</loc>
+    </url>
+    
+    <url>
+        <loc>//localhost:4000/finalproject/connection</loc>
     </url>
     
     <url>

@@ -1,14 +1,6 @@
 [
 	
 		{
-		  "title"      : "Programming",
-		  "category"   : "finalproject",
-		  "url"        : "//localhost:4000/finalproject/connection",
-		  "date"       : "2015-06-14 00:00:00 +0200",
-		  "shortdate"  : "June 14, 2015"
-		} ,
-	
-		{
 		  "title"      : "Project Development",
 		  "category"   : "Class_assignments",
 		  "url"        : "//localhost:4000/class_assignments/Project_Development",
@@ -62,6 +54,14 @@
 		  "url"        : "//localhost:4000/finalproject/servo",
 		  "date"       : "2015-05-15 00:00:00 +0200",
 		  "shortdate"  : "May 15, 2015"
+		} ,
+	
+		{
+		  "title"      : "Programming",
+		  "category"   : "finalproject",
+		  "url"        : "//localhost:4000/finalproject/connection",
+		  "date"       : "2015-05-13 00:00:00 +0200",
+		  "shortdate"  : "May 13, 2015"
 		} ,
 	
 		{
