@@ -11,16 +11,16 @@ imagefeature: project_development.jpg
 
 I used many pages for documenting my project, so you will need to look at those pages first:
 
-[Project description and overall requirements]({{ site.url }}/finalproject/description/) 
+
+[Project description and overall requirements]({{ site.url }}/finalproject/description/)
 
 [Schedule]({{ site.url }}/finalproject/schedule/)
 
 [Project blog]({{ site.url }}/final_project/)
 
-[Mechanical Design]({{ site.url }}/finalproject/servo/)
+[Mechanical Design]({{ site.url }}/finalproject/rgb/)
 
 [Dissemination, Licensing and Business model]({{ site.url }}/class_assignments/week16/)
-
 
 
 ###Tinal project presentation functionality:
